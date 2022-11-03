@@ -30,7 +30,6 @@ ACP 1.x (Objective-C)
 
 <Tabs query="platform=acp-objc&api=extension-version"/>
 
-
 ### registerExtension
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>

@@ -54,7 +54,6 @@ Xamarin
 
 <Tabs query="platform=xamarin&api=get-user-attributes"/>
 
-
 ## registerExtension
 
 Registers the Profile extension with the Mobile Core extension.
