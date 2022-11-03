@@ -59,6 +59,14 @@ module.exports = {
                 ]
             },
             {
+                title: "Version 4 Mobile SDKs end-of-support FAQ",
+                path: "/documentation/v4-end-of-life-faq"
+            },
+            {
+                title: "Version 4 API changelog",
+                path: "/documentation/api-changelog"
+            },
+            {
                 title: "Mobile Foundation extensions",
                 path: "/documentation/mobile-foundation-extensions",
                 pages: [{
@@ -172,6 +180,31 @@ module.exports = {
                         ]
                     },
                     {
+                        title: "Adobe Experience Platform Assurance",
+                        path: "/documentation/platform-assurance-sdk",
+                        pages: [{
+                                title: "Overview",
+                                path: "/documentation/platform-assurance-sdk"
+                            },
+                            {
+                                title: "Migration",
+                                path: "/documentation/platform-assurance-sdk/migration"
+                            },
+                            {
+                                title: "API reference",
+                                path: "/documentation/platform-assurance-sdk/api-reference"
+                            },
+                            {
+                                title: "Resolving common issues",
+                                path: "/documentation/platform-assurance-sdk/common-issues/"
+                            },
+                            {
+                                title: "Release notes",
+                                path: "/documentation/platform-assurance-sdk/release-notes"
+                            }
+                        ]
+                    },
+                    {
                         title: "Profile",
                         path: "/documentation/profile",
                         pages: [{
@@ -185,10 +218,6 @@ module.exports = {
                             {
                                 title: "API reference",
                                 path: "documentation/profile/api-reference"
-                            },
-                            {
-                                title: "Event reference",
-                                path: "documentation/profile/event-reference"
                             },
                             {
                                 title: "Release notes",
@@ -288,10 +317,6 @@ module.exports = {
                                 path: "documentation/adobe-audience-manager/api-reference"
                             },
                             {
-                                title: "Event reference",
-                                path: "documentation/adobe-audience-manager/event-reference"
-                            },
-                            {
                                 title: "Migration",
                                 path: "documentation/adobe-audience-manager/migration"
                             },
@@ -311,10 +336,6 @@ module.exports = {
                             {
                                 title: "API reference",
                                 path: "documentation/adobe-campaign-classic/api-reference"
-                            },
-                            {
-                                title: "Event reference",
-                                path: "documentation/adobe-campaign-classic/event-reference"
                             },
                             {
                                 title: "Migration",
@@ -338,10 +359,6 @@ module.exports = {
                                 path: "documentation/adobe-campaign-standard/api-reference"
                             },
                             {
-                                title: "Event reference",
-                                path: "documentation/adobe-campaign-standard/event-reference"
-                            },
-                            {
                                 title: "Migration",
                                 path: "documentation/adobe-campaign-standard/migration"
                             },
@@ -361,10 +378,6 @@ module.exports = {
                             {
                                 title: "API reference",
                                 path: "documentation/adobe-target/api-reference"
-                            },
-                            {
-                                title: "Event reference",
-                                path: "documentation/adobe-target/event-reference"
                             },
                             {
                                 title: "Migration",
@@ -415,8 +428,8 @@ module.exports = {
                         ]
                     },
                     {
-                        title: "Frequently asked questions",
-                        path: "documentation/faq"
+                        title: "Privacy and GDPR",
+                        path: "documentation/privacy-and-gdpr"
                     },
                     {
                         title: "Migrate to Swift",
