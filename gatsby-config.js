@@ -112,7 +112,7 @@ module.exports = {
                                     {
                                         title: "API reference",
                                         path: "documentation/mobile-core/lifecycle/api-reference"
-                                    }
+                                    },
                                     {
                                         title: "Migration",
                                         path: "documentation/mobile-core/lifecycle/migration"
