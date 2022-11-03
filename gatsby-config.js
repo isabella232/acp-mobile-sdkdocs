@@ -149,10 +149,6 @@ module.exports = {
                                 path: "documentation/mobile-core/api-reference"
                             },
                             {
-                                title: "Event reference",
-                                path: "documentation/mobile-core/event-reference"
-                            },
-                            {
                                 title: "Migration",
                                 path: "documentation/mobile-core/migration"
                             },
@@ -193,10 +189,6 @@ module.exports = {
                             {
                                 title: "API reference",
                                 path: "/documentation/platform-assurance-sdk/api-reference"
-                            },
-                            {
-                                title: "Resolving common issues",
-                                path: "/documentation/platform-assurance-sdk/common-issues/"
                             },
                             {
                                 title: "Release notes",
@@ -246,16 +238,8 @@ module.exports = {
                                 path: "/documentation/adobe-analytics/api-reference/"
                             },
                             {
-                                title: 'Event reference',
-                                path: '/documentation/adobe-analytics/event-reference/'
-                            },
-                            {
                                 title: "Migration",
                                 path: "/documentation/adobe-analytics/migration/"
-                            },
-                            {
-                                title: "Product variable",
-                                path: "/documentation/adobe-analytics/product-variable"
                             },
                             {
                                 title: 'Release Notes',
