@@ -6,15 +6,7 @@ import Tabs from './tabs/api-reference.md'
 
 The `extensionVersion()` API returns the version of the Profile extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -44,15 +36,7 @@ Xamarin
 
 The `getUserAttributes()` API gets the user profile attributes with the given keys.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
-
-Android
-
-<Tabs query="platform=android&api=get-user-attributes"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-user-attributes"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
 iOS (ACP 2.x)
 
@@ -70,20 +54,11 @@ Xamarin
 
 <Tabs query="platform=xamarin&api=get-user-attributes"/>
 
-
 ## registerExtension
 
 Registers the Profile extension with the Mobile Core extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
-
-Android
-
-<Tabs query="platform=android&api=register-extension"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=register-extension"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS (ACP 2.x)
 
@@ -93,11 +68,7 @@ iOS (ACP 2.x)
 
 Removes the user profile attribute for the given key.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
-
-Android
-
-<Tabs query="platform=android&api=remove-user-attribute"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
 iOS (ACP 2.x)
 
@@ -119,15 +90,7 @@ Xamarin
 
 Removes the user profile attributes for the given keys.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
-
-Android
-
-<Tabs query="platform=android&api=remove-user-attributes"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=android&api=remove-user-attributes"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
 iOS (ACP 2.x)
 
@@ -155,11 +118,7 @@ Remember the following information:
 * If the attribute exists, the value will be updated.
 * A null attribute value removes the attribute.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
-
-Android
-
-<Tabs query="platform=android&api=update-user-attribute"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
 iOS (ACP 2.x)
 
@@ -189,15 +148,7 @@ Allows you to create/update a batch of user profile attributes:
 * If the attribute already exists, the value is updated.
 * A null attribute value will remove the attribute.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
-
-Android
-
-<Tabs query="platform=android&api=update-user-attributes"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=android&api=update-user-attributes"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
 iOS (ACP 2.x)
 
