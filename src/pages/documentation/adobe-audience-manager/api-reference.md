@@ -8,15 +8,7 @@ The `extensionVersion()` API returns the version of the Audience extension that 
 
 To get the version of the Audience extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -46,15 +38,7 @@ Xamarin
 
 This API returns the most recently obtained visitor profile. The visitor profile is saved in the SDK's local storage for access across multiple launches of your app. If no audience signal has been sent before, when this API is called, a null value is returned.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=get-visitor-profile"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-visitor-profile"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -68,15 +52,7 @@ React Native
 
 This API registers an extension class that was derived from `ACPExtension` with a unique name. This call validates the parameters to ensure that the name is not empty, the name is unique, and that the parent class is `ACPExtension`.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=register-extension"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=register-extension"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -94,15 +70,7 @@ This API helps you reset the Audience Manager UUID and purges the current visito
 
 For more information about the UUID, the DPID, the DPUUID and other Audience Manager identifiers, see [Index of IDs in Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/ids-in-aam.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=reset"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=reset"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -122,15 +90,7 @@ If you are using the Experience Cloud ID (ECID) Service (formerly MCID), the ECI
 
 For more information about the UUID and other Audience Manager identifiers, see the [index of IDs in Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/ids-in-aam.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=signal-with-data"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=signal-with-data"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 

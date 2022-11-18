@@ -102,15 +102,7 @@ The number of seconds to wait before Analytics launch hits are sent from the SDK
 
 ## Add Analytics to your application
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -138,15 +130,7 @@ Xamarin
 
 ## Register Analytics with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -202,15 +186,7 @@ For more information about collecting audio and video analytics, please read the
 
 Event serialization is not supported by processing rules. To set serialized events directly on the hits sent to Analytics, use the following syntax in context data parameters:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&task=serialize"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=serialize"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -254,15 +230,7 @@ To update the SDK configuration programmatically, use the following information 
 
 ## Update Analytics configuration
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&task=update"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=update"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 

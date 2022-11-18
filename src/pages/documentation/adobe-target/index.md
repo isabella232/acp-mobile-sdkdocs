@@ -31,15 +31,7 @@ To get started with Target, follow these steps:
 
 To add the Target extension to your app:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -53,15 +45,7 @@ React Native
 
 To register the Target extension with Mobile Core:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -79,15 +63,7 @@ Here is some information about the parameters in a Target request:
 
 The `TargetOrder` class encapsulates the order ID, the order total, and the purchased product IDs. You can instantiate this class to create order parameters. For more information about Target Order parameters, see [Create an Order Confirmation mbox - mbox.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=target-order"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=target-order"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -101,15 +77,7 @@ React Native
 
 The `TargetProduct` class encapsulates the product ID and the product category ID, and you can instantiate this class to create order parameters. For more information about Target Product parameters, see [Entity attributes](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=target-product"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=target-product"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -123,15 +91,7 @@ React Native
 
 `TargetParameters` encapsulates `mboxParameters`, `profileParameters`, `orderParameters`, and `productParameters`, and allows you easily pass these parameters in a Target request.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=target-parameters"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=target-parameters"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -167,15 +127,7 @@ After making preview mode selections, the first mbox request made may fail due t
 
 The mbox request that failed can be retried to successfully retrieve the test offer content.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
-
-Android
-
-<Tabs query="platform=android&task=visual-preview"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=visual-preview"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS (ACP 2.x)
 

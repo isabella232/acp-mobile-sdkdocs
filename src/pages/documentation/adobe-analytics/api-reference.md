@@ -15,15 +15,7 @@ Force delete, without sending to Analytics, all hits being stored or batched on 
 
 Use caution when manually clearing the queue. This operation cannot be reverted.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=clear-queue"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=clear-queue"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -55,15 +47,7 @@ The `extensionVersion()` API returns the version of the Analytics extension that
 
 To get the version of the Analytics extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -93,15 +77,7 @@ Xamarin
 
 Retrieves the total number of Analytics hits in the tracking queue.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=get-queue-size"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-queue-size"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -131,11 +107,7 @@ Xamarin
 
 Retrieves the total number of Analytics hits in the tracking queue. Invoke the callback with NSError if an unexpected error occurs or the request times out.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-queue-size-with-completion-handler"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS (ACP 2.x)
 
@@ -149,15 +121,7 @@ Retrieves the Analytics tracking identifier that is generated for this app/devic
 
 Starting with v1.2.9 (Android) / v3.0.3(iOS AEPAnalytics) / v2.5.1 (iOS ACPAnalytics) this API does not generate or retrieve a new tracking identifier (AID) for new visitors. For the visitors which have an AID previously generated will continue retrieve the AID value with this API, and new users will use the ECID (MID) value as the primary identity.<br/><br/>Before using this API, see the documentation on identifying [unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=get-tracking-identifier"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-tracking-identifier"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -195,11 +159,7 @@ Retrieves the Analytics tracking identifier that is generated for this app/devic
 
 If you have an [Experience Cloud ID](../mobile-core/identity/api-reference.md#getexperiencecloudid) and have not yet configured a visitor ID grace period, the value returned by `getTrackingIdentifier` may be null.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-tracking-identifier-with-completion-handler"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS (ACP 2.x)
 
@@ -213,15 +173,7 @@ Before using this API, see [Identify unique visitors](https://experienceleague.a
 
 This API gets a custom Analytics visitor identifier, which has been set previously using [setVisitorIdentifier](#setvisitoridentifier).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=get-visitor-identifier"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-visitor-identifier"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -255,11 +207,7 @@ Before using this API, see [Identify unique visitors](https://experienceleague.a
 
 This API gets a custom Analytics visitor identifier, which has been set previously using [setVisitorIdentifier](#setvisitoridentifier). Callback with NSError if an unexpected error occurs or the request times out.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-visitor-identifier-with-completion-handler"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS (ACP 2.x)
 
@@ -283,15 +231,7 @@ This method forces the library to send all hits in the offline queue, regardless
 
 Use caution when manually clearing the queue. This operation cannot be reverted.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=send-queued-hits"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=send-queued-hits"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 
@@ -325,15 +265,7 @@ Before using this API, see [Identify unique visitors](https://experienceleague.a
 
 Sets a custom Analytics visitor identifier. For more information, see [Custom Visitor ID](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&api=set-visitor-identifier"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=set-visitor-identifier"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS (ACP 2.x)
 

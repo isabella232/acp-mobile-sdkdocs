@@ -17,15 +17,7 @@ Adobe Audience Manager is a versatile audience data management platform. With th
 
 ## Add Audience Manager to your app
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 
@@ -37,15 +29,7 @@ React Native
 
 ## Register Audience Manager with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 2.x)
 

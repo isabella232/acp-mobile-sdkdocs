@@ -6,15 +6,7 @@ import Tabs from './tabs/api-reference.md'
 
 Returns the running version of the Campaign Standard extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 1.x)
 
@@ -28,15 +20,7 @@ React Native
 
 Registers the Campaign Standard extension with the Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=register-extension"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=register-extension"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 1.x)
 
@@ -52,15 +36,7 @@ Clears previously stored linkage fields in the mobile SDK and triggers a Campaig
 
 This method unregisters any previously registered rules with the Rules Engine and clears cached rules from the most recent rules download.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=reset-linkage-fields"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=reset-linkage-fields"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 1.x)
 
@@ -76,15 +52,7 @@ Sets the Campaign linkage fields (CRM IDs) in the mobile SDK to be used for down
 
 The set linkage fields are stored as a base64 encoded JSON string in memory and they are sent in a custom HTTP header `X-InApp-Auth`.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
-
-Android
-
-<Tabs query="platform=android&api=set-linkage-fields"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=set-linkage-fields"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
 iOS (ACP 1.x)
 

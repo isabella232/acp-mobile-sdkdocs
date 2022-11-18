@@ -8,15 +8,7 @@ Since the products variable cannot be set by processing rules, you need to set s
 
 To set the products variable, set a context data key to `&&products`, and set the value to the products or merchandising variable. For more information, see the [implementing a merchandising variable tutorial](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar-merchandising.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
-
-Android
-
-<Tabs query="platform=android&task=set-variable"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=set-variable"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 iOS (ACP 2.x)
 
@@ -40,15 +32,7 @@ You do **not** need to map the `products` variable using processing rules becaus
 
 The following code samples show an example of the products variable with merchandising eVars and product-specific events.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
-
-Android
-
-<Tabs query="platform=android&task=products"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=products"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 iOS (ACP 2.x)
 
