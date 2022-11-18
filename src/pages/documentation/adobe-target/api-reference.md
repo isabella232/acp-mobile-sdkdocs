@@ -307,8 +307,3 @@ iOS
 React Native
 
 <Tabs query="platform=react-native&api=target-product"/>
-
-
-### Target callback
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
