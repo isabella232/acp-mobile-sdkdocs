@@ -25,7 +25,11 @@ Go to the [Experience Platform Data Collection UI](https://experience.adobe.com/
 
 ### Import the library to your app code
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+
+iOS
+
+<Tabs query="platform=ios-acp&task=import-library"/>
 
 React Native
 
@@ -49,7 +53,11 @@ Xamarin
 
 ### Register AEPAssurance with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+
+iOS
+
+<Tabs query="platform=ios-acp&task=register-assurance"/>
 
 React Native
 
@@ -81,4 +89,8 @@ To learn how to start sessions for other platforms, please read the [Platform As
 
 You may call this API when the app launches with a url (see code snippet below for sample usage) <br/><br/> The AEP Assurance Android extension does not require this API to be called since it registers the app lifecycle handlers which automatically pick up any deep links and use them to start the session.<br/><br/>When using the AEP Assurance iOS extension, you should call this API when the app launches with a URL (see code snippet below for sample usage).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+
+iOS
+
+<Tabs query="platform=ios-acp&task=register-assurance"/>
