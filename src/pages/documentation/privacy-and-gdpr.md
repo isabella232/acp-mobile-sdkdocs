@@ -10,64 +10,11 @@ When Adobe provides software and services to an enterprise, Adobe acts as a data
 
 ## Setup steps
 
-The following sections provide details on how you can collect consent and privacy status to ensure collection of data suits your user's preferences.
-
-Depending on the mobile extensions you use, there are two ways of collecting and enforcing consent preferences when using the Experience Platform SDKs:
-
-1. When using the **Edge Network** mobile extensions, you should use the [Consent for Edge Network](./consent-for-edge-network/index.md) extension.
-2. When using **Adobe Experience Cloud** mobile extensions, you should use privacy status settings.
-
-The two options are documented in detail below.
-
-<InlineAlert variant="info" slots="text"/>
-
-If you are using a mix of Edge Network and Adobe Experience Cloud mobile extensions, please follow the steps for configuring both consent and privacy status settings. See also the [frequently asked questions](./identity-for-edge-network/faq.md) about consent and privacy settings or identities.
-
-## Using Experience Platform SDKs for Edge Network
-
-## Update and get collect consent preferences
-
-You can set the collect consent status to ensure collection of data suits your user's preferences.
-
-| Extension        | Collect (y)   | Collect (n)       | Collect (pending) |
-| :--------------- | :------------ | :---------------- | :---------------- |
-| **Edge Network** | Hits are sent | Hits are not sent | Hits are queued   |
-
-> **Note:** When no default collect consent value is defined in configuration, the SDK defaults to Yes (y) for collect consent.
-
-<InlineAlert variant="warning" slots="text"/>
-
-Updating the collect consent status to No (n) does not reset or clear the identities of the current user. If you need to reset all current identities, use the [MobileCore.resetIdentities()](./mobile-core/api-reference.md#resetidentities) API.
-
-### Collect consent settings
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
-
-### getConsents
-
-You can programmatically view the current collect consent preferences status in a dictionary representation by using the following API.
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
-
-### updateConsents
-
-Use this example to programmatically update the consent collect for the application user.
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
-
-### getIdentities
-
-When using the Edge Network extensions, use the [Identity.getIdentities](./identity-for-edge-network/api-reference.md#getidentities) API to retrieve all the identifier data stored locally by the SDK and send this data to your servers.
-
-## Configuration keys
-
-To programmatically update the SDK configuration, use the following information to change your default consent values. For more information, see the [configuration API reference](./mobile-core/configuration/api-reference.md).
-
-| Key | Description |
-| :--- | :--------- |
-| `consent.default` | Defines the set of default consent preferences for the SDK in XDM format. For more details, see [Privacy/Personalization/Marketing Preferences (Consents) Schema](https://github.com/adobe/xdm/blob/master/docs/reference/mixins/profile/profile-consents.schema.md). |
+The following section provides details on how you can set and get privacy status to ensure collection of data suits your user's preferences.
 
 ## Using Adobe Experience Cloud Solution extensions
+
+When using **Adobe Experience Cloud** mobile extensions, you should use privacy status settings.
 
 ## Set and get privacy status
 

@@ -155,12 +155,6 @@ iOS
 
 <Tabs query="platform=ios-acp&api=register-url-handler"/>
 
-## resetIdentities
-
-The `resetIdentities` method requests that each extension resets the identities it owns and each extension responds to this request uniquely. For more details, check the `resetIdentities` API reference on each of the extensions you use.
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
 ## setAdvertisingIdentifier
 
 The advertising ID is preserved between app upgrades, is saved and restored during the standard application backup process, available via [Signals](signals/index.md), and is removed at uninstall.
