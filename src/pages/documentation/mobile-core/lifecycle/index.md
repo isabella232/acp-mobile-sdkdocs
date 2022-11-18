@@ -10,17 +10,9 @@ Sessions contain information about the app's current lifecycle, such as the devi
 
 ## Add Lifecycle to your app
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -47,17 +39,9 @@ Xamarin
 
 ## Register Lifecycle with Mobile Core and add appropriate Start/Pause calls
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 

@@ -6,7 +6,7 @@ The Adobe Experience Platform SDKs give you controls to manage consent and priva
 
 Before implementing these controls, read the [Adobe Experience Platform Privacy Service documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).
 
-When Adobe provides software and services to an enterprise, Adobe acts as a data processor for any personal data it processes and stores as part of providing these services. As a data processor, Adobe processes personal data in accordance with your company’s permission and instructions, as set out in your agreement with Adobe. As a data controller, you can use the Experience Platform SDKs to support privacy retrieve and delete requests from your mobile apps.
+When Adobe provides software and services to an enterprise, Adobe acts as a data processor for any personal data it processes and stores as part of providing these services. As a data processor, Adobe processes personal data in accordance with your company's permission and instructions, as set out in your agreement with Adobe. As a data controller, you can use the Experience Platform SDKs to support privacy retrieve and delete requests from your mobile apps.
 
 ## Setup steps
 
@@ -41,43 +41,19 @@ Updating the collect consent status to No (n) does not reset or clear the identi
 
 ### Collect consent settings
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<PrivacyTabs query="platform=android&task=collect-consent-settings"/>
-
-iOS (AEP 3.x)
-
-<PrivacyTabs query="platform=ios-aep&task=collect-consent-settings"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
 
 ### getConsents
 
 You can programmatically view the current collect consent preferences status in a dictionary representation by using the following API.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<PrivacyTabs query="platform=android&task=get-consents"/>
-
-iOS (AEP 3.x)
-
-<PrivacyTabs query="platform=ios-aep&task=get-consents"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
 
 ### updateConsents
 
 Use this example to programmatically update the consent collect for the application user.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<PrivacyTabs query="platform=android&task=update-consents"/>
-
-iOS (AEP 3.x)
-
-<PrivacyTabs query="platform=ios-aep&task=update-consents"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
 
 ### getIdentities
 
@@ -111,17 +87,9 @@ You can set a privacy status to ensure collection of data suits your user's pref
 
 ### setPrivacyStatus
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<PrivacyTabs query="platform=android&task=set-privacy-status"/>
-
-iOS (AEP 3.x)
-
-<PrivacyTabs query="platform=ios-aep&task=set-privacy-status"/>
-
-iOS (ACP 2.x)
+iOS
 
 <PrivacyTabs query="platform=ios-acp&task=set-privacy-status"/>
 
@@ -129,17 +97,9 @@ iOS (ACP 2.x)
 
 You can also programmatically view the current privacy status by using the following:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<PrivacyTabs query="platform=android&task=get-privacy-status"/>
-
-iOS (AEP 3.x)
-
-<PrivacyTabs query="platform=ios-aep&task=get-privacy-status"/>
-
-iOS (ACP 2.x)
+iOS
 
 <PrivacyTabs query="platform=ios-acp&task=get-privacy-status"/>
 

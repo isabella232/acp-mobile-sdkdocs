@@ -22,31 +22,15 @@ You can clear any programmatic updates made to the configuration via the `clearU
 
 * `configureWithAppId(appId)`(Android)/`configureWith(appId:)`(iOS) or `configureWithFileInPath(filePath)`(Android)/ `configureWith(filePath:)`(iOS) or `configureWithFileInAssets(fileName)`(Android) -> `setPrivacyStatus(privacyStatus)`(Android)/ `setPrivacyStatus(_ status:)`(iOS) -> `clearUpdatedConfiguration()`: In this example, the configuration will have the initial `MobilePrivacyStatus`(Android)/ `PrivacyStatus`(iOS) set via `configureWithAppId(appId)`(Android)/`configureWith(appId:)`(iOS) or `configureWithFileInPath(filePath)`(Android)/ `configureWith(filePath:)`(iOS) or `configureWithFileInAssets(fileName)`(Android).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android 
-
-<Tabs query="platform=android&api=clear-updated-configuration"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=clear-updated-configuration"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
 
 ## configureWithAppID
 
 This API causes the SDK to download the configuration for the provided app ID and apply the configuration to the current session.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
-Android
-
-<Tabs query="platform=android&api=configure-with-app-id"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=configure-with-app-id"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=configure-with-app-id"/>
 
@@ -66,11 +50,7 @@ This API is only available in Android and was added in Android was added in Andr
 
 You can bundle a JSON configuration file in the app's Assets folder to replace or complement the configuration that was downloaded by using the [Configure with App ID per environment](./index.md#configure-with-app-id-per-environment) approach.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
-
-Android
-
-<Tabs query="platform=android&api=configure-with-file-in-assets"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
 
 ## configureWithFileInPath
 
@@ -78,17 +58,9 @@ You can include a bundled JSON configuration file in your app package to replace
 
 To pass in a bundled path and file name:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=configure-with-file-in-path"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=configure-with-file-in-path"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=configure-with-file-in-path"/>
 
@@ -102,17 +74,9 @@ The `extensionVersion()` API returns the version of the Configuration extension.
 
 To get the version of the Configuration extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -148,17 +112,9 @@ Keys that are not found on the current configuration are added when this method 
 
 Do not use this API to update the `build.environment` key or any key with an environment prefix, because it can lead to unexpected behaviors. For more information, read [Environment-aware configuration properties](./index.md#environment-aware-configuration-properties).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=update-configuration"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=update-configuration"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=update-configuration"/>
 

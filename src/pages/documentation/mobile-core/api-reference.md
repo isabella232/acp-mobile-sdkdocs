@@ -10,17 +10,9 @@ You can provide the user information to the SDK from various launch points in yo
 
 If the Adobe Analytics extension is enabled in your SDK, collecting this launch data results in an Analytics request being sent. Other extensions in the SDK might use the collected data, for example, as a rule condition for an In-App Message.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&api=collect-launch-info"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=collect-launch-info"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=collect-launch-info"/>
 
@@ -32,17 +24,9 @@ The `collectPii` method lets the SDK to collect sensitive or personally identifi
 
 Although this method enables the collection of sensitive data, no data is sent to any Adobe or other third-party endpoints. To send the data to an endpoint, use a PII type postback.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=collect-pii"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=collect-pii"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=collect-pii"/>
 
@@ -54,11 +38,7 @@ React Native
 
 You can use the `getApplication` method to get the previously set Android `Application` instance. The `Application` instance is mainly provided for third-party extensions.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&api=get-application"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 Xamarin
 
@@ -68,17 +48,9 @@ Xamarin
 
 This API gets the current log level being used in the SDK.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
-Android
-
-<Tabs query="platform=android&api=get-log-level"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-log-level"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-log-level"/>
 
@@ -113,17 +85,9 @@ To retrieve data as a JSON string from the SDKs and send this data to your serve
 
 You must call the API below and retrieve identities stored in the SDK, **before** the user opts out.<br/><br/>This API does **not** include the identities stored in the Edge Identity extension. To retrieve the identities from the Edge Identity extension, use [getIdentities](../identity-for-edge-network/api-reference.md#getidentities).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&api=get-sdk-identities"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=get-sdk-identities"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-sdk-identities"/>
 
@@ -131,17 +95,9 @@ iOS (ACP 2.x)
 
 This is the API used to log from the SDK.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
-Android
-
-<Tabs query="platform=android&api=log"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=log"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=log"/>
 
@@ -163,17 +119,9 @@ Extension registration is **mandatory**. Attempting to make extension-specific A
 
 The following code snippets demonstrate how you can import and register the Mobile Core and Profile extensions. You can also see, for reference, how Identity, Lifecycle, Signal, Profile, and other extensions are imported and registered.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=register-extension"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=register-extension"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 
@@ -203,7 +151,7 @@ Mobile SDK allows you to add a callback function that is triggered before the [`
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-url-handler"/>
 
@@ -212,14 +160,6 @@ iOS (ACP 2.x)
 The `resetIdentities` method requests that each extension resets the identities it owns and each extension responds to this request uniquely. For more details, check the `resetIdentities` API reference on each of the extensions you use.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&api=reset-identities"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=reset-identities"/>
 
 ## setAdvertisingIdentifier
 
@@ -235,13 +175,9 @@ You can use the `setAppGroup` method to set the app group, which is used to shar
 
 This API _must_ be called in `AppDidFinishLaunching` and before any other interactions with the Adobe Experience SDK have happened. Only the first call to this function will have any effect.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=set-app-group"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-app-group"/>
 
@@ -259,11 +195,7 @@ Android applications must call `MobileCore.setApplication()` before calling any 
 
 You can use the `setApplication` method to pass the Android `Application` instance to Mobile SDK. Please note that this method is **only** supported on Android versions of Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&api=set-application"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 Xamarin
 
@@ -292,17 +224,9 @@ By default, Mobile SDK logging mode is set to `LoggingMode.ERROR` for Android an
 
 On **Android**, Mobile SDK uses the `android.util.Log` class to log messages.<br/><br/>On **iOS**, Mobile SDK uses `NSLog` to messages to Apple System Log facility.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=set-log-level"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=set-log-level"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-log-level"/>
 
@@ -334,17 +258,9 @@ This API sets the device token for push notifications in the SDK. If the current
 
 You should call `setPushIdentifier` on each application launch to ensure the most up-to-date device token is set to the SDK. If no device token is available, `null`/`nil` should be passed.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&api=set-push-identifier"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=set-push-identifier"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-push-identifier"/>
 
@@ -352,11 +268,7 @@ iOS (ACP 2.x)
 
 You can set the small and large icons that will be used for notifications that are created by the SDK. The small icon appears in the status bar and is the secondary image that is displayed when the user sees the complete notification in the notification center. The large icon is the primary image that is displayed when the user sees the complete notification in the notification center. Please note that this method is **only** supported on Android versions of Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&api=set-icon-resource-id"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 Xamarin
 
@@ -374,17 +286,9 @@ You want to use the `trackAction` method when you want to track an occurring eve
 
 If you installed and configured the Adobe Analytics extension, this method sends an Adobe Analytics action tracking hit with the provided optional context data.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=track-action"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-action"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=track-action"/>
 
@@ -416,17 +320,9 @@ States represent screens or views in your application. The `trackState` method n
 
 If you installed and configured the Adobe Analytics extension, the `trackState` method increments page views and an Adobe Analytics state tracking hit with the provided optional context data.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=track-state"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-state"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=track-state"/>
 
@@ -452,17 +348,9 @@ Xamarin
 
 ## Public classes
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=public-classes"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=public-classes"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=public-classes"/>
 

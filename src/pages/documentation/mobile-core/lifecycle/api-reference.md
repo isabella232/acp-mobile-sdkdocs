@@ -8,17 +8,9 @@ The `extensionVersion()` API returns the version of the Lifecycle extension that
 
 To get the version of the Lifecycle extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -50,17 +42,9 @@ Starts the collection of lifecycle data.
 
 **For Platform use case:** Use this API to dispatch a [Lifecycle Application Foreground](./event-reference.md#lifecycle-application-foreground) event when the application is launched.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-Android
-
-<Tabs query="platform=android&api=lifecycle-start"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=lifecycle-start"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=lifecycle-start"/>
 
@@ -88,17 +72,9 @@ Pauses the collection of lifecycle data.
 
 **For Platform use case:** Use this API to dispatch a [Lifecycle Application Background](./event-reference.md#lifecycle-application-background) event when the application closes.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-Android
-
-<Tabs query="platform=android&api=lifecycle-pause"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=lifecycle-pause"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=lifecycle-pause"/>
 

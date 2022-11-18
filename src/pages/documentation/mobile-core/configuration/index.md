@@ -16,17 +16,9 @@ After the configuration is retrieved when the app is initially launched, the con
 
 The unique environment ID from the Data Collection UI can be configured with the SDK using the following:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
 
-Android
-
-<Tabs query="platform=android&task=configure"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=configure"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=configure"/>
 
@@ -54,17 +46,9 @@ Keys that are not found on the current configuration are added when this method 
 
 Do not use this API to update the build.environment or any key with an environment prefix, because it can lead to unexpected behavior. For more information, read [Environment-aware configuration properties](./index.md#environment-aware-configuration-properties).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=update"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=update"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=update"/>
 
@@ -113,17 +97,9 @@ You can also load a different `ADBMobileConfig.json` file by using the `Configur
 
 To pass in a bundled path and file name:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&task=bundle"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=bundle"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=bundle"/>
 
