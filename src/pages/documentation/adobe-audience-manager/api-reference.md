@@ -10,7 +10,7 @@ To get the version of the Audience extension, use the following code sample:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -40,7 +40,7 @@ This API returns the most recently obtained visitor profile. The visitor profile
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-visitor-profile"/>
 
@@ -54,7 +54,7 @@ This API registers an extension class that was derived from `ACPExtension` with 
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 
@@ -72,7 +72,7 @@ For more information about the UUID, the DPID, the DPUUID and other Audience Man
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=reset"/>
 
@@ -92,7 +92,7 @@ For more information about the UUID and other Audience Manager identifiers, see 
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=signal-with-data"/>
 

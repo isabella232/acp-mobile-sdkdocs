@@ -107,7 +107,7 @@ iOS AEP (3.x) Mobile Services extension only supports Cocoapods. It does **not**
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -115,7 +115,7 @@ iOS (ACP 2.x)
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -127,7 +127,7 @@ To use your Android or iOS extension with the Experience Platform SDKs, implemen
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=set-push-messaging"/>
 
@@ -151,7 +151,7 @@ Using the following API does not increment page views.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=set-push-tracking"/>
 
@@ -382,7 +382,7 @@ Ensure that the deep link URL has the `a.deeplink.id` key in the URL string. If 
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=track-deep-link"/>
 

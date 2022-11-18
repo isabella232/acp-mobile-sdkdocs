@@ -8,7 +8,7 @@ The `extensionVersion` API returns the version of the Campaign Classic extension
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -18,7 +18,7 @@ The `registerDevice` API lets you register a user device with Campaign Classic.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-device"/>
 
@@ -28,7 +28,7 @@ The `trackNotificationReceive` API sends the received push notification's tracki
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=track-notification-receive"/>
 
@@ -38,6 +38,6 @@ The `trackNotificationClick` API sends the clicked push notification's tracking 
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=track-notification-click"/>

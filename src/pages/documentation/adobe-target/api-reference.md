@@ -8,7 +8,7 @@ This API clears the in-memory cache that contains the prefetched offers.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=clear-prefetch-cache"/>
 
@@ -25,7 +25,7 @@ This API sends a location click notification for an mbox to the configured Targe
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=clicked-location"/>
 
@@ -39,7 +39,7 @@ This API sends a location display notification for an mbox to the configured Tar
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=displayed-locations"/>
 
@@ -54,7 +54,7 @@ Returns the running version of the Target extension.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -71,7 +71,7 @@ The session ID is generated locally in the SDK upon initial Target request and p
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-session-id"/>
 
@@ -81,7 +81,7 @@ This API gets the custom visitor ID for Target. If no `third-party` ID was previ
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-third-party-id"/>
 
@@ -96,7 +96,7 @@ This API gets the Target user ID (also known as the `tntId`) from the Target ser
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-tnt-id"/>
 
@@ -111,7 +111,7 @@ This API sends a prefetch request to your configured Target server. The prefetch
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=prefetch-content"/>
 
@@ -126,7 +126,7 @@ Registers the Target extension with the Mobile Core.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 
@@ -141,7 +141,7 @@ This API resets the user's experience by removing the visitor identifiers and re
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=reset-experience"/>
 
@@ -163,7 +163,7 @@ When using `contentWithData` callback to instantiate TargetRequest object, the f
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=retrieve-location-content"/>
 
@@ -178,7 +178,7 @@ This API sets a specific location in the app to be displayed when preview mode s
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-preview-restart-deep-link"/>
 
@@ -197,7 +197,7 @@ This ID is preserved between app upgrades, is saved and restored during the stan
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-session-id"/>
 
@@ -207,7 +207,7 @@ This API sets the custom visitor ID for Target. This ID is preserved between app
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-third-party-id"/>
 
@@ -225,7 +225,7 @@ This ID is preserved between app upgrades, is saved and restored during the stan
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-tnt-id"/>
 
@@ -235,7 +235,7 @@ Target visual preview mode allows you to easily perform end-to-end QA activities
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=visual-preview"/>
 
@@ -248,7 +248,7 @@ The following is a list of all the public classes available when using the Adobe
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=target-request"/>
 
@@ -261,7 +261,7 @@ React Native
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=target-prefetch"/>
 
@@ -274,7 +274,7 @@ React Native
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=target-parameters"/>
 
@@ -287,7 +287,7 @@ React Native
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=target-order"/>
 
@@ -300,7 +300,7 @@ React Native
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=target-product"/>
 

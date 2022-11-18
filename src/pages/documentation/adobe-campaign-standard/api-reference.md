@@ -8,7 +8,7 @@ Returns the running version of the Campaign Standard extension.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -22,7 +22,7 @@ Registers the Campaign Standard extension with the Mobile Core.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 
@@ -38,7 +38,7 @@ This method unregisters any previously registered rules with the Rules Engine an
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=reset-linkage-fields"/>
 
@@ -54,7 +54,7 @@ The set linkage fields are stored as a base64 encoded JSON string in memory and 
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-linkage-fields"/>
 

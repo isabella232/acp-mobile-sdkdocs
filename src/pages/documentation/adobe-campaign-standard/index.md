@@ -65,7 +65,7 @@ The instructions to add these extensions to your mobile app are also available i
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -78,7 +78,7 @@ React Native
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -92,7 +92,7 @@ To initialize the SDK and set up tracking, see the [initialize the SDK and set u
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=initialize"/>
 
@@ -108,7 +108,7 @@ To learn more about creating a push notification using Adobe Campaign, see the t
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=push-messaging"/>
 
@@ -126,7 +126,7 @@ The code samples below are provided as examples on how to correctly invoke the `
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=track"/>
 
@@ -150,7 +150,7 @@ A destination URL can be added to in-app messages that are delivered from Adobe 
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=handling"/>
 
@@ -164,7 +164,7 @@ The configuration setting to pause registration requests is provided for specifi
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=customize"/>
 

@@ -8,7 +8,7 @@ The `extensionVersion()` API returns the version of the Mobile Services extensio
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -123,6 +123,6 @@ You can use this API to track a deep link or a marketing link, as long as the li
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=track-adobe-deep-link"/>

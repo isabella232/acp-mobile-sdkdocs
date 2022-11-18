@@ -33,7 +33,7 @@ To add the Target extension to your app:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -47,7 +47,7 @@ To register the Target extension with Mobile Core:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -65,7 +65,7 @@ The `TargetOrder` class encapsulates the order ID, the order total, and the purc
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=target-order"/>
 
@@ -79,7 +79,7 @@ The `TargetProduct` class encapsulates the product ID and the product category I
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=target-product"/>
 
@@ -93,7 +93,7 @@ React Native
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=target-parameters"/>
 
@@ -129,7 +129,7 @@ The mbox request that failed can be retried to successfully retrieve the test of
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=visual-preview"/>
 

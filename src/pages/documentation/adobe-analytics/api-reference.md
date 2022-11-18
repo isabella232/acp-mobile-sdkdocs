@@ -17,7 +17,7 @@ Use caution when manually clearing the queue. This operation cannot be reverted.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=clear-queue"/>
 
@@ -49,7 +49,7 @@ To get the version of the Analytics extension, use the following code sample:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -79,7 +79,7 @@ Retrieves the total number of Analytics hits in the tracking queue.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-queue-size"/>
 
@@ -109,7 +109,7 @@ Retrieves the total number of Analytics hits in the tracking queue. Invoke the c
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-queue-size-with-completion-handler"/>
 
@@ -123,7 +123,7 @@ Starting with v1.2.9 (Android) / v3.0.3(iOS AEPAnalytics) / v2.5.1 (iOS ACPAnaly
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-tracking-identifier"/>
 
@@ -161,7 +161,7 @@ If you have an [Experience Cloud ID](../mobile-core/identity/api-reference.md#ge
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-tracking-identifier-with-completion-handler"/>
 
@@ -175,7 +175,7 @@ This API gets a custom Analytics visitor identifier, which has been set previous
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-visitor-identifier"/>
 
@@ -209,7 +209,7 @@ This API gets a custom Analytics visitor identifier, which has been set previous
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-visitor-identifier-with-completion-handler"/>
 
@@ -233,7 +233,7 @@ Use caution when manually clearing the queue. This operation cannot be reverted.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=send-queued-hits"/>
 
@@ -267,7 +267,7 @@ Sets a custom Analytics visitor identifier. For more information, see [Custom Vi
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-visitor-identifier"/>
 
