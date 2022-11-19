@@ -14,36 +14,6 @@ public String extensionVersion()
 Campaign.extensionVersion();
 ```
 
-<Variant platform="ios-aep" api="extension-version" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static var extensionVersion: String
-```
-
-**Example**
-
-```swift
-let campaignVersion = Campaign.extensionVersion
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objective-c
-+ (NSString * _Nonnull)extensionVersion
-```
-
-**Example**
-
-```objective-c
-NSString *campaignVersion = [AEPMobileCampaign extensionVersion];
-```
-
 <Variant platform="ios-acp" api="extension-version" repeat="10"/>
 
 #### Swift
@@ -106,10 +76,6 @@ public static void registerExtension()
 Campaign.registerExtension();
 ```
 
-<Variant platform="ios-aep" api="register-extension" repeat="1"/>
-
-This API no longer exists in the Adobe Campaign Standard extension. Instead, the extension should be registered by calling the `registerExtensions` API in the MobileCore. Please see the updated SDK initialization steps at the [migrate to Swift tutorial](../migrate-to-swift.md).
-
 <Variant platform="ios-acp" api="register-extension" repeat="10"/>
 
 #### Swift
@@ -158,36 +124,6 @@ public static void resetLinkageFields()
 
 ```java
 Campaign.resetLinkageFields()
-```
-
-<Variant platform="ios-aep" api="reset-linkage-fields" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func resetLinkageFields()
-```
-
-**Example**
-
-```swift
-Campaign.resetLinkageFields()
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objective-c
-+ (void) resetLinkageFields
-```
-
-**Example**
-
-```objective-c
-[AEPMobileCampaign resetLinkageFields];
 ```
 
 <Variant platform="ios-acp" api="reset-linkage-fields" repeat="10"/>
@@ -254,36 +190,6 @@ linkageFields.put("cusFirstName", "John");
 linkageFields.put("cusLastName", "Doe");
 linkageFields.put("cusEmail", "john.doe@email.com");
 Campaign.setLinkageFields(linkageFields);
-```
-
-<Variant platform="ios-aep" api="set-linkage-fields" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func setLinkageFields(_ linkageFields: [String: String])
-```
-
-**Example**
-
-```swift
-Campaign.setLinkageFields(linkageFields: ["cusFirstName": "John", "cusLastName": "Doe", "cusEmail": "john.doe@email.com"])
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objective-c
-+ (void) setLinkageFields:(NSDictionary<NSString *,NSString *> * _Nonnull)
-```
-
-**Example**
-
-```objective-c
-[AEPMobileCampaign setLinkageFields:@{@"cusFirstName" : @"John", @"cusLastName": @"Doe", @"cusEmail": @"john.doe@email.com"}];
 ```
 
 <Variant platform="ios-acp" api="set-linkage-fields" repeat="10"/>

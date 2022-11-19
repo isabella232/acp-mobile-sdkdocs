@@ -14,33 +14,6 @@ Import the Signal extension in your application's main activity.
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios-aep" task="add" repeat="8"/>
-
-​Add the AEPSignal extension and it's dependency, the [Mobile Core](../index.md) extension to your project using Cocoapods.
-
-Add following pods in your `Podfile`:
-
-```pod
-pod 'AEPCore','~> 3.0'
-pod 'AEPSignal','~> 3.0'
-```
-
-Import the Signal libraries:
-
-#### Swift
-
-```swift
-import AEPCore
-import AEPSignal
-```
-
-#### Objective-C
-
-```objectivec
-@import AEPCore;
-@import AEPSignal;
-```
-
 <Variant platform="ios-acp" task="add" repeat="9"/>
 
 ​The Signal extension is included in the Mobile Core extension. Add the [Mobile Core](../index.md) extension to your project using Cocoapods.
@@ -148,34 +121,6 @@ public class MobileApp extends Application {
 ```
 
 Please note that the Signal extension is automatically included in the Mobile Core extension by Maven. When you manually install the Signal extension, ensure that you add the `signal-1.x.x.aar` library to your project.
-
-<Variant platform="ios-aep" task="register" repeat="5"/>
-
-In your app's `application:didFinishLaunchingWithOptions`, register the Signal extension with Mobile Core:
-
-#### Swift
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-     MobileCore.registerExtensions([Signal.self, ...]) {
-       MobileCore.configureWith(appId: "yourAppId")
-       // Any other post registration processing
-     }
-     return true;
-}
-```
-
-#### Objective-C
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobileSignal.class, ...] completion:^{
-        [AEPMobileCore configureWithAppId: @"yourAppId"];
-        // Any other post registration processing
-    }];
-    return YES;
- }
-```
 
 <Variant platform="ios-acp" task="register" repeat="6"/>
 

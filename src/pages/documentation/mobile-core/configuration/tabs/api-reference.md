@@ -14,36 +14,6 @@ public static void clearUpdatedConfiguration();
 MobileCore.clearUpdatedConfiguration();
 ```
 
-<Variant platform="ios-aep" api="clear-updated-configuration" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func clearUpdatedConfiguration()
-```
-
-**Example**
-
-```swift
-MobileCore.clearUpdatedConfiguration()
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) clearUpdatedConfiguration(); 
-```
-
-**Example**
-
-```objectivec
-[AEPMobileCore clearUpdatedConfiguration];
-```
-
 <Variant platform="android" api="configure-with-app-id" repeat="5"/>
 
 #### Java
@@ -58,36 +28,6 @@ public static void configureWithAppID(final String appId);
 
 ```java
 MobileCore.configureWithAppId("1423ae38-8385-8963-8693-28375403491d");
-```
-
-<Variant platform="ios-aep" api="configure-with-app-id" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
- static func configureWith(appId: String)
-```
-
-**Example**
-
-```swift
- MobileCore.configureWith(appId: "1423ae38-8385-8963-8693-28375403491d")
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) configureWithAppId: (NSString* appId);
-```
-
-**Example**
-
-```objectivec
- [AEPMobileCore configureWithAppId: @"1423ae38-8385-8963-8693-28375403491d"];
 ```
 
 <Variant platform="ios-acp" api="configure-with-app-id" repeat="10"/>
@@ -190,38 +130,6 @@ public static void configureWithFileInPath(final String filePath);
 MobileCore.configureWithFileInPath("absolute/path/to/exampleJSONfile.json");
 ```
 
-<Variant platform="ios-aep" api="configure-with-file-in-path" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
- static func configureWith(filePath: String)
-```
-
-**Example**
-
-```swift
- let filePath = Bundle.main.path(forResource: "ExampleJSONFile", ofType: "json")
- MobileCore.configureWith(filePath: filePath)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) configureWithFileInPath: (NSString* __nullable) filepath;
-```
-
-**Example**
-
-```objectivec
- NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ExampleJSONFile" ofType:@"json"];
- [AEPMobileCore configureWithFilePath:filePath];
-```
-
 <Variant platform="ios-acp" api="configure-with-file-in-path" repeat="10"/>
 
 #### Swift
@@ -282,20 +190,6 @@ ACPCore.ConfigureWithFileInPath("absolute/path/to/exampleJSONfile.json");
 
 ```java
 String coreExtensionVersion = MobileCore.extensionVersion();
-```
-
-<Variant platform="ios-aep" api="extension-version" repeat="4"/>
-
-#### Swift
-
-```swift
-let version = MobileCore.extensionVersion
-```
-
-#### Objective-C
-
-```objectivec
-NSString *version = [AEPMobileCore extensionVersion];
 ```
 
 <Variant platform="ios-acp" api="extension-version" repeat="4"/>
@@ -372,39 +266,6 @@ public static void updateConfiguration(final Map configMap);
 HashMap<String, Object> data = new HashMap<String, Object>();
 data.put("global.privacy", "optedout");
 MobileCore.updateConfiguration(data);
-```
-
-<Variant platform="ios-aep" api="update-configuration" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(updateConfiguration:)
-static func updateConfigurationWith(configDict: [String: Any])
-```
-
-**Example**
-
-```swift
- let updatedConfig = ["global.privacy":"optedout"]
- MobileCore.updateConfigurationWith(configDict: updatedConfig)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
- + (void) updateConfiguration: (NSDictionary* __nullable) config;
-```
-
-**Example**
-
-```objectivec
- NSDictionary *updatedConfig = @{@"global.privacy":@"optedout"};
- [AEPMobileCore updateConfiguration:updatedConfig];
 ```
 
 <Variant platform="ios-acp" api="update-configuration" repeat="10"/>
