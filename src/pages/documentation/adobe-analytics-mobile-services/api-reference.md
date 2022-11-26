@@ -8,6 +8,14 @@ The `extensionVersion()` API returns the version of the Mobile Services extensio
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
+<!-- Android
+
+<Tabs query="platform=android&api=extension-version"/>
+
+iOS (AEP 3.x)
+
+<Tabs query="platform=ios-aep&api=extension-version"/> -->
+
 iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>

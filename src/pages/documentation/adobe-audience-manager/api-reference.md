@@ -18,22 +18,6 @@ React Native
 
 <Tabs query="platform=react-native&api=extension-version"/>
 
-Flutter
-
-<Tabs query="platform=flutter&api=extension-version"/>
-
-Cordova
-
-<Tabs query="platform=cordova&api=extension-version"/>
-
-Unity
-
-<Tabs query="platform=unity&api=extension-version"/>
-
-Xamarin
-
-<Tabs query="platform=xamarin&api=extension-version"/>
-
 ## getVisitorProfile
 
 This API returns the most recently obtained visitor profile. The visitor profile is saved in the SDK's local storage for access across multiple launches of your app. If no audience signal has been sent before, when this API is called, a null value is returned.

@@ -10,7 +10,7 @@ To set the products variable, set a context data key to `&&products`, and set th
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=set-variable"/>
 
@@ -34,7 +34,7 @@ The following code samples show an example of the products variable with merchan
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=products"/>
 
