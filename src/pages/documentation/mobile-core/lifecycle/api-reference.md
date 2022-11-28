@@ -40,8 +40,6 @@ Starts the collection of lifecycle data.
 
 **For Analytics use case:** Use this API to start a new lifecycle session or resume a previously paused lifecycle session. If a previously paused session timed out, then a new session is created. If a current session is running, then calling this method does nothing.
 
-**For Platform use case:** Use this API to dispatch a [Lifecycle Application Foreground](./event-reference.md#lifecycle-application-foreground) event when the application is launched.
-
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
 iOS
@@ -64,13 +62,11 @@ Xamarin
 
 <Tabs query="platform=xamarin&api=lifecycle-start"/>
 
-### lifecyclePause
+## lifecyclePause
 
 Pauses the collection of lifecycle data.
 
 **For Analytics use case:** Use this API to pause the collection of lifecycle data.
-
-**For Platform use case:** Use this API to dispatch a [Lifecycle Application Background](./event-reference.md#lifecycle-application-background) event when the application closes.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
