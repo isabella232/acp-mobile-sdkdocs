@@ -160,30 +160,6 @@ The A4T payload returned from Target servers is sent to Adobe Analytics in the f
 
 For A4T data to be sent to Adobe Analytics client-side, make sure Analytics SDK extension is installed and registered in your mobile application. For more information on Adobe Analytics, please read the [Adobe Analytics guide](../adobe-analytics/index.md).
 
-## Configuration keys
-
-To programmatically update SDK configuration, use the following information to change your Target configuration values:
-
-For more information, see [Programmatic updates to Configuration](../mobile-core/configuration/api-reference.md#programmatic-updates-to-configuration).
-
-| Key | Description | Data Type |
-| :--- | :--- | :--- |
-| target.clientcode | Client code for your account. | String |
-| target.timeout | Time, in seconds, to wait for a response from Target servers before timing out. | Integer |
-| target.environmentId | Environment ID you want to use. If the value is left blank, the default production environment will be used. | Integer |
-| target.propertyToken | `at_property` token value, which is generated from the Target UI. If this value is left blank, no token is sent in the Target network calls. | String |
-| target.previewEnabled | Boolean parameter, which can be used to enable/disable Target Preview. If not specified, then Preview will be enabled by default. | Boolean |
-| target.sessionTimeout | The duration, in seconds, during which the Target session ID and Edge Host are persisted. If this value is not specified, the default timeout value is 30 minutes. | Integer |
-| target.server | _Optional_. If provided, all Target requests will be sent to this host. Available since v2.1.7 (iOS), v1.1.6 (Android). e.g. - `mytargetdomain.com` | String |
-
-<InlineAlert variant="warning" slots="text"/>
-
-Instead of passing the property token as a mbox parameter, you should use an Experience Platform configuration so that Target can pass the token. If the token is passed both in an Experience Platform configuration, and as a mbox parameter, the token that was provided as the mbox parameter is discarded.
-
-<InlineAlert variant="warning" slots="text"/>
-
-Currently, the `target.sessiontimeout` value can only be configured programmatically. For more information, see [updateConfiguration](../mobile-core/configuration/api-reference.md#programmatic-updates-to-configuration).
-
 ## Additional information
 
 * Want to get your Target client code? See the **Client** row in [Configure mbox.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html).

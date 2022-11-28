@@ -416,14 +416,6 @@ To prepare for your migration, please note the following information:
 * `a.internalaction` or `action` (from Lifecycle) can be used to trigger in-app messages or local notifications. You should, however, use `LaunchEvent` instead.
 * Local notifications do **not** support Android 8.0 or higher.
 
-### Configuration keys
-
-| Key | Description |
-| :--- | :--- |
-| mobile.acquisitionTimeout | Amount of time, in seconds, to wait for acquisition information from the Mobile Services acquisition server. |
-| mobile.acquisitionAppId | App ID uniquely identifies the app on the Mobile Services acquisition server. |
-| mobile.messagesUrl | Messages URL from your configuration (`ADBMobileConfig.json`) file's remotes section. |
-
 ## Watch the video
 
 <Media slots="video"/>

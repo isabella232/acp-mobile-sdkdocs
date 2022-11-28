@@ -43,15 +43,6 @@ React Native
 
 For more information about implementing Audience Manager APIs, please read the [Audience Manager API reference](./api-reference.md).
 
-## Configuration keys
-
-To update SDK configuration programmatically, use the following information to change your Audience Manager configuration values. For more information, see the [Configuration API reference](../mobile-core/configuration/api-reference.md).
-
-| Key | Required | Description | Data Type |
-| :--- | :--- | :--- | :--- |
-| `audience.server` | Yes | Server endpoint used to collect Audience Manager data | String |
-| `audience.timeout` | No | Time, in seconds, to wait for a response from Audience Manager before timing out. Default value is 2 seconds. | Integer |
-
 ## Additional information
 
 * How do you find your Audience Manager server?

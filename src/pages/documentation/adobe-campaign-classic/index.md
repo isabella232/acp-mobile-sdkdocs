@@ -63,18 +63,3 @@ iOS
 iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
-
-## Configuration keys
-
-To update SDK configuration programmatically, use the following information to change your Campaign Classic configuration values. For more information, see the [Configuration API reference](../mobile-core/configuration/api-reference.md).
-
-| Key | Required | Description | Data Type |
-| :--- | :--- | :--- | :--- |
-| `build.environment` | Yes | Specifies which environment to use (prod, dev, or staging) when sending registration and tracking information. It is also used to specify which mobile app integration key to use. | String |
-| `campaignclassic.timeout` | No | Specifies the amount of time to wait for a response from the Campaign Classic registration or tracking server. | Integer |
-| `campaignclassic.marketingServer` | Yes | Sets the marketing server, which receives registration requests. | String |
-| `campaignclassic.trackingServer` | Yes | Sets the tracking server, which receives tracking requests. | String |
-| `campaignclassic.ios.integrationKey` | Yes | Sets the iOS mobile app integration key, which links the app to an iOS application campaign in Campaign Classic. | String |
-| `campaignclassic.android.integrationKey` | Yes | Sets the Android mobile app integration key, which links the app to an Android application campaign in Campaign Classic. | String |
-
-
