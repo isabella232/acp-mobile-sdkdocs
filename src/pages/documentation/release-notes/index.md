@@ -32,23 +32,9 @@ With this release, the extension enables a drop-in solution for converting Core 
 
 For an end-to-end guide on how to use the extension, see the [Edge Bridge tutorial](https://github.com/adobe/aepsdk-edgebridge-ios/blob/main/Documentation/tutorials/edge-bridge-tutorial.md).
 
-## October 24, 2022
-
-### Android Edge Bridge 1.0.0
-
-The `Adobe Experience Platform Mobile SDK - Edge Bridge` extension is now available for Android!
-
-With this release, the extension enables a drop-in solution for converting Core track API (trackAction & trackState) generated events into Edge Network events. This extension may be used to easily route existing track calls, that may have been implemented for Adobe Analytics, to Edge Network. The configured Data Collection datastream for the mobile application can define a mapping of the track event's `contextdata` to an XDM schema using [Data Prep for Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/data-prep.html) to route data to Adobe Analytics, Adobe Experience Platform, or to 3rd party vendors via server-side event forwarding.
-
-For an end-to-end guide on how to use the extension, see the [Edge Bridge tutorial](https://github.com/adobe/aepsdk-edgebridge-android/blob/main/Documentation/tutorials/edge-bridge-tutorial.md).
-
 ## October 19, 2022
 
 ### iOS AEPEdge 1.5.0
-
-* Adds support for persisting the location hint returned by the Edge Network for the duration of the session for an improved user experience. Includes new APIs `getLocationHint` and `setLocationHint` allowing hybrid applications to share the location hint across SDKs.
-
-### Android Edge 1.4.0
 
 * Adds support for persisting the location hint returned by the Edge Network for the duration of the session for an improved user experience. Includes new APIs `getLocationHint` and `setLocationHint` allowing hybrid applications to share the location hint across SDKs.
 
@@ -76,25 +62,11 @@ For an end-to-end guide on how to use the extension, see the [Edge Bridge tutori
 * Fixed a few race conditions in the EventHub and MobileCore.
 * Made changes in AEPIdentity to speed up boot.
 
-## June 15, 2022
-
-### Android Core 1.11.1
-
-* Fixed a crash which was caused by an exception thrown from the Android Activity class.
-
 ## June 10, 2022
 
 ### Adobe Journey Optimizer - Decisioning extension 1.0.0
 
 `Adobe Journey Optimizer - Decisioning` extension is now available in the extensions catalog on the Data Collection UI for mobile Tag Properties. No configuration is necessary for this extension.  
-
-## June 9, 2022
-
-### Android Optimize 1.0.0
-
-The `Adobe Experience Platform Mobile SDK - Optimize` extension is now available for Android!
-
-This extension enables real-time personalization workflows in your mobile applications when using Adobe Target and/or Adobe Journey Optimizer Offer Decisioning.
 
 **Key Features**
 
@@ -110,12 +82,6 @@ With this release, the extension provides APIs that you can use to:
 * Added the `getUrlVariables` API to support passing the visitor ID from a mobile app to a web view.
 * Added support for advertising identifier and ad tracking consent collection.
 
-### Android EdgeIdentity 1.1.0
-
-* Added the `getUrlVariables` API to support passing the visitor ID from a mobile app to a web view.
-* Added support for advertising identifier and ad tracking consent collection.
-* Internal fixes for IdentityMap deserialization.
-
 ### iOS ACPAnalytics 2.5.3
 
 * Fix crash in AnalyticsHitDatabase caused by unprotected shared access of AnalyticsState object.
@@ -126,11 +92,6 @@ With this release, the extension provides APIs that you can use to:
 
 * Updates the consent request to use "update" query operation in order to allow for incremental consent preferences changes.
 * Internal updates to use URLComponents builder for Edge endpoints.
-
-### Android Edge 1.3.2
-
-* Updates the consent request to use "update" query operation in order to allow for incremental consent preferences changes.
-* Updates internal network stack to use Mobile Core's ServiceProvider Network Service, reducing overall extension code size.
 
 ## May 27, 2022
 
@@ -146,10 +107,6 @@ With this release, the extension provides APIs that you can use to:
 
 * Fetch personalized offers from the decisioning services enabled in the datastreams e.g. Adobe Target, Adobe Journey Optimizer Offer Decisioning.
 * Track user interactions with those offers.
-
-### Android Campaign Standard 1.0.9
-
-* Fixed a compatibility issue seen when using the Campaign Standard and Messaging In-App beta extensions in the same mobile app.
 
 ## May 26, 2022
 
@@ -168,10 +125,6 @@ With this release, the extension provides APIs that you can use to:
 ### iOS AEPAudience 3.0.4
 
 * Fixed an issue where lifecycle data was included in signalWithData requests.
-
-### Android Campaign Classic 1.0.2
-
-* Android Campaign Classic SDK is now Adobe Campaign Classic (ACC) v8 compatible! Broadlog ID can be provided in the UUID format in the notification tracking APIs.
 
 ## May 17, 2022
 
@@ -213,17 +166,6 @@ Updated the following ACP React Native packages to remove the usage of deprecate
 - [@adobe/react-native-acpplaces v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpplaces/v/2.0.1)
 - [@adobe/react-native-acpaudience v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpaudience/v/2.0.1)
 - [@adobe/react-native-acpanalytics v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpanalytics/v/2.0.1)
-
-## April 21, 2022
-
-### Android Core 1.11.0
-
-* Internal fixes to support In-App Messaging with the AEPMessaging extension.
-* Fixed a crash that could happen while initializing event history database.
-
-### Android Identity 1.3.1
-
-* Improved extension stability by adding additional error checks when processing sync identifier requests.
 
 ## April 12, 2022
 
@@ -296,29 +238,11 @@ Note: This release pertains to Assurance mobile extension that works with ACPCor
 
 * Effective March 30, 2022, support for Adobe Experience Platform Mobile SDKs on Unity is no longer active. While you may continue using our libraries, Adobe no longer plans to update, modify, or provide support for these libraries. Please contact your Adobe CSM for details.
 
-## March 11, 2022
-
-### Android Core 1.10.1
-
-* Updates the timestamp format for rule token `~timestampp`  with fractional seconds and UTC time zone. This rule token is used to set the mobile property data element "Adobe Experience Platform Timestamp".
-
-### Android Lifecycle 1.1.1
-
-* Lifecycle foreground and background events for Edge Network now format timestamps with fractional seconds and UTC time zone.
-
-### Android Edge 1.3.1
-
-* Updates timestamp in Experience Events to use fractional seconds.
-
-### Android Consent 1.0.1
-
-* Updates timestamp in Consent requests to use fractional seconds.
-
 ## March 4, 2022
 
 ### ACP Xamarin frameworks
 
-Updated the Android and iOS native libraries for the [ACPCore](https://github.com/adobe/xamarin-acpcore) and [ACPAnalytics](https://github.com/adobe/xamarin-acpanalytics) Xamarin frameworks:
+Updated the iOS native libraries for the [ACPCore](https://github.com/adobe/xamarin-acpcore) and [ACPAnalytics](https://github.com/adobe/xamarin-acpanalytics) Xamarin frameworks:
 
 * [Xamarin Core Android 1.1.0](https://www.nuget.org/packages/Adobe.ACPCore.Android/1.1.0): Android Core updated to 1.10.0
 * [Xamarin Identity Android 1.1.0](https://www.nuget.org/packages/Adobe.ACPIdentity.Android/1.1.0): Android Identity updated to 1.3.0
@@ -330,22 +254,9 @@ Updated the Android and iOS native libraries for the [ACPCore](https://github.co
 * [Xamarin Analytics iOS 1.0.1](https://www.nuget.org/packages/Adobe.ACPAnalytics.iOS/1.0.1): iOS Analytics updated to 2.5.1
 * [Xamarin Analytics tvOS 1.0.1](https://www.nuget.org/packages/Adobe.ACPAnalytics.tvOS/1.0.1): tvOS Analytics updated to 2.5.1
 
-## March 3, 2022
-
-### Android Analytics 1.2.10
-
-* Fixed a bug for the integration with Assurance where "No Debug Flag" was showing in the UI for some events.
-
 ## February 22, 2022
 
 ### iOS Assurance 3.0.1
-
-* Add support for transmitting large events.
-* Assurance extension now prompts an error message when attempting to connect to a deleted session.
-* Improved logging for troubleshooting.
-* Fixed an issue to ensure that event collection stops on session disconnection.
-
-### Android Assurance 1.0.4
 
 * Add support for transmitting large events.
 * Assurance extension now prompts an error message when attempting to connect to a deleted session.
@@ -367,26 +278,6 @@ Updated the Android and iOS native libraries for the [ACPCore](https://github.co
 ### iOS Campaign Standard 3.0.1
 
 * Fixed an issue with the Campaign message tracking URL being incorrectly built.
-
-## February 8, 2022
-
-### Android Identity 1.3.0
-
-- Added a `device_consent` status parameter when `setAdvertisingIdentifier` is called after ad tracking is enabled/disabled.
-- Added support to handle the MobileCore.resetIdentities() API.
-- Fixes intermittent issue for GetUrlVariables and AppendToUrl APIs when custom Analytics identifiers are being used.
-- Stability improvements for network connections.
-
-Released with sdk-core version 1.10.0
-
-## February 7, 2022
-
-### Android Core 1.10.0
-
-* Added support for a new API `clearUpdatedConfiguration()`, see Configuration API reference for more details.
-* Added support for optionally capturing event history on the device.
-* Added support for triggering rules engine conditions based on event history.
-* Added public platform support for datastore and UI services.
 
 ## February 3, 2022
 
@@ -416,10 +307,6 @@ Below is a list of the new versions for each Unity package:
 ## January 21, 2022
 
 ### iOS AEPEdge 1.3.0
-
-* Allows setting a custom first-party domain that is used to interact with the mapped Adobe-provisioned Edge Network domain.
-
-### Android AEPEdge 1.3.0
 
 * Allows setting a custom first-party domain that is used to interact with the mapped Adobe-provisioned Edge Network domain.
 
