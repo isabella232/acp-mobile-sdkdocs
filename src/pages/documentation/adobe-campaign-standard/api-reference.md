@@ -6,17 +6,9 @@ import Tabs from './tabs/api-reference.md'
 
 Returns the running version of the Campaign Standard extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -28,17 +20,9 @@ React Native
 
 Registers the Campaign Standard extension with the Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=register-extension"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=register-extension"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 
@@ -52,17 +36,9 @@ Clears previously stored linkage fields in the mobile SDK and triggers a Campaig
 
 This method unregisters any previously registered rules with the Rules Engine and clears cached rules from the most recent rules download.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=reset-linkage-fields"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=reset-linkage-fields"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=reset-linkage-fields"/>
 
@@ -76,17 +52,9 @@ Sets the Campaign linkage fields (CRM IDs) in the mobile SDK to be used for down
 
 The set linkage fields are stored as a base64 encoded JSON string in memory and they are sent in a custom HTTP header `X-InApp-Auth`.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=set-linkage-fields"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=set-linkage-fields"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=set-linkage-fields"/>
 
