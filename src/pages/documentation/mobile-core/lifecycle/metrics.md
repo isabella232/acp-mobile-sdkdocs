@@ -4,17 +4,6 @@
 
 The following metrics are collected on each [Lifecycle data content response](./event-reference.md#lifecycle-data-content-response) event.
 
-### Application Context
-
-| Metric | Key | Description |
-| :----- | :--- | :--------- |
-| App ID | `a.AppID` | Stores the application name and version in the following format: `AppName BundleVersion (app version code)`. An example of this format is `MyAppName 1.1(1)`. |
-| Device name | `a.DeviceName` | Stores the device name. |
-| Operating system version | `a.OSVersion` | Stores the operating system name and version. |
-| Carrier name | `a.carrierName` | Stores the name of the mobile service provider as provided by the device. <br/><br/> This metric is **not** automatically stored in an Analytics variable. You must create a processing rule to copy this value to an Analytics variable for reporting. |
-| Resolution | `a.Resolution` | The width x height in pixels. |
-| Locale | `a.Locale` | The locale set for this device. For example, this value can be `en-US`. |
-
 ### Install
 
 | **Metric** | **Key** | **Description** |
@@ -109,13 +98,3 @@ The following metrics are collected on each [Lifecycle Application Background](.
 | xdm:isClose | boolean | Close of an application. Every application background event sets `isClose` to `true`. |
 | xdm:closeType | String | Type of application close, sent on application isClose. Type is "close" on graceful termination of an application, or "unknown" when application termination source is unknown. |
 | xdm:sessionLength | integer | Length of the application session in seconds. Usually referred as the time the application was in foreground. Will not be less than zero. |
-
-If you need to programmatically update your SDK configuration, use the following information to change your Lifecycle configuration values:
-
-<InlineAlert variant="warning" slots="text"/>
-
-The time that your app spends in the background is not included in the session length.
-
-| Key | Description |
-| :---  | :-------- |
-| `lifecycle.sessionTimeout` | Time, in seconds, that must elapse between the time the app is launched and before the launch is considered to be a new session. This timeout also applies when your application is sent to the background and reactivated.<br/><br/> The default value is 300 seconds (5 minutes). |
