@@ -29,68 +29,6 @@ Identity.appendVisitorInfoForURL("https://example.com", new AdobeCallback<String
 });
 ```
 
-<Variant platform="ios-aep" api="append-to-url" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func appendTo(url: URL?, completion: @escaping (URL?, Error?) -> Void)
-```
-
-* _url_ is the URL to which the visitor information needs to be appended. If the visitor information is nil or empty, the URL is returned as is.
-* _completion_ is invoked after the updated _URL_ is available or _Error_ if an unexpected exception occurs or the request times out. The returned `Error` contains the [AEPError](../api-reference.md#public-classes) code of the specific error.
-
-**Example**
-
-```swift
-Identity.appendTo(url: URL(string: "https://example.com")) { appendedURL, error in
-  if let error = error {
-    // handle error
-  } else {
-    // handle the appended url here
-    if let appendedURL = appendedURL {
-      // APIs which update the UI must be called from main thread
-      DispatchQueue.main.async {
-        self.webView.load(URLRequest(url: appendedURL!))
-      }
-    } else {
-      // handle error, nil appendedURL
-    }
-  }
-})
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) appendToUrl: (NSURL * _Nullable baseUrl) completion: ^(NSURL * _Nullable urlWithVisitorData, NSError * _Nullable error) completion;
-```
-
-**Example**
-
-```objectivec
-NSURL* url = [NSURL URLWithString:@"https://example.com"];
-[AEPMobileIdentity appendToUrl:url completion:^(NSURL * _Nullable urlWithVisitorData, NSError * _Nullable error) {
-  if (error) {
-    // handle error here
-  } else {
-    // handle the appended url here
-    if (urlWithVisitorData) {
-      // APIs which update the UI must be called from main thread
-      dispatch_async(dispatch_get_main_queue(), ^{
-        [[self webView] loadRequest:[NSURLRequest requestWithURL:urlWithVisitorData]];
-      }
-    } else {
-      // handle error, nil urlWithVisitorData
-    }
-  }
-}];
-```
-
 <Variant platform="ios-acp" api="append-to-url" repeat="12"/>
 
 Method `appendToUrl:withCompletionHandler` was added in ACPCore version 2.5.0 and ACPIdentity version 2.2.0.
@@ -331,36 +269,6 @@ class StringCallback : Java.Lang.Object, IAdobeCallback
 String identityExtensionVersion = Identity.extensionVersion();
 ```
 
-<Variant platform="ios-aep" api="extension-version" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static var extensionVersion: String
-```
-
-**Example**
-
-```swift
-let identityExtensionVersion  = Identity.extensionVersion
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (nonnull NSString*) extensionVersion;
-```
-
-**Example**
-
-```objectivec
-NSString *identityVersion = [AEPMobileIdentity extensionVersion];
-```
-
 <Variant platform="ios-acp" api="extension-version" repeat="10"/>
 
 #### Swift
@@ -485,51 +393,6 @@ Identity.getExperienceCloudId(new AdobeCallback<String>() {
          //Handle the ID returned here    
     }
 });
-```
-
-<Variant platform="ios-aep" api="get-experience-cloud-id" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(getExperienceCloudId:)
-static func getExperienceCloudId(completion: @escaping (String?, Error?) -> Void)
-```
-
-* _completion_ is invoked with _String_ after the ECID is available, or _Error_ if an unexpected error occurs or the request times out. The returned `Error` contains the [AEPError](../api-reference.md#public-classes) code of the specific error.
-
-**Example**
-
-```swift
-Identity.getExperienceCloudId { ecid, error in
-  if let error = error {
-    // handle error here
-  } else {
-    // handle the retrieved ID here
-  }
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) getExperienceCloudId: ^(NSString * _Nullable ecid, NSError * _Nullable error) completion;
-```
-
-**Example**
-
-```objectivec
-[AEPMobileIdentity getExperienceCloudId:^(NSString * _Nullable ecid, NSError *error) {
-  if (error) {
-    // handle error here
-  } else {
-    // handle the retrieved ID here
-  }
-}];
 ```
 
 <Variant platform="ios-acp" api="get-experience-cloud-id" repeat="12"/>
@@ -746,51 +609,6 @@ Identity.getIdentifiers(new AdobeCallback<List<VisitorID>>() {
     }
 
 });
-```
-
-<Variant platform="ios-aep" api="get-identifiers" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(getIdentifiers:)
-static func getIdentifiers(completion: @escaping ([Identifiable]?, Error?) -> Void)
-```
-
-* _completion_ is invoked with a list of  _Identifiable_ objects after the customer identifiers are available, or _Error_ if an unexpected error occurs or the request times out. The returned `Error` contains the [AEPError](../api-reference.md#public-classes) code of the specific error.
-
-**Example**
-
-```swift
-Identity.getIdentifiers { identifiers, error in
-  if let error = error {
-    // handle error here
-  } else {
-    // handle the retrieved identifiers here
-  }
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) getIdentifiers: ^(NSArray<id<AEPIdentifiables>> * _Nullable identifiers, NSError * _Nullable error) completion;
-```
-
-**Example**
-
-```objectivec
-[[AEPMobileIdentity getIdentifiers:^(NSArray<id<AEPIdentifiable>> * _Nullable identifiers, NSError *error) {
-  if (error) {
-    // handle error here
-  } else {
-    // handle the retrieved identifiers here
-  }
-}];
 ```
 
 <Variant platform="ios-acp" api="get-identifiers" repeat="12"/>
@@ -1032,70 +850,6 @@ Identity.getUrlVariables(new AdobeCallback<String>() {
         startActivity(i);    
     }
 });
-```
-
-<Variant platform="ios-aep" api="get-url-variables" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(getUrlVariables:)
-static func getUrlVariables(completion: @escaping (String?, Error?) -> Void)
-```
-
-* _completion_ is invoked with _String_ containing the visitor identifiers as a query string, or _Error_ if an unexpected error occurs or the request times out. The returned `Error` contains the [AEPError](../api-reference.md#public-classes) code of the specific error. The default timeout of 500ms.
-
-**Example**
-
-```swift
-Identity.getUrlVariables { (urlVariables, error) in
-  if let error = error {
-    // handle error
-  } else {
-    var urlStringWithVisitorData: String = "https://example.com"
-    if let urlVariables: String = urlVariables {
-      urlStringWithVisitorData.append("?" + urlVariables)
-    }
-
-    guard let urlWithVisitorData: URL = URL(string: urlStringWithVisitorData) else {
-      // handle error, unable to construct URL
-      return
-    }
-    // APIs which update the UI must be called from main thread
-    DispatchQueue.main.async {
-      self.webView.load(URLRequest(url: urlWithVisitorData))
-    }
-  }
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) getUrlVariables: ^(NSString * _Nullable urlVariables, NSError * _Nullable error) completion;
-```
-
-**Example**
-
-```objectivec
-[AEPMobileIdentity getUrlVariables:^(NSString * _Nullable urlVariables, NSError *error) {
-  if (error) {
-    // handle error here
-  } else {
-    // handle the URL query parameter string here
-    NSString* urlString = @"https://example.com";
-    NSString* urlStringWithVisitorData = [NSString stringWithFormat:@"%@?%@", urlString, urlVariables];
-    NSURL* urlWithVisitorData = [NSURL URLWithString:urlStringWithVisitorData];
-    // APIs which update the UI must be called from main thread
-    dispatch_async(dispatch_get_main_queue(), ^{
-      [[self webView] loadRequest:[NSURLRequest requestWithURL:urlWithVisitorData]];
-    }
-  }
-}];
 ```
 
 <Variant platform="ios-acp" api="get-url-variables" repeat="12"/>
@@ -1350,38 +1104,6 @@ super.onCreate();
 }
 ```
 
-<Variant platform="ios-aep" api="register-extension" repeat="7"/>
-
-For iOS AEP libraries, registration is changed to a single API call. Calling the MobileCore.start API is no longer required. See [MobileCore.registerExtensions()](../api-reference.md#registerextension-s) for more information.
-
-#### Swift
-
-**Example**
-
-```swift
-// AppDelegate.swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MobileCore.registerExtensions([AEPIdentity.Identity.self, Lifecycle.self, Analytics.self], {
-        MobileCore.configureWith(appId: "mobilePropertyEnvironmentID")
-    })
-  ...
-}
-```
-
-#### Objective-C
-
-**Example**
-
-```objectivec
-// AppDelegate.m
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobileIdentity.class, AEPMobileLifecycle.class, AEPMobileAnalytics.class] completion:^{
-    [AEPMobileCore configureWithAppId: @"mobilePropertyEnvironmentID"];
-  }];
-  ...
-}
-```
-
 <Variant platform="ios-acp" api="register-extension" repeat="7"/>
 
 Register the Identity extension in your app's `didFinishLaunchingWithOptions` function:
@@ -1534,143 +1256,6 @@ public void onResume() {
             MobileCore.setAdvertisingIdentifier(advertisingIdentifier);
         }
     }).start();
-}
-```
-
-<Variant platform="ios-aep" api="set-advertising-identifier" repeat="13"/>
-
-To access IDFA and handle it correctly in your mobile application, see the [Apple developer documentation about IDFA](https://developer.apple.com/documentation/adsupport/asidentifiermanager)
-
-Starting iOS 14+, applications must use the [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency) framework to request user authorization before using the Identifier for Advertising (IDFA).
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(setAdvertisingIdentifier:)
-public static func setAdvertisingIdentifier(_ identifier: String?)
-```
-
-* _identifier_ is a string that provides developers with a simple, standard system to continue to track the Ads through their apps.
-
-**Example**
-
-```swift
-import AdSupport
-import AppTrackingTransparency
-...
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    ...
-    if #available(iOS 14, *) {
-       setAdvertisingIdentiferUsingTrackingManager()
-    } else {
-       // Fallback on earlier versions
-       setAdvertisingIdentifierUsingIdentifierManager()
-    }
-
-}
-
-func setAdvertisingIdentifierUsingIdentifierManager() {
-    var idfa:String = "";
-        if (ASIdentifierManager.shared().isAdvertisingTrackingEnabled) {
-            idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString;
-        } else {
-            Log.debug(label: "AppDelegateExample",
-                      "Advertising Tracking is disabled by the user, cannot process the advertising identifier.");
-        }
-        MobileCore.setAdvertisingIdentifier(idfa);
-}
-
-@available(iOS 14, *)
-func setAdvertisingIdentiferUsingTrackingManager() {
-    ATTrackingManager.requestTrackingAuthorization { (status) in
-        var idfa: String = "";
-
-        switch (status) {
-        case .authorized:
-            idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-        case .denied:
-            Log.debug(label: "AppDelegateExample",
-                      "Advertising Tracking is denied by the user, cannot process the advertising identifier.")
-        case .notDetermined:
-            Log.debug(label: "AppDelegateExample",
-                      "Advertising Tracking is not determined, cannot process the advertising identifier.")
-        case .restricted:
-            Log.debug(label: "AppDelegateExample",
-                      "Advertising Tracking is restricted by the user, cannot process the advertising identifier.")
-        }
-
-        MobileCore.setAdvertisingIdentifier(idfa)
-    }
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) setAdvertisingIdentifier: (NSString * _Nullable identifier);
-```
-
-**Example**
-
-```objectivec
-#import <AdSupport/ASIdentifierManager.h>
-#import <AppTrackingTransparency/ATTrackingManager.h>
-...
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
--   ...
--   
-    if (@available(iOS 14, *)) {
-        [self setAdvertisingIdentiferUsingTrackingManager];
-    } else {
-        // fallback to earlier versions
-        [self setAdvertisingIdentifierUsingIdentifierManager];
-    }
-
-}
-
-- (void) setAdvertisingIdentifierUsingIdentifierManager {
-    // setup the advertising identifier
-    NSString *idfa = nil;
-    if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
-        idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    } else {
-        [AEPLog debugWithLabel:@"AppDelegateExample"
-                       message:@"Advertising Tracking is disabled by the user, cannot process the advertising identifier"];
-    }
-    [AEPMobileCore setAdvertisingIdentifier:idfa];
-
-}
-
-- (void) setAdvertisingIdentiferUsingTrackingManager API_AVAILABLE(ios(14)) {
-    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:
-    ^(ATTrackingManagerAuthorizationStatus status){
-        NSString *idfa = nil;
-        switch(status) {
-            case ATTrackingManagerAuthorizationStatusAuthorized:
-                idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-                break;
-            case ATTrackingManagerAuthorizationStatusDenied:
-                [AEPLog debugWithLabel:@"AppDelegateExample"
-                               message:@"Advertising Tracking is denied by the user, cannot process the advertising identifier"];
-                break;
-            case ATTrackingManagerAuthorizationStatusNotDetermined:
-                [AEPLog debugWithLabel:@"AppDelegateExample"
-                               message:@"Advertising Tracking is not determined, cannot process the advertising identifier"];
-                break;
-            case ATTrackingManagerAuthorizationStatusRestricted:
-                [AEPLog debugWithLabel:@"AppDelegateExample"
-                               message:@"Advertising Tracking is restricted by the user, cannot process the advertising identifier"];
-                break;
-        }
-
-        [AEPMobileCore setAdvertisingIdentifier:idfa];
-    }];
 }
 ```
 
@@ -1941,41 +1526,6 @@ public static void setPushIdentifier(final String pushIdentifier);
 MobileCore.setPushIdentifier(token);
 ```
 
-<Variant platform="ios-aep" api="set-push-identifier" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(setPushIdentifier:)
-public static func setPushIdentifier(_ deviceToken: Data?)
-```
-
-* _deviceToken_  is a string that contains the device token for push notifications.
-
-**Example**
-
-```swift
-// Set the deviceToken that the APNs has assigned to the device
-MobileCore.setPushIdentifier(deviceToken)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) setPushIdentifier: (NSString * _Nullable deviceToken);
-```
-
-**Example**
-
-```objectivec
-// Set the deviceToken that the APNS has assigned to the device
-[AEPMobileCore setPushIdentifier:deviceToken];
-```
-
 <Variant platform="ios-acp" api="set-push-identifier" repeat="11"/>
 
 #### Swift
@@ -2050,47 +1600,6 @@ public static void syncIdentifier(final String identifierType,
 Identity.syncIdentifier("idType",
                         "idValue",
                         VisitorID.AuthenticationState.AUTHENTICATED);
-```
-
-<Variant platform="ios-aep" api="sync-identifier" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(syncIdentifierWithType:identifier:authenticationState:)
-static func syncIdentifier(identifierType: String, identifier: String, authenticationState: MobileVisitorAuthenticationState)
-```
-
-* The _identifierType (String)_ contains the `identifier type`, and this parameter should not be null or empty. The allowed characters are [A-Za-z0-9_.]
-* The _identifier (String)_ contains the `identifier` value, and this parameter should not be null or empty. If either the `identifierType` or `identifier` contains a null or an empty string, the identifier is ignored by the Identity extension.
-* The _authenticationState (MobileVisitorAuthenticationState)_ value indicates the authentication state for the user and contains one of the [MobileVisitorAuthenticationState](#public-classes) values.
-
-**Example**
-
-```swift
-Identity.syncIdentifier(identifierType: "idType",
-                            identifier: "idValue",
-                        authentication: .unknown)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) syncIdentifierWithType: (NSString * _Nonnull identifierType)
-										 identifier: (NSString * _Nonnull identifier)
-								 authentication: (enum AEPAuthenticationState authenticationState);
-```
-
-**Example**
-
-```objectivec
-[AEPMobileIdentity syncIdentifierWithType:@"idType"
-                               identifier:@"idValue"
-                      authenticationState:AEPMobileVisitorAuthStateUnknown];
 ```
 
 <Variant platform="ios-acp" api="sync-identifier" repeat="11"/>
@@ -2275,45 +1784,6 @@ identifiers.put("idType1", "idValue1");
 identifiers.put("idType2", "idValue2");
 identifiers.put("idType3", "idValue3");
 Identity.syncIdentifiers(identifiers);
-```
-
-<Variant platform="ios-aep" api="sync-identifiers" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(syncIdentifiers:)
-static func syncIdentifiers(identifiers: [String: String]?)
-```
-
-* The _identifiers_ dictionary contains identifier type as the key and identifier as the value, both identifier type and identifier should be non empty and non nil values.
-
-**Example**
-
-```swift
-let ids : [String: String] = ["idType1":"idValue1",
-                              "idType2":"idValue2",
-                              "idType3":"idValue3"];
-Identity.syncIdentifiers(identifiers: ids)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) syncIdentifiers: (NSDictionary<NSString *, NSString *> * _Nullable identifiers);
-```
-
-**Example**
-
-```objectivec
-NSDictionary *ids = @{@"idType1":@"idValue1",
-                      @"idType2":@"idValue2",
-                      @"idType3":@"idValue3"};
-[AEPMobileIdentity syncIdentifiers:ids];
 ```
 
 <Variant platform="ios-acp" api="sync-identifiers" repeat="11"/>
@@ -2501,47 +1971,6 @@ identifiers.put("idType1", "idValue1");
 identifiers.put("idType2", "idValue2");
 identifiers.put("idType3", "idValue3");
 Identity.syncIdentifiers(identifiers, VisitorID.AuthenticationState.AUTHENTICATED);
-```
-
-<Variant platform="ios-aep" api="sync-identifiers-overloaded" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(syncIdentifiers:authenticationState:)
-static func syncIdentifiers(identifiers: [String: String]?, authenticationState: MobileVisitorAuthenticationState)
-```
-
-* The _identifiers_ dictionary contains identifier type as the key and identifier as the value, both identifier type and identifier should be non empty and non nil values.
-* The _authenticationState (MobileVisitorAuthenticationState)_ indicates the authentication state of the user and contains one of the [MobileVisitorAuthenticationState](#public-classes) values.
-
-**Example**
-
-```swift
-let ids : [String: String] = ["idType1":"idValue1",
-                              "idType2":"idValue2",
-                              "idType3":"idValue3"];
-Identity.syncIdentifiers(identifiers: ids, authenticationState: .authenticated)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) syncIdentifiers: (NSDictionary<NSString *, NSString *> * _Nullable identifiers)
-				  authentication: (enum AEPAuthenticationState authenticationState);
-```
-
-**Example**
-
-```objectivec
-NSDictionary *ids = @{@"idType1":@"idValue1",
-                      @"idType2":@"idValue2",
-                      @"idType3":@"idValue3"};
-[AEPMobileIdentity syncIdentifiers:ids authenticationState:AEPMobileVisitorAuthStateAuthenticated];
 ```
 
 <Variant platform="ios-acp" api="sync-identifiers-overloaded" repeat="11"/>
@@ -2751,38 +2180,6 @@ public class VisitorID {
 
      public final String getIdType();
 
-}
-```
-
-<Variant platform="ios-aep" api="public-classes" repeat="5"/>
-
-**MobileVisitorAuthenticationState**
-
-This is used to indicate the authentication state for the current `Identifiable`.
-
-```swift
-@objc(AEPMobileVisitorAuthState) public enum MobileVisitorAuthenticationState: Int, Codable {
-    case unknown = 0
-    case authenticated = 1
-    case loggedOut = 2
-}
-```
-
-**Identifiable**
-
-```swift
-@objc(AEPIdentifiable) public protocol Identifiable {
-    /// Origin of the identifier
-    var origin: String? { get }
-
-    /// Type of the identifier
-    var type: String? { get }
-
-    /// The identifier
-    var identifier: String? { get }
-
-    /// The authentication state for the identifier
-    var authenticationState: MobileVisitorAuthenticationState { get }
 }
 ```
 

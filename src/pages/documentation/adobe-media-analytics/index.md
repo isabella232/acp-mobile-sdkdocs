@@ -90,17 +90,6 @@ React Native
 
 <Tabs query="platform=react-native&task=register"/>
 
-## Configuration keys
-
-To update your SDK configuration programmatically, use the following information to change your Media configuration values. For more information, see [Configuration API reference](../mobile-core/configuration/api-reference.md).
-
-| Key | Required | Description | Data Type |
-| :--- | :--- | :--- | :--- |
-| `media.collectionServer` | Yes | Media Collection Server endpoint to which all the media tracking data is sent. For more information, see [Collection Server](#collection-api-server). | String |
-| `media.channel` | No | Channel name. For more information, see [Channel](#channel). | String |
-| `media.playerName` | No | Name of the media player in use, i.e., "AVPlayer", "HTML5 Player", "My Custom Player". For more information, see [Player Name](#player-name). | String |
-| `media.appVersion` | No | Version of the media player app/SDK. For more information, see [Application Version](#application-version). | String |
-
 ## Platform Support
 
 | Platform | Support Status |

@@ -24,44 +24,6 @@ You can also manually include the libraries. Get `.aar` libraries from [Github](
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios-aep" task="add" repeat="11"/>
-
-The latest iOS SDK versions:
-
-[<img src="https://img.shields.io/cocoapods/v/AEPCore.svg?color=orange&label=AEPCore&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/AEPCore)
-
-[<img src="https://img.shields.io/cocoapods/v/AEPAnalytics.svg?color=orange&label=AEPAnalytics&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/AEPAnalytics)
-
-[<img src="https://img.shields.io/cocoapods/v/AEPMedia.svg?color=orange&label=AEPMedia&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/AEPMedia)
-
-1. To add the Media library and its dependencies to your project, add the following pods to your `Podfile`:
-
-```ruby
-pod 'AEPCore
-pod 'AEPAnalytics
-pod 'AEPMedia'
-```
-
-2. In Xcode project, import the Media extension:
-
-**Swift**
-
-```swift
-import AEPMedia
-import AEPCore
-import AEPIdentity
-import AEPAnalytics
-```
-
-**Objective-C**
-
-```objectivec
-@import AEPCore;
-@import AEPMedia;
-@import AEPAnalytics;
-@import AEPIdentity;
-```
-
 <Variant platform="ios-acp" task="add" repeat="12"/>
 
 The latest iOS SDK versions:
@@ -174,34 +136,6 @@ public class MobileApp extends Application {
 
       }
   }
-}
-```
-
-<Variant platform="ios-aep" task="register" repeat="6"/>
-
-#### Swift
-
-In your app's `_:didFinishLaunchingWithOptions` function, register the Audience Manager extension with the Mobile Core:
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-   MobileCore.registerExtensions([Media.self, Analytics.self, Identity.self], {
-   MobileCore.configureWith(appId: "yourAppId")
- })  
- ...
-}
-```
-
-#### Objective-C
-
-In your app's `application:didFinishLaunchingWithOptions`, register Media with Mobile Core:
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobileMedia.class, AEPMobileAnalytics.class, AEPMobileIdentity.class] completion:^{
-    [AEPMobileCore configureWithAppId: @"yourAppId"];
-  }];
-  ...
 }
 ```
 

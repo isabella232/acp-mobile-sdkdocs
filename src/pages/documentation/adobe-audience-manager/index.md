@@ -17,17 +17,9 @@ Adobe Audience Manager is a versatile audience data management platform. With th
 
 ## Add Audience Manager to your app
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -37,17 +29,9 @@ React Native
 
 ## Register Audience Manager with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -58,15 +42,6 @@ React Native
 ## Implement Audience Manager APIs
 
 For more information about implementing Audience Manager APIs, please read the [Audience Manager API reference](./api-reference.md).
-
-## Configuration keys
-
-To update SDK configuration programmatically, use the following information to change your Audience Manager configuration values. For more information, see the [Configuration API reference](../mobile-core/configuration/api-reference.md).
-
-| Key | Required | Description | Data Type |
-| :--- | :--- | :--- | :--- |
-| `audience.server` | Yes | Server endpoint used to collect Audience Manager data | String |
-| `audience.timeout` | No | Time, in seconds, to wait for a response from Audience Manager before timing out. Default value is 2 seconds. | Integer |
 
 ## Additional information
 

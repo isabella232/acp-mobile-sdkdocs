@@ -18,53 +18,12 @@ ExperienceEvent experienceEvent = new ExperienceEvent.Builder()
                 .build();
 ```
 
-<Variant platform="ios-aep" task="create" repeat="4"/>
-
-#### Swift
-
-```swift
-var xdmData : [String: Any] = [:]
-xdmData["eventType"] = "MyFirstXDMExperienceEvent"
-xdmData[_yourTenantId] = ["productSku": "demo123",
-                          "rating": 5,
-                          "reviewText": "I love this demo!",
-                          "reviewerId": "Anonymous user"]
-let experienceEvent = ExperienceEvent(xdm: xdmData)
-```
-
-#### Objective-C
-
-```objc
-NSDictionary<NSString*, NSObject*>* xdmData;
-[xdmData setValue:@"MyFirstXDMExperienceEvent" forKey:@"eventType"];
-[xdmData setValue:@{@"productSku": @"demo123",
-                    @"rating": @5,
-                    @"reviewText": @"I love this demo!",
-                    @"reviewerId": @"Anonymous user"}
-                      forKey:_yourTenantId];
-AEPExperienceEvent *experienceEvent = [[AEPExperienceEvent alloc] initWithXdm:xdmData data:nil datasetIdentifier:nil];
-```
-
 <Variant platform="android" task="send" repeat="2"/>
 
 #### Java
 
 ```java
 Edge.sendEvent(experienceEvent, null);
-```
-
-<Variant platform="ios-aep" task="send" repeat="4"/>
-
-#### Swift
-
-```swift
-Edge.sendEvent(experienceEvent: experienceEvent)
-```
-
-#### Objective-C
-
-```objc
-[AEPMobileEdge sendExperienceEvent:event completion:nil];
 ```
 
 <Variant platform="android" task="track-action" repeat="5"/>
@@ -83,37 +42,6 @@ public static void trackAction(final String action, final Map<String, String> co
 Map<String, String> additionalContextData = new HashMap<String, String>();
 additionalContextData.put("customKey", "value");
 MobileCore.trackAction("loginClicked", additionalContextData);
-```
-
-<Variant platform="ios-aep" task="track-action" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func track(action: String?, data: [String: Any]?)
-```
-
-**Example**
-
-```swift
-MobileCore.track(action: "actionName", data: ["key": "value"])
-```
-
-#### Objective-C
-
-**Syntax**
-
-```swift
-@objc(trackAction:data:)
-static func track(action: String?, data: [String: Any]?)
-```
-
-**Example**
-
-```objectivec
-[AEPMobileCore trackAction:@"action name" data:@{@"key": @"value"}];
 ```
 
 <Variant platform="ios-acp" task="track-action" repeat="10"/>
@@ -236,37 +164,6 @@ public static void trackState(final String state, final Map<String, String> cont
 Map<String, String> additionalContextData = new HashMap<String, String>();         
 additionalContextData.put("customKey", "value");         
 MobileCore.trackState("homePage", additionalContextData);
-```
-
-<Variant platform="ios-aep" task="track-state" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func track(state: String?, data: [String: Any]?) 
-```
-
-**Example**
-
-```swift
-MobileCore.track(state: "state name", data: ["key": "value"])
-```
-
-#### Objective-C
-
-**Syntax**
-
-```swift
-@objc(trackState:data:)
-static func track(state: String?, data: [String: Any]?) 
-```
-
-**Example**
-
-```objectivec
-[AEPMobileCore trackState:@"state name" data:@{@"key": @"value"}];
 ```
 
 <Variant platform="ios-acp" task="track-state" repeat="10"/>
