@@ -102,17 +102,9 @@ The number of seconds to wait before Analytics launch hits are sent from the SDK
 
 ## Add Analytics to your application
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -138,17 +130,9 @@ Xamarin
 
 ## Register Analytics with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -202,17 +186,9 @@ For more information about collecting audio and video analytics, please read the
 
 Event serialization is not supported by processing rules. To set serialized events directly on the hits sent to Analytics, use the following syntax in context data parameters:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=serialize"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=serialize"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=serialize"/>
 
@@ -238,55 +214,3 @@ Xamarin
 
 The [linked video](https://video.tv.adobe.com/v/26260
 ) shows you how to use [trackState](../mobile-core/api-reference.md#track-app-states-and-views) APIs to send data to Adobe Analytics.
-
-## Configuration keys
-
-To update the SDK configuration programmatically, use the following information to change your Analytics configuration values.
-
-| Key | Required | Description | Data Type |
-| :--- | :--- | :--- | :--- |
-| analytics.server | Yes | See [Tracking Server](./#tracking-server) | String |
-| analytics.rsids | Yes | See [Report Suites](./#report-suites). Multiple report suite IDs can be comma separated with no space in- between. For example: "rsids" : "rsid" "rsids" : "rsid1,rsid2" | String |
-| analytics.batchLimit | No | See [Batch Limit](./#batch-limit) | Integer |
-| analytics.aamForwardingEnabled | No | See [Audience Manager Forwarding](./#audience-manager-forwarding) | Boolean |
-| analytics.offlineEnabled | No | See [Offline Enabled](./#offline-enabled) | Boolean |
-| analytics.backdatePreviousSessionInfo | No | See [Backdate Previous Session Info](./#backdate-previous-session-info). | Boolean |
-
-## Update Analytics configuration
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
-
-Android
-
-<Tabs query="platform=android&task=update"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=update"/>
-
-iOS (ACP 2.x)
-
-<Tabs query="platform=ios-acp&task=update"/>
-
-React Native
-
-<Tabs query="platform=react-native&task=update"/>
-
-Flutter
-
-<Tabs query="platform=flutter&task=update"/>
-
-Cordova
-
-<Tabs query="platform=cordova&task=update"/>
-
-Unity
-
-<Tabs query="platform=unity&task=update"/>
-
-Xamarin
-
-<Tabs query="platform=xamarin&task=update"/>
-
-For more information, see the [configuration API reference](../mobile-core/configuration/api-reference.md).
-

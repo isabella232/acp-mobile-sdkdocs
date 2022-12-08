@@ -16,36 +16,6 @@ import com.adobe.marketing.mobile.MobileCore;
 import com.adobe.marketing.mobile.Places;
 ```
 
-<Variant platform="ios-aep" task="download" repeat="7"/>
-
-1. Add the Mobile Core and Places extensions to your project using CocoaPods. Add the following pods in your `Podfile`:
-
-```swift
-use_frameworks!
-target 'YourTargetApp' do
-   pod 'AEPCore'
-   pod 'AEPPlaces'       
-end
-```
-
-2. Import the Mobile Core and Places modules:
-
-**Swift**
-
-```swift
-// AppDelegate.swift
-import AEPCore
-import AEPPlaces
-```
-
-**Objective-C**
-
-```objectivec
-// AppDelegate.h
-@import AEPCore;
-@import AEPPlaces;
-```
-
 <Variant platform="ios-acp" task="download" repeat="7"/>
 
 1. Add the Mobile Core and Places extensions to your project using CocoaPods. Add the following pods in your `Podfile`:
@@ -100,33 +70,6 @@ public class MobileApp extends Application {
             //Log the exception
          }
     }
-}
-```
-
-<Variant platform="ios-aep" task="register" repeat="4"/>
-
-**Swift**
-
-```swift
-// AppDelegate.swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MobileCore.registerExtensions([Places.self], {
-        MobileCore.configureWith(appId: "yourAppId")
-    })
-    ...
-}
-```
-
-**Objective-C**
-
-```objectivec
-// AppDelegate.m
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobilePlaces.class] completion:^{
-        ...
-    }];
-    [AEPMobileCore configureWithAppId: @"yourAppId"];
-    ...
 }
 ```
 

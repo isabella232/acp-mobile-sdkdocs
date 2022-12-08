@@ -16,35 +16,6 @@ import com.adobe.marketing.mobile.MobileCore;
 import com.adobe.marketing.mobile.Analytics;
 ```
 
-<Variant platform="ios-aep" task="add" repeat="7"/>
-
-1. Add the [Mobile Core](../mobile-core/index.md) and Analytics extensions to your project using Cocoapods.
-2. Add the following pods in your `Podfile`:
-
-```ruby
-pod 'AEPCore'
-pod 'AEPAnalytics'
-pod 'AEPIdentity'
-```
-
-3. Import the Analytics and Identity libraries:
-
-**Swift**
-
-```swift
-import AEPCore
-import AEPAnalytics
-import AEPIdentity
-```
-
-**Objective-C**
-
-```objectivec
-@import AEPCore;
-@import AEPAnalytics;
-@import AEPIdentity;
-```
-
 <Variant platform="ios-acp" task="add" repeat="7"/>
 
 1. Add the [Mobile Core](../mobile-core/index.md) and Analytics extensions to your project using Cocoapods.
@@ -208,34 +179,6 @@ public class MobileApp extends Application {
 
 Analytics depends on the Identity extension and is automatically included in Core by Maven. When manually installing the Analytics extension, ensure that you add the `identity-1.x.x.aar` library to your project.
 
-<Variant platform="ios-aep" task="register" repeat="6"/>
-
-#### Swift
-
-In your app's `_:didFinishLaunchingWithOptions` function, register the Audience Manager extension with the Mobile Core:
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-   MobileCore.registerExtensions([Analytics.self, Identity.self], {
-   MobileCore.configureWith(appId: "yourAppId")
- })  
- ...
-}
-```
-
-#### Objective-C
-
-In your app's `application:didFinishLaunchingWithOptions`, register Media with Mobile Core:
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobileAnalytics.class, AEPMobileIdentity.class] completion:^{
-    [AEPMobileCore configureWithAppId: @"yourAppId"];
-  }];
-  ...
-}
-```
-
 <Variant platform="ios-acp" task="register" repeat="7"/>
 
 #### Swift
@@ -391,57 +334,6 @@ cdata.put("&&events", "event1:12341234");
 MobileCore.trackAction("Action Name", cdata);
 // trackState example:
 MobileCore.trackState("State Name", cdata);
-```
-
-<Variant platform="ios-aep" task="serialize" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-contextdata["&&events"] = "event1:12341234"
-```
-
-**Example**
-
-```swift
-//create a context data dictionary
-var contextData = [String: Any]()
-
-// add events
-contextData["&&events"] = "event1:12341234"
-
-// send the tracking call - use either a trackAction or trackState call.
-// trackAction example:
-MobileCore.track(action: "Action Name" as String, data: contextData)
-
-// trackState example:
-MobileCore.track(state: "State Name" as String, data: contextData)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-[contextData setObject:@"eventN:serial number" forKey:@"&&events"];
-```
-
-**Example**
-
-```objectivec
-//create a context data dictionary
-NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
-
-// add events
-[contextData setObject:@"event1:12341234" forKey:@"&&events"];
-
-// send the tracking call - use either a trackAction or trackState call.
-// trackAction example:
-[AEPMobileCore trackAction:@"Action Name" data:contextData];
-// trackState example:
-[AEPMobileCore trackState:@"State Name" data:contextData];
 ```
 
 <Variant platform="ios-acp" task="serialize" repeat="5"/>
@@ -639,32 +531,6 @@ data.put("analytics.batchLimit", 10);
 data.put("analytics.offlineEnabled", true);
 
 MobileCore.updateConfiguration(data);
-```
-
-<Variant platform="ios-aep" task="update" repeat="6"/>
-
-#### Swift
-
-**Example**
-
-```swift
-let updatedConfig = ["analytics.server":"sample.analytics.tracking.server",
-                     "analytics.rsids":"rsid1,rsid2",
-                     "analytics.batchLimit":10,
-                     "analytics.offlineEnabled":true] as [String: Any]
-MobileCore.updateConfigurationWith(configDict: updatedConfig)
-```
-
-#### Objective-C
-
-**Example**
-
-```objectivec
-NSDictionary *updatedConfig = @{@"analytics.server":@"sample.analytics.tracking.server",
-                                @"analytics.rsids":@"rsid1,rsid2",
-                                @"analytics.batchLimit":@(10),
-                                @"analytics.offlineEnabled":@YES};
-[AEPMobileCore updateConfiguration:updatedConfig];
 ```
 
 <Variant platform="ios-acp" task="update" repeat="6"/>

@@ -9,26 +9,6 @@ MobileCore.setLogLevel(LoggingMode.DEBUG);
 // MobileCore.setLogLevel(LoggingMode.ERROR);
 ```
 
-<Variant platform="ios-aep" task="enable" repeat="4"/>
-
-#### Swift
-
-```swift
-MobileCore.setLogLevel(.debug)
-// MobileCore.setLogLevel(.trace)
-// MobileCore.setLogLevel(.warning)
-// MobileCore.setLogLevel(.error)
-```
-
-#### Objective-C
-
-```objectivec
-[AEPMobileCore setLogLevel:AEPLogLevelDebug];
-// [AEPMobileCore setLogLevel:AEPLogLevelTrace];
-// [AEPMobileCore setLogLevel:AEPLogLevelWarning];
-// [AEPMobileCore setLogLevel:AEPLogLevelError];
-```
-
 <Variant platform="ios-acp" task="enable" repeat="4"/>
 
 #### Swift

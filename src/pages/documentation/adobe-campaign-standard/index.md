@@ -63,17 +63,9 @@ Remember the following information when you add the Campaign extension to your a
 
 The instructions to add these extensions to your mobile app are also available in the Data Collection UI. To access the installation dialog box, open your mobile property, select the **Environments** tab, followed by **Install**.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&task=add"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=add"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
 
@@ -84,17 +76,9 @@ React Native
 
 ### Register the Campaign Standard extension with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -106,17 +90,9 @@ React Native
 
 To initialize the SDK and set up tracking, see the [initialize the SDK and set up tracking tutorial](../getting-started/track-events.md).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&task=initialize"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=initialize"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=initialize"/>
 
@@ -130,17 +106,9 @@ For more information about setting up your iOS app to connect to APNS and retrie
 
 To learn more about creating a push notification using Adobe Campaign, see the tutorial on [preparing and sending a push notification](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/push-notifications/preparing-and-sending-a-push-notification.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&task=push-messaging"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=push-messaging"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=push-messaging"/>
 
@@ -156,17 +124,9 @@ User interactions with local or push notifications can be tracked by invoking th
 
 The code samples below are provided as examples on how to correctly invoke the `collectMessageInfo` API. For more specific details, please read the tutorials on [implementing local notification tracking](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-mobile/local-tracking.html) and [configuring push tracking](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-mobile/push-tracking.html) within the Adobe Campaign documentation.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&task=track"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=track"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=track"/>
 
@@ -188,17 +148,9 @@ Deleting your mobile property in the Data Collection UI does not automatically d
 
 A destination URL can be added to in-app messages that are delivered from Adobe Campaign. The destination can be a website URL such as [https://www.adobe.com](https://www.adobe.com) or a deep link such as `campaigndemoapp://signupactivity?paidaccount=true` which can be used to direct the user to a specific area of your app.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&task=handling"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=handling"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=handling"/>
 
@@ -210,37 +162,10 @@ The frequency of registration requests sent to Campaign are reduced starting wit
 
 The configuration setting to pause registration requests is provided for specific use cases only. The use of this configuration setting should be **avoided** when possible.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&task=customize"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=customize"/>
-
-iOS (ACP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=customize"/>
 
 Giving a value of `0` when setting `campaign.registrationDelay` will send a registration request on every launch event. This is the previous behavior seen before the registration request reduction enhancement was added.
-
-## Configuration keys
-
-To update SDK configuration programmatically, use the following information to change your Campaign Standard configuration values. For more information, see the [Configuration API reference](../mobile-core/configuration/api-reference.md).
-
-| Key | Required | Description | Data Type |
-| :--- | :--- | :--- | :--- |
-| `campaign.timeout` | Yes | Sets the amount of time to wait for a response from the in-app messaging service. | Integer |
-| `campaign.mcias` | Yes | Sets the in-app messaging service URL endpoint. | String |
-| `campaign.server` | Yes | Sets the endpoint URL for the production environment in the Adobe Campaign Standard instance. | String |
-| `campaign.pkey` | Yes | Sets the identifier for a mobile app that was configured in the production environment in the Adobe Campaign Standard. | String |
-| `build.environment` | Yes | Specifies which environment to use (prod, dev, or staging) when sending registration information. | String |
-| `__dev__campaign.pkey` | No | Sets the identifier for a mobile app that was configured in the development environment in Adobe Campaign Standard. | String |
-| `__dev__campaign.server` | No | Sets the endpoint URL for the development environment in the Adobe Campaign Standard instance. | String |
-| `__stage__campaign.pkey` | No | Sets the identifier for a mobile app that was configured in the staging environment in Adobe Campaign Standard. | String |
-| `__stage__campaign.server` | No | Sets the endpoint URL for the staging environment in the Adobe Campaign Standard instance. | String |
-| `campaign.registrationDelay` | No | Sets the number of days to delay the sending of the next Adobe Campaign Standard registration request. | Integer |
-| `campaign.registrationPaused` | No | Sets the Adobe Campaign Standard registration request paused status. | Boolean |
-

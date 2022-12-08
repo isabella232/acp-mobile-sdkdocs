@@ -14,31 +14,6 @@ import com.adobe.marketing.mobile.Assurance;
 import com.adobe.marketing.mobile.MobileCore;
 ```
 
-<Variant platform="ios-aep" task="import-library" repeat="7"/>
-
-Add the library to your project via your [Cocoapods](https://cocoapods.org/pods/AEPAssurance) `Podfile`:
-
-```pod
-pod 'AEPCore','~> 3.0'
-pod 'AEPAssurance','~> 3.0'
-```
-
-Import the Assurance extension along with the other Adobe Mobile SDK extensions:
-
-#### Swift
-
-```swift
-import AEPCore
-import AEPAssurance
-```
-
-#### Objective-C
-
-```objectivec
-@import AEPCore;
-@import AEPAssurance;
-```
-
 <Variant platform="ios-acp" task="import-library" repeat="7"/>
 
 Add the library to your project via your [Cocoapods](https://cocoapods.org/pods/AEPAssurance) `Podfile`:
@@ -208,40 +183,6 @@ To find your app ID, which is mentioned below, please read the [Mobile Install I
 }
 ```
 
-<Variant platform="ios-aep" task="register-assurance" repeat="5"/>
-
-To start using the extension library, you must first register the extension with the [Mobile Core](../mobile-core/index.md) extension.
-
-#### Swift
-
-```swift
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        let extensions = [Assurance.self, ...]
-        MobileCore.registerExtensions(extensions, {
-            // set app id from the Data Collection UI    
-		        MobileCore.configureWith(appId: "yourAppId")  
-        })
-
-        return true
-    }
-```
-
-#### Objective-C
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    NSArray *extensionsToRegister = @[AEPMobileAssurance.class, ...];
-    [AEPMobileCore registerExtensions:extensionsToRegister completion:^{
-        // set app id from the Data Collection UI
-        [AEPMobileCore configureWithAppId: @"yourAppId"];
-    }];
-
-    return YES;
-}
-```
-
 <Variant platform="ios-acp" task="register-assurance" repeat="5"/>
 
 To start using the extension library, you must first register the extension with the [Mobile Core](../mobile-core/index.md) extension.
@@ -250,7 +191,7 @@ To start using the extension library, you must first register the extension with
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-	   // set app id from the Data Collection UI
+       // set app id from the Data Collection UI
      ACPCore.configure(withAppId: "yourAppId")
      AEPAssurance.registerExtension()
      ACPCore.start(nil)
@@ -362,69 +303,6 @@ class CoreStartCompletionCallback : Java.Lang.Object, IAdobeCallback
     // set app id from the Data Collection UI
     ACPCore.ConfigureWithAppID("yourAppId");
   }
-}
-```
-
-<Variant platform="ios-aep" task="implement-assurance" repeat="11"/>
-
-#### Swift
-
-**Example**
-
-```swift
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        Assurance.startSession(url: url)
-        return true
-    }
-```
-
-In iOS 13 and later, for a scene-based application, use the `UISceneDelegate`'s `scene(_:openURLContexts:)` method as follows:
-
-```swift
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Called when the app launches with the deep link
-        if let deepLinkURL = connectionOptions.urlContexts.first?.url {
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-static func startSession(url: URL?)
-```
-
-**Example**
-
-```objectivec
-- (BOOL)application:(UIApplication *)app openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    [AEPMobileAssurance startSessionWithUrl:url];
-    return true;
-}
-```
-
-In iOS 13 and later, for a scene-based application, use the `UISceneDelegate`'s `scene(_:openURLContexts:)` method as follows:
-
-```objectivec
-
-- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {    
-    NSURL *deepLinkURL = connectionOptions.URLContexts.allObjects.firstObject.URL;
-    [AEPMobileAssurance startSessionWithUrl:deepLinkURL];
-}
-
-
-- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
-    [AEPMobileAssurance startSessionWithUrl:URLContexts.allObjects.firstObject.URL];
 }
 ```
 

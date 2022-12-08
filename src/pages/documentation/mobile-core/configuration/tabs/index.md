@@ -14,38 +14,6 @@ public static void configureWithAppID(final String appId);
 MobileCore.configureWithAppId("1423ae38-8385-8963-8693-28375403491d");
 ```
 
-<Variant platform="ios-aep" task="configure" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func configureWith(appId: String)
-```
-
-**Example**
-
-```swift
-MobileCore.configureWith(appId: "1423ae38-8385-8963-8693-28375403491d")
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) configureWithAppId: (NSString* appId);
-```
-
-**Example**
-
-```objectivec
-[AEPMobileCore configureWithAppId: @"1423ae38-8385-8963-8693-28375403491d"];
-```
-
-Alternatively, you can also place the environment ID in your iOS project's _Info.plist_ with the `ADBMobileAppID` key. When the SDK is initialized, the environment ID is automatically read from the _Info.plist_ file and the associated configuration.
-
 <Variant platform="ios-acp" task="configure" repeat="11"/>
 
 #### Swift
@@ -132,39 +100,6 @@ public static void updateConfiguration(final Map<String, Object> configMap);
 HashMap<String, Object> data = new HashMap<String, Object>();
 data.put("global.privacy", "optedout");
 MobileCore.updateConfiguration(data);
-```
-
-<Variant platform="ios-aep" task="update" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-@objc(updateConfiguration:)
-static func updateConfigurationWith(configDict: [String: Any])
-```
-
-**Example**
-
-```swift
-let updatedConfig = ["global.privacy":"optedout"]
-MobileCore.updateConfigurationWith(configDict: updatedConfig)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) updateConfiguration: (NSDictionary* __nullable) config;
-```
-
-**Example**
-
-```objectivec
-NSDictionary *updatedConfig = @{@"global.privacy":@"optedout"};
-[AEPMobileCore updateConfiguration:updatedConfig];
 ```
 
 <Variant platform="ios-acp" task="update" repeat="10"/>
@@ -305,40 +240,6 @@ MobileCore.configureWithFileInPath("absolute/path/to/exampleJSONfile.json");
 
 // Case 3: to use a config json in Assets folder
 MobileCore.configureWithFileInAssets("exampleJSONfile.json");
-```
-
-<Variant platform="ios-aep" task="bundle" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func configureWith(filePath: String)
-```
-
-**Example**
-
-```swift
-let filePath = Bundle.main.path(forResource: "ExampleJSONFile", ofType: "json")
-if let filePath = filePath {
-    MobileCore.configureWith(filePath: filePath)
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) configureWithFilePath: (NSString* __nullable) filepath;
-```
-
-**Example**
-
-```objectivec
-NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ExampleJSONFile" ofType:@"json"];
-[AEPMobileCore configureWithFilePath: filePath];
 ```
 
 <Variant platform="ios-acp" task="bundle" repeat="10"/>

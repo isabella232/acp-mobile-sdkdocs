@@ -22,38 +22,6 @@ You should see a dialog box similar to the following:
 
 The necessary dependencies and initialization code can be copied from the dialog box to your mobile application project.
 
-<Variant platform="ios-aep" task="get" repeat="5"/>
-
-Adobe Experience Platform SDKs for iOS support **iOS 10 or later**; **requires** Swift 5.1 or newer; **and** Xcode 11.0 or newer.
-
-In order to support the new Apple M1 architecture while maintaining support for existing Intel architecture, the Adobe Experience Platform SDKs are now distributed using XCFrameworks. <br/><br/> Please see the [release notes](../release-notes/2020.md#december-18-2020) and the document on [current SDK versions](../current-sdk-versions.md) for more information on the latest extension versions.
-
-#### Swift
-
-Add the dependencies to your `Podfile` for each extension. For a complete list of available SDK extension libraries, please read the documentation on [current SDK Versions](../current-sdk-versions.md).
-
-```swift
-use_frameworks!
-target 'YourTargetApp' do
-    // Mobile Core and dependents
-    pod 'AEPCore'
-    pod 'AEPSignal'
-    pod 'AEPLifecycle'
-
-    // Client-side user profile
-    pod 'AEPUserProfile'
-
-    // Edge Network and dependents
-    pod 'AEPEdge'
-    pod 'AEPEdgeIdentity'
-    pod 'AEPEdgeConsent'
-
-    // Adobe Analytics and dependents
-    pod 'AEPIdentity'
-    pod 'AEPAnalytics'
-end
-```
-
 <Variant platform="ios-acp" task="get" repeat="8"/>
 
 Adobe Experience Platform SDKs for iOS support **iOS 10 or later**; **requires** Swift 5.1 or newer; **and** Xcode 11.0 or newer.
@@ -153,35 +121,6 @@ implementation 'com.adobe.marketing.mobile:userprofile:1.+'
 implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
 ```
 
-<Variant platform="ios-aep" task="add-dependencies" repeat="8"/>
-
-
-Create a `Podfile` if you do not already have one:
-
-```pod
-pod init
-```
-
-Add the dependencies to your `Podfile` for each extension.
-
-```pod
-use_frameworks!
-pod 'AEPCore', '~> 1.0'
-pod 'AEPUserProfile', '~> 1.0'
-```
-
-If Cocoapods cannot not find the dependencies, you may need to run this command:
-
-```pod
-pod repo update
-```
-
-Save the `Podfile` and run install:
-
-```pod
-pod install
-```
-
 <Variant platform="ios-acp" task="add-dependencies" repeat="8"/>
 
 Create a `Podfile` if you do not already have one:
@@ -251,34 +190,6 @@ public class MainApp extends Application {
       ...
     }
   }
-}
-```
-
-<Variant platform="ios-aep" task="add-initialization" repeat="5"/>
-
-For iOS Swift libraries, registration is changed to a single API call (as shown in the snippets below). Calling the`MobileCore.start` API is no longer required.
-
-#### Swift
-
-```swift
-// AppDelegate.swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MobileCore.registerExtensions([Signal.self, Lifecycle.self, UserProfile.self, Edge.self, AEPEdgeIdentity.Identity.self, Consent.self, AEPIdentity.Identity.self, Analytics.self], {
-        MobileCore.configureWith(appId: "yourLaunchEnvironmentID")
-    })
-  ...
-}
-```
-
-#### Objective-C
-
-```objectivec
-// AppDelegate.m
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobileSignal.class, AEPMobileLifecycle.class, AEPMobileUserProfile.class, AEPMobileEdge.class, AEPMobileEdgeIdentity.class, AEPMobileEdgeConsent.class, AEPMobileIdentity.class, AEPMobileAnalytics.class] completion:^{
-    [AEPMobileCore configureWithAppId: @"yourLaunchEnvironmentID"];
-  }];
-  ...
 }
 ```
 
