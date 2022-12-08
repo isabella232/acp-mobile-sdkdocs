@@ -14,28 +14,6 @@ public static String extensionVersion();
 String signalExtensionVersion = Signal.extensionVersion();
 ```
 
-<Variant platform="ios-aep" api="extension-version" repeat="7"/>
-
-**Syntax**
-
-```swift
-public static let extensionVersion
-```
-
-**Examples**
-
-**Swift**
-
-```swift
-let version = Signal.extensionVersion
-```
-
-**Objective-C**
-
-```objectivec
-NSString *version = [AEPMobileSignal extensionVersion];
-```
-
 <Variant platform="ios-acp" api="extension-version" repeat="7"/>
 
 **Syntax**
@@ -117,10 +95,6 @@ public static void registerExtension()
 ```java
 Signal.registerExtension();
 ```
-
-<Variant platform="ios-aep" api="register-extension" repeat="1"/>
-
-This API no longer exists in `Signal`. Instead, the extension should be registered by calling the `registerExtensions` API in the MobileCore. Please see the updated SDK initialization steps at the [migrate to Swift tutorial.](../../migrate-to-swift.md#update-sdk-initialization)
 
 <Variant platform="ios-acp" api="register-extension" repeat="7"/>
 

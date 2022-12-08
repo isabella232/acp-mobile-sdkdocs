@@ -6,53 +6,6 @@ The Android SDK automatically registers an `Application.ActivityLifecycleCallbac
 * Tracking push message clickthrough
 * Tracking Local Notification clickthrough
 
-<Variant platform="ios-aep" api="collect-launch-info" repeat="14"/>
-
-#### Swift
-
-This method should be called to support the following use cases:
-
-* Tracking deep link clickthroughs
-  * From `application(_:didFinishLaunchingWithOptions:)`
-  * Extract `userInfo` from `url: UIApplication.LaunchOptionsKey`
-* Tracking push message clickthrough
-  * From `application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`
-
-**Syntax**
-
-```swift
- public static func collectLaunchInfo(_ userInfo: [String: Any])
-```
-
-**Example**
-
-```swift
- MobileCore.collectLaunchInfo(userInfo)
-```
-
-#### Objective-C
-
-This method should be called to support the following use cases:
-
-* Tracking deep link clickthroughs
-  * From `application:didFinishLaunchingWithOptions`
-  * Extract `userInfo` from `UIApplicationLaunchOptionsURLKey`
-    * Tracking push message clickthrough
-  * From `application:didReceiveRemoteNotification:fetchCompletionHandler:`
-
-**Syntax**
-
-```objc
-@objc(collectLaunchInfo:)
-public static func collectLaunchInfo(_ userInfo: [String: Any])
-```
-
-**Example**
-
-```objc
- [AEPMobileCore collectLaunchInfo:launchOptions];
-```
-
 <Variant platform="ios-acp" api="collect-launch-info" repeat="14"/>
 
 #### Swift
@@ -117,39 +70,6 @@ data.put("firstname", "customer");
 //The rule to trigger a PII needs to be setup for this call
 //to result in a network send
 MobileCore.collectPII(data);
-```
-
-<Variant platform="ios-aep" api="collect-pii" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-public static func collectPii(_ data: [String: Any])
-```
-
-**Example**
-
-```objectivec
-MobileCore.collectPii(["key1" : "value1","key2" : "value2"]);
-```
-
-#### Objective-C
-
-**Syntax**
-
-```swift
- @objc(collectPii:)
- public static func collectPii(_ data: [String: Any])
-```
-
-**Example**
-
-```objectivec
- [AEPMobileCore collectPii:data:@{@"key1" : @"value1",
-                            @"key2" : @"value2"
-                            }];
 ```
 
 <Variant platform="ios-acp" api="collect-pii" repeat="10"/>
@@ -266,40 +186,6 @@ public static LoggingMode getLogLevel()
 LoggingMode mode = MobileCore.getLogLevel();
 ```
 
-<Variant platform="ios-aep" api="get-log-level" repeat="12"/>
-
-The logLevel getter has been deprecated. To get the log level in the Swift AEP 3.x SDKs, please use `Log.logFilter` instead.
-
-#### Swift
-
-**Syntax**
-
-```swift
-public static var logFilter: LogLevel
-```
-
-This variable is part of the `Log` class within `AEPServices`.
-
-**Example**
-
-```swift
-var logLevel = Log.logFilter
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-@objc public static var logFilter: LogLevel
-```
-
-**Example**
-
-```objectivec
-AEPLogLevel logLevel = [AEPLog logFilter];
-```
-
 <Variant platform="ios-acp" api="get-log-level" repeat="10"/>
 
 #### Swift
@@ -383,51 +269,6 @@ MobileCore.getSdkIdentities(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-aep" api="get-sdk-identities" repeat="12"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func getSdkIdentities(completion: @escaping (String?, Error?) -> Void)
-```
-
-* _callback_ is invoked with the SDK identities as a JSON string.
-* _completionHandler_ is invoked with the SDK identities as a JSON string, or _error_ if an unexpected error occurs or the request times out. The default timeout is 1000ms.
-
-**Example**
-
-```swift
- MobileCore.getSdkIdentities { (content, error) in
-     // handle completion
- }
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
- @objc(getSdkIdentities:)
- static func getSdkIdentities(completion: @escaping (String?, Error?) -> Void)
-```
-
-* _callback_ is invoked with the SDK identities as a JSON string.
-* _completionHandler_ is invoked with the SDK identities as a JSON string, or _error_ if an unexpected error occurs or the request times out. The default timeout is 1000ms.
-
-**Example**
-
-```objectivec
- [AEPMobileCore getSdkIdentities:^(NSString * _Nullable content, NSError * _Nullable error) {
-     if (error) {
-       // handle error here
-     } else {
-       // handle the retrieved identities
-     }
- }];
-```
-
 <Variant platform="ios-acp" api="get-sdk-identities" repeat="9"/>
 
 #### Objective-C
@@ -497,59 +338,6 @@ MobileCore.log(LoggingMode.DEBUG, "MyClassName", "Provided data was null");
 
 ```text
 D/AdobeExperienceSDK: MyClassName - Provided data was null
-```
-
-<Variant platform="ios-aep" api="log" repeat="12"/>
-
-#### Swift
-
-The log messages from the Adobe Experience SDK are printed to the Apple System Log facility and use a common format that contains the tag `AEP SDK`. For example, if logging an error message using `Log.error(label:_ message:_)`, the printed output looks like `[AEP SDK ERROR <label>]: message`.
-
-**Syntax**
-
-```swift
-public static func trace(label: String, _ message: String) {
-public static func debug(label: String, _ message: String)
-public static func warning(label: String, _ message: String) {
-public static func error(label: String, _ message: String) {
-```
-
-**Example**
-
-```swift
-Log.trace(label: "testLabel", "Test message")
-Log.debug(label: "testLabel", "Test message")
-Log.warning(label: "testLabel", "Test message")
-Log.error(label: "testLabel", "Test message")
-```
-
-#### Objective-C
-
-The log messages from the Adobe Experience SDK are printed to the Apple System Log facility and use a common format that contains the tag `AEP SDK`. For example, if logging an error message using `[AEPLog errorWithLabel: _ message:_]`, the printed output looks like `[AEP SDK ERROR <label>]: message`.
-
-**Syntax**
-
-```swift
-@objc(traceWithLabel:message:)
-public static func trace(label: String, _ message: String) 
-
-@objc(debugWithLabel:message:)
-public static func debug(label: String, _ message: String) 
-
-@objc(warningWithLabel:message:)
-public static func warning(label: String, _ message: String) 
-
-@objc(errorWithLabel:message:)
-public static func error(label: String, _ message: String) 
-```
-
-**Example**
-
-```objectivec
-[AEPLog traceWithLabel:@"testLabel" message:@"testMessage"];
-[AEPLog debugWithLabel:@"testLabel" message:@"testMessage"];
-[AEPLog warningWithLabel:@"testLabel" message:@"testMessage"];
-[AEPLog errorWithLabel:@"testLabel" message:@"testMessage"];
 ```
 
 <Variant platform="ios-acp" api="log" repeat="15"/>
@@ -686,38 +474,6 @@ public class MainApp extends Application {
       ...
     }
   }
-}
-```
-
-<Variant platform="ios-aep" api="register-extension" repeat="7"/>
-
-For iOS Swift libraries, registration is changed to a single API call (as shown in the snippets below). Calling the `MobileCore.start` API is no longer required.
-
-#### Swift
-
-**Example**
-
-```swift
-// AppDelegate.swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MobileCore.registerExtensions([Signal.self, Lifecycle.self, UserProfile.self, Edge.self, AEPEdgeIdentity.Identity.self, Consent.self, AEPIdentity.Identity.self, Analytics.self], {
-        MobileCore.configureWith(appId: "yourAppId")
-    })
-  ...
-}
-```
-
-#### Objective-C
-
-**Example**
-
-```objectivec
-// AppDelegate.m
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@[AEPMobileSignal.class, AEPMobileLifecycle.class, AEPMobileUserProfile.class, AEPMobileEdge.class, AEPMobileEdgeIdentity.class, AEPMobileEdgeConsent.class, AEPMobileIdentity.class, AEPMobileAnalytics.class] completion:^{
-    [AEPMobileCore configureWithAppId: @"yourAppId"];
-  }];
-  ...
 }
 ```
 
@@ -1076,68 +832,6 @@ void resetIdentities();
 MobileCore.resetIdentities();
 ```
 
-<Variant platform="ios-aep" api="reset-identities" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func resetIdentities()
-```
-
-**Example**
-
-```swift
-MobileCore.resetIdentities()
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-@objc(resetIdentities)
-static func resetIdentities()
-```
-
-**Example**
-
-```objectivec
-[AEPMobileCore resetIdentities];
-```
-
-<Variant platform="ios-aep" api="set-app-group" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-public static func setAppGroup(_ group: String?)
-```
-
-**Example**
-
-```swift
-MobileCore.setAppGroup("appGroupId")
-```
-
-#### Objective-C
-
-**Syntax**
-
-```swift
-@objc(setAppGroup:)
-public static func setAppGroup(_ group: String?)
-```
-
-**Example**
-
-```objectivec
-[AEPMobileCore setAppGroup:@"app-group-id"];
-```
-
 <Variant platform="ios-acp" api="set-app-group" repeat="10"/>
 
 #### Swift
@@ -1244,43 +938,6 @@ import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
 
 MobileCore.setLogLevel(LoggingMode.VERBOSE);
-```
-
-<Variant platform="ios-aep" api="set-log-level" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
- public static func setLogLevel(_ level: LogLevel)
-```
-
-**Example**
-
-```swift
-import AEPCore
-import AEPServices
-
-  MobileCore.setLogLevel(.trace)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```swift
- @objc(setLogLevel:)
- public static func setLogLevel(_ level: LogLevel)
-```
-
-**Example**
-
-```objectivec
-@import AEPCore;
-@import AEPServices;
-
- [AEPMobileCore setLogLevel: AEPLogLevelTrace];
 ```
 
 <Variant platform="ios-acp" api="set-log-level" repeat="10"/>
@@ -1459,37 +1116,6 @@ public static void setPushIdentifier(final String pushIdentifier);
 MobileCore.setPushIdentifier(token);
 ```
 
-<Variant platform="ios-aep" api="set-push-identifier" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-public static func setPushIdentifier(_ deviceToken: Data?)
-```
-
-**Example**
-
-```swift
-MobileCore.setPushIdentifier(deviceToken)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objc
- @objc(setPushIdentifier:)
- public static func setPushIdentifier(_ deviceToken: Data?)
-```
-
-**Example**
-
-```objectivec
- [AEPMobileCore setPushIdentifier:deviceToken];
-```
-
 <Variant platform="ios-acp" api="set-push-identifier" repeat="12"/>
 
 #### Swift
@@ -1610,43 +1236,6 @@ public static void trackAction(final String action, final Map<String, String> co
 Map<String, String> additionalContextData = new HashMap<String, String>();
 additionalContextData.put("customKey", "value");
 MobileCore.trackAction("loginClicked", additionalContextData);
-```
-
-<Variant platform="ios-aep" api="track-action" repeat="12"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
- static func track(action: String?, data: [String: Any]?)
-```
-
-* _action_ contains the name of the action to track.
-* _contextData_ contains the context data to attach on this hit.
-
-**Example**
-
-```swift
- MobileCore.track(action: "action name", data: ["key": "value"])
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objc
- @objc(trackAction:data:)
- static func track(action: String?, data: [String: Any]?)
-```
-
-* _action_ contains the name of the action to track.
-* _contextData_ contains the context data to attach on this hit.
-
-**Example**
-
-```objectivec
-  [AEPMobileCore trackAction:@"action name" data:@{@"key":@"value"}];
 ```
 
 <Variant platform="ios-acp" api="track-action" repeat="12"/>
@@ -1827,43 +1416,6 @@ public static void trackState(final String state, final Map<String, String> cont
 Map<String, String> additionalContextData = new HashMap<String, String>();        
 additionalContextData.put("customKey", "value");
 MobileCore.trackState("homePage", additionalContextData);
-```
-
-<Variant platform="ios-aep" api="track-state" repeat="12"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
- static func track(state: String?, data: [String: Any]?)
-```
-
-* _state_ contains the name of the state to track.
-* _contextData_ contains the context data to attach on this hit.
-
-**Example**
-
-```swift
- MobileCore.track(state: "state name", data: ["key": "value"])
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objc
- @objc(trackState:data:)
- static func track(state: String?, data: [String: Any]?)
-```
-
-* _state_ contains the name of the state to track.
-* _contextData_ contains the context data to attach on this hit.
-
-**Example**
-
-```objectivec
-  [AEPMobileCore trackState:@"state name" data:@{@"key":@"value"}];
 ```
 
 <Variant platform="ios-acp" api="track-state" repeat="12"/>
@@ -2079,86 +1631,6 @@ MobileCore.getPrivacyStatus(new AdobeCallbackWithError<MobilePrivacyStatus>() {
     // use MobilePrivacyStatus value
   }
 });
-```
-
-<Variant platform="ios-aep" api="public-classes" repeat="8"/>
-
-#### AEPError
-
-The `AEPError` enum shows the errors that can be passed to a completion handler callback from any API which uses one:
-
-* `case unexpected` - An unexpected error occured.
-* `case callbackTimeout` - The timeout was met.
-* `case callbackNil` -  The provided callback function is nil.
-* `case none` -  There was no error, used when an error return type is required but there was no error.
-* `case serverError` - There was a server error.
-* `case networkError` - There was a network error.
-* `case invalidRequest` - There was an invalid request.
-* `case invalidResponse` - There was an invalid response.
-* `case errorExtensionNotInitialized` - The extension is not initialized.
-
-**Example**
-
-**Swift**
-
-```swift
-MobileCore.getSdkIdentities { (content, error) in
-    if let error = error, let aepError = error as? AEPError {
-        switch aepError {
-        case .unexpected:
-          // Handle unexpected error
-        case .callbackTimeout:
-          // Handle callback timeout error
-        case .callbackNil:
-          // Handle callback being nil error
-        case .none:
-          // no error
-        case .serverError:
-          // handle server error
-        case .networkError:
-          // handle network error
-        case .invalidRequest:
-          // handle invalid request error
-        case .invalidResponse:
-          // handle invalid response error
-        case .errorExtensionNotInitialized:
-          // handle extension not initialized error
-        @unknown default:
-          // handle unknown error
-        }
-    }
-    ...
-}
-```
-
-**Objective-C**
-
-```objectivec
-[AEPMobileCore getSdkIdentities:^(NSString * _Nullable content, NSError * _Nullable error) {
-    if (error) {
-        if (error.code == AEPErrorUnexpected) {
-          // Handle unexpected error
-        } else if (error.code == AEPErrorCallbackTimeout) {
-          // Handle callback timeout error
-        } else if (error.code == AEPErrorCallbackNil) {
-          // Handle callback being nil error
-        } else if (error.code == AEPErrorNone) {
-          // no error     
-        } else if (error.code == AEPErrorServerError) {
-          // handle server error
-        } else if (error.code == AEPErrorNetworkError) {
-          // handle network error 
-        } else if (error.code == AEPErrorInvalidRequest) {
-          // handle invalid request error
-        } else if (error.code == AEPErrorInvalidResponse) {
-          // handle invalid response error  
-        } else if (error.code == AEPErrorErrorExtensionNotInitialized) {
-          // handle extension not intialized error  
-        }
-    }
-
-    ...
-}];
 ```
 
 <Variant platform="ios-acp" api="public-classes" repeat="8"/>

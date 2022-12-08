@@ -17,10 +17,6 @@ import com.adobe.marketing.mobile.CampaignClassic;
 import com.adobe.marketing.mobile.Lifecycle;
 ```
 
-<Variant platform="ios-aep" task="add" repeat="1"/>
-
-Adobe Campaign Classic has not yet been released as an AEP 3.x Swift extension. Please reach out to your Adobe customer account manager if you have any questions or would like to express interest in the AEP 3.x Campaign Classic extension.
-
 <Variant platform="ios-acp" task="add" repeat="8"/>
 
 1. Add the Campaign Classic and [Mobile Core](../mobile-core/index.md) libraries to your project.
@@ -75,10 +71,6 @@ public class CampaignClassicTestApp extends Application {
     }
 }
 ```
-
-<Variant platform="ios-aep" task="register" repeat="1"/>
-
-Adobe Campaign Classic has not yet been released as an AEP 3.x Swift extension. Please reach out to your Adobe customer account manager if you have any questions or would like to express interest in the AEP 3.x Campaign Classic extension.
 
 <Variant platform="ios-acp" task="register" repeat="5"/>
 
