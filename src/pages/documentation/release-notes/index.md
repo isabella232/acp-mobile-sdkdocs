@@ -35,14 +35,6 @@ Updated the following ACP React Native packages to remove the usage of deprecate
 - [@adobe/react-native-acpaudience v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpaudience/v/2.0.1)
 - [@adobe/react-native-acpanalytics v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpanalytics/v/2.0.1)
 
-## April 2, 2022
-
-### iOS AEPAssurance 1.1.4
-
-* Fixed a bug that caused Assurance to not connect to a session if your iOS app's `info.plist` contains a property of type `date`.
-
-Note: This release pertains to Assurance mobile extension that works with ACPCore
-
 ## March 30, 2022
 
 ## End of support for Adobe Experience Platform Mobile SDK plugins for Unity
