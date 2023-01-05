@@ -22,33 +22,17 @@ The SDK extension listens for events that contain GPS coordinates and geofence r
 
 ### Download and import the Places extension
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&task=download"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=download"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=download"/>
 
 ### Register the Places extension with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-Android
-
-<Tabs query="platform=android&task=register"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 
@@ -62,3 +46,7 @@ For more information about implementing and using Adobe Experience Platform Loca
 * [Cordova Places SDK GitHub readme](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)
 * [React Native Places SDK GitHub readme](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)
 * [Xamarin Places SDK GitHub readme](https://github.com/adobe/xamarin-acpplaces/blob/master/README.md)
+
+## API Reference
+
+A full API reference for the Android Places extension and iOS Places can be found [here](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-api-reference.html?lang=en).

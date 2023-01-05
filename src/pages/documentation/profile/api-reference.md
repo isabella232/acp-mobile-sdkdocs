@@ -8,7 +8,7 @@ The `extensionVersion()` API returns the version of the Profile extension.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -36,11 +36,15 @@ Xamarin
 
 The `getUserAttributes()` API gets the user profile attributes with the given keys.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=get-user-attributes"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=get-user-attributes"/>
 
 Flutter
 
@@ -60,7 +64,7 @@ Registers the Profile extension with the Mobile Core extension.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 
@@ -68,11 +72,15 @@ iOS (ACP 2.x)
 
 Removes the user profile attribute for the given key.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=remove-user-attribute"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=remove-user-attribute"/>
 
 Flutter
 
@@ -90,11 +98,15 @@ Xamarin
 
 Removes the user profile attributes for the given keys.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=remove-user-attributes"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=remove-user-attributes"/>
 
 Flutter
 
@@ -118,11 +130,15 @@ Remember the following information:
 * If the attribute exists, the value will be updated.
 * A null attribute value removes the attribute.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=update-user-attribute"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=update-user-attribute"/>
 
 Flutter
 
@@ -148,11 +164,15 @@ Allows you to create/update a batch of user profile attributes:
 * If the attribute already exists, the value is updated.
 * A null attribute value will remove the attribute.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=update-user-attributes"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=update-user-attributes"/>
 
 Flutter
 

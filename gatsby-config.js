@@ -124,6 +124,10 @@ module.exports = {
                                     {
                                         title: "Migration",
                                         path: "documentation/mobile-core/lifecycle/migration"
+                                    },
+                                    {
+                                        title: "Metrics",
+                                        path: "documentation/mobile-core/lifecycle/metrics"
                                     }
                                 ]
                             },

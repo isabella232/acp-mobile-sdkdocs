@@ -6,11 +6,7 @@ import Tabs from './tabs/api-reference.md'
 
 Returns the current version of the AEP Assurance extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
-
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS
 
@@ -44,11 +40,7 @@ The `startSession` API needs to be called to begin a AEP Assurance session. When
 
 You may call this API when the app launches with a URL (see code snippet below for sample usage)
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
-
-Android
-
-<Tabs query="platform=android&api=start-session"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
 iOS
 

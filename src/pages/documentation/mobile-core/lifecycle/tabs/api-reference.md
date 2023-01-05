@@ -121,7 +121,7 @@ If you need to collect additional lifecycle data:
 
 #### JavaScript
 
-When using React Native, starting to collect lifecycle data should be done in native code which is shown under the Android and iOS (ACP 2.x) tabs.
+When using React Native, starting to collect lifecycle data should be done in native code which is shown under the Android and iOS tabs.
 
 <Variant platform="cordova" api="lifecycle-start" repeat="2"/>
 
