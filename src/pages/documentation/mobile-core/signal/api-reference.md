@@ -8,17 +8,9 @@ The `extensionVersion()` API returns the version of the Signal extension that is
 
 To get the version of the Signal extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=extension-version"/>
 
@@ -47,17 +39,9 @@ Xamarin
 
 Registers the Signal extension with the Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
-Android
-
-<Tabs query="platform=android&api=register-extension"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=register-extension"/>
-
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&api=register-extension"/>
 

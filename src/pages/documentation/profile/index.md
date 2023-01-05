@@ -32,11 +32,15 @@ To get started with the Profile extension:
 
 To add the Profile extension to your app:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=add"/>
+
+React Native
+
+<Tabs query="platform=react-native&task=add"/>
 
 Cordova
 
@@ -55,7 +59,7 @@ Xamarin
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register"/>
 

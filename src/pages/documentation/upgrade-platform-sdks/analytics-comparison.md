@@ -10,11 +10,7 @@ The Adobe Experience Platform Analytics extension uses [tags](https://experience
 2. Configure your mobile app with the create mobile property.<br/>The AEP Mobile Core extension provides general functionality required by all the Adobe AEP extensions. The Configuration extension is built into the Mobile Core and contains the configureWithAppId API. This API is used to link the tag mobile property with your mobile app. The documentation for this API can be seen at the [Configuration API Reference](../mobile-core/configuration/api-reference.md#configurewithappid) page. A code sample showing the usage of this API is provided below.
 3. Once all the Platform extensions are imported and configured correctly, remove the v4 Mobile SDK dependency. <br/>This step is mandatory and a mix of v4 and AEP API calls is not supported.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&task=config"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS
 
@@ -44,11 +40,7 @@ For an overview of the API mapping between the Mobile Services SDK and Adobe Exp
 
 In your app's Application class add the Adobe Experience Platform extension registration and configuration code:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&task=aep-install"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS
 
@@ -60,11 +52,7 @@ For more details, see [Add Analytics to your application](../adobe-analytics/ind
 
 ### Track App State and Track App Actions
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&task=api-changes"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS
 
@@ -80,11 +68,7 @@ The privacy status API `setPrivacyStatus` and `getPrivacyStatus` can be found in
 
 **Opted out:** Analytics hits will be dropped.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
-
-Android
-
-<Tabs query="platform=android&task=privacy-changes"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 iOS
 

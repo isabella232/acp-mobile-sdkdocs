@@ -25,17 +25,9 @@ Go to the [Experience Platform Data Collection UI](https://experience.adobe.com/
 
 ### Import the library to your app code
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=import-library"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=import-library"/>
-
-iOS (AEP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=import-library"/>
 
@@ -61,17 +53,9 @@ Xamarin
 
 ### Register AEPAssurance with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="8"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
 
-Android
-
-<Tabs query="platform=android&task=register-assurance"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register-assurance"/>
-
-iOS (AEP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register-assurance"/>
 
@@ -103,14 +87,10 @@ To learn how to start sessions for other platforms, please read the [Platform As
 
 <InlineAlert variant="info" slots="text"/>
 
-You may call this API when the app launches with a url (see code snippet below for sample usage) <br/><br/> The AEP Assurance Android extension does not require this API to be called since it registers the app lifecycle handlers which automatically pick up any deep links and use them to start the session.<br/><br/>When using the AEP Assurance iOS extension, you should call this API when the app launches with a URL (see code snippet below for sample usage).
+You may call this API when the app launches with a url (see code snippet below for sample usage) <br/><br/> The Assurance Android extension does not require this API to be called since it registers the app lifecycle handlers which automatically pick up any deep links and use them to start the session.<br/><br/>When using the Assurance iOS extension, you should call this API when the app launches with a URL (see code snippet below for sample usage).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&task=register-assurance"/>
-
-iOS (AEP 1.x)
+iOS
 
 <Tabs query="platform=ios-acp&task=register-assurance"/>

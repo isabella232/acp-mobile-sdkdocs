@@ -10,22 +10,6 @@ Release notes and change logs for the Adobe Experience Platform Assurance extens
 
 Note: This release pertains to Assurance mobile extension that works with ACPCore
 
-## February 22, 2022
-
-### iOS Assurance 3.0.1
-
-* Add support for transmitting large events.
-* Assurance extension now prompts an error message when attempting to connect to a deleted session.
-* Improved logging for troubleshooting.
-* Fixed an issue to ensure that event collection stops on session disconnection.
-
-### Android Assurance 1.0.4
-
-* Add support for transmitting large events.
-* Assurance extension now prompts an error message when attempting to connect to a deleted session.
-* Improved logging for troubleshooting.
-* Fixed an issue to ensure that event collection stops on session disconnection.
-
 ## January 14, 2022
 
 ### Flutter Assurance 2.0.1
@@ -60,19 +44,9 @@ This major release introduces support for following:
 
 - Updated to support Flutter 2.0 and null safety.
 
-## June 28, 2021
-
-### iOS AEPAssurance 3.0.0
-
-* Initial release to support [Adobe Experience Platform Assurance](./index.md) for Adobe Experience Platform Mobile SDKs for iOS in Swift. This library as available as an [open sourced project on Github](https://github.com/adobe/aepsdk-assurance-ios).
-
 ## June 17, 2021
 
 ### iOS Assurance 1.1.3
-
-* Assurance state is now properly shared when reconnecting to an established session.
-
-### Android Assurance 1.0.3
 
 * Assurance state is now properly shared when reconnecting to an established session.
 
@@ -87,14 +61,6 @@ This major release introduces support for following:
 * Bug fix that ensures the Griffon UI will always correctly show the number of connected devices.
 * Various security fixes.
 
-### Android Assurance 1.0.2
-
-* Support for Shared States in XDM format when using the AEPEdge extension.
-* Lifecycle install and launch hits are now captured for Adobe Analytics debugging.
-* Sends extension-specific state events when connecting to a Griffon session.
-* Better error handling when reaching activity or Griffon session limits.
-* Various security fixes.
-
 ## December 18, 2020
 
 ### iOS Assurance 1.1.0
@@ -102,12 +68,6 @@ This major release introduces support for following:
 * The AEP SDKs are now distributed using XCFrameworks in order to support hardware with the new Apple M1 architecture while maintaining support for existing Intel architecture.
   * **IMPORTANT**: Upgrading to XCFrameworks distribution requires Xcode 12.0 or newer
   * **IMPORTANT**: If using Cocoapods, upgrading to the XCFrameworks distribution requires Cocoapods 1.10.0 or newer
-
-## November 24, 2020
-
-### Android Assurance 1.0.1
-
-* Fixed a bug that triggered ANR (Application not responsive) error while initializing webview.
 
 ## November 23, 2020
 
@@ -135,9 +95,5 @@ This major release introduces support for following:
 ## October 05, 2020
 
 ### iOS Assurance 1.0.0
-
-* General availability and release of [Adobe Experience Platform Assurance](./index.md) that enables capabilities of [Project Griffon](./index.md)
-
-### Android Assurance 1.0.0
 
 * General availability and release of [Adobe Experience Platform Assurance](./index.md) that enables capabilities of [Project Griffon](./index.md)
