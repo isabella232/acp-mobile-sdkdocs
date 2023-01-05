@@ -12,15 +12,18 @@
 module.exports = {
     pathPrefix: process.env.PATH_PREFIX || '/client-sdks/acp/',
     siteMetadata: {
-        versions: [{
-                title: 'AEP SDKs',
-                selected: '/client-sdks/aep/'
-            },
+        versions: [
             {
-                title: 'ACP SDKs',
-                path: true
-            }
-        ],
+                title: 'AEP SDKs',
+                path: '/client-sdks/',
+  
+              },
+              {
+                title: 'ACP SDKs apis',
+                path: '/client-sdks/acp/',
+                selected: true
+              }
+          ],
         pages: [{
             title: 'Documentation',
             path: '/documentation',
