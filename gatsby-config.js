@@ -14,12 +14,12 @@ module.exports = {
     siteMetadata: {
         versions: [
             {
-                title: 'AEP SDKs',
+                title: 'Latest version',
                 path: '/client-sdks/documentation',
   
               },
               {
-                title: 'ACP SDKs apis',
+                title: 'Previous versions',
                 path: '/client-sdks/acp/documentation',
                 selected: true
               }
