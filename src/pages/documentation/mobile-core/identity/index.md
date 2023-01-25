@@ -25,7 +25,7 @@ To get started with Identity, complete the following steps:
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 React Native
 
@@ -57,7 +57,7 @@ To register the Identity extension, use the following code sample:
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 React Native
 
@@ -113,7 +113,7 @@ To use the same visitor ID in the app and mobile web and pass the visitor ID to 
 
 iOS
 
-<Tabs query="platform=ios-acp&task=implement"/>
+<Tabs query="platform=ios&task=implement"/>
 
 React Native
 

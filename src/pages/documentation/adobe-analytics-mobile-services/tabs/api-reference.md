@@ -6,7 +6,7 @@
 String mobileServicesExtensionVersion = MobileServices.extensionVersion();
 ```
 
-<Variant platform="ios-acp" api="extension-version" repeat="4"/>
+<Variant platform="ios" api="extension-version" repeat="4"/>
 
 #### Objective-C
 
@@ -43,7 +43,7 @@ Uri testUri = new Uri.Builder()
         MobileServices.trackAdobeDeepLink(testUri);
 ```
 
-<Variant platform="ios-acp" api="track-adobe-deep-link" repeat="7"/>
+<Variant platform="ios" api="track-adobe-deep-link" repeat="7"/>
 
 **Syntax**
 

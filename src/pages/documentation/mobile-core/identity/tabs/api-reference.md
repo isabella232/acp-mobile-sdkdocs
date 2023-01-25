@@ -29,7 +29,7 @@ Identity.appendVisitorInfoForURL("https://example.com", new AdobeCallback<String
 });
 ```
 
-<Variant platform="ios-acp" api="append-to-url" repeat="12"/>
+<Variant platform="ios" api="append-to-url" repeat="12"/>
 
 Method `appendToUrl:withCompletionHandler` was added in ACPCore version 2.5.0 and ACPIdentity version 2.2.0.
 
@@ -269,7 +269,7 @@ class StringCallback : Java.Lang.Object, IAdobeCallback
 String identityExtensionVersion = Identity.extensionVersion();
 ```
 
-<Variant platform="ios-acp" api="extension-version" repeat="10"/>
+<Variant platform="ios" api="extension-version" repeat="10"/>
 
 #### Swift
 
@@ -395,7 +395,7 @@ Identity.getExperienceCloudId(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-experience-cloud-id" repeat="12"/>
+<Variant platform="ios" api="get-experience-cloud-id" repeat="12"/>
 
 Method `getExperienceCloudIdWithCompletionHandler` was added in ACPCore version 2.5.0 and ACPIdentity version 2.2.0.
 
@@ -611,7 +611,7 @@ Identity.getIdentifiers(new AdobeCallback<List<VisitorID>>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-identifiers" repeat="12"/>
+<Variant platform="ios" api="get-identifiers" repeat="12"/>
 
 Method `getIdentifiersWithCompletionHandler` was added in ACPCore version 2.5.0 and ACPIdentity version 2.2.0.
 
@@ -852,7 +852,7 @@ Identity.getUrlVariables(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-url-variables" repeat="12"/>
+<Variant platform="ios" api="get-url-variables" repeat="12"/>
 
 Method `getUrlVariables` was added in ACPCore version 2.3.0 and ACPIdentity version 2.1.0. Method `getUrlVariablesWithCompletionHandler` was added in ACPCore version 2.5.0 and ACPIdentity version 2.2.0.
 
@@ -1104,7 +1104,7 @@ super.onCreate();
 }
 ```
 
-<Variant platform="ios-acp" api="register-extension" repeat="7"/>
+<Variant platform="ios" api="register-extension" repeat="7"/>
 
 Register the Identity extension in your app's `didFinishLaunchingWithOptions` function:
 
@@ -1259,7 +1259,7 @@ public void onResume() {
 }
 ```
 
-<Variant platform="ios-acp" api="set-advertising-identifier" repeat="13"/>
+<Variant platform="ios" api="set-advertising-identifier" repeat="13"/>
 
 To access IDFA and handle it correctly in your mobile application, see [Apple developer documentation about IDFA](https://developer.apple.com/documentation/adsupport/asidentifiermanager)
 
@@ -1526,7 +1526,7 @@ public static void setPushIdentifier(final String pushIdentifier);
 MobileCore.setPushIdentifier(token);
 ```
 
-<Variant platform="ios-acp" api="set-push-identifier" repeat="11"/>
+<Variant platform="ios" api="set-push-identifier" repeat="11"/>
 
 #### Swift
 
@@ -1602,7 +1602,7 @@ Identity.syncIdentifier("idType",
                         VisitorID.AuthenticationState.AUTHENTICATED);
 ```
 
-<Variant platform="ios-acp" api="sync-identifier" repeat="11"/>
+<Variant platform="ios" api="sync-identifier" repeat="11"/>
 
 #### Swift
 
@@ -1786,7 +1786,7 @@ identifiers.put("idType3", "idValue3");
 Identity.syncIdentifiers(identifiers);
 ```
 
-<Variant platform="ios-acp" api="sync-identifiers" repeat="11"/>
+<Variant platform="ios" api="sync-identifiers" repeat="11"/>
 
 #### Swift
 
@@ -1973,7 +1973,7 @@ identifiers.put("idType3", "idValue3");
 Identity.syncIdentifiers(identifiers, VisitorID.AuthenticationState.AUTHENTICATED);
 ```
 
-<Variant platform="ios-acp" api="sync-identifiers-overloaded" repeat="11"/>
+<Variant platform="ios" api="sync-identifiers-overloaded" repeat="11"/>
 
 #### Swift
 
@@ -2183,7 +2183,7 @@ public class VisitorID {
 }
 ```
 
-<Variant platform="ios-acp" api="public-classes" repeat="6"/>
+<Variant platform="ios" api="public-classes" repeat="6"/>
 
 **ACPMobileVisitorAuthenticationState**
 

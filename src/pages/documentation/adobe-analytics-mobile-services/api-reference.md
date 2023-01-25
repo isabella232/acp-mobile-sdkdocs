@@ -10,15 +10,11 @@ The `extensionVersion()` API returns the version of the Mobile Services extensio
 
 <!-- Android
 
-<Tabs query="platform=android&api=extension-version"/>
-
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/> -->
+<Tabs query="platform=android&api=extension-version"/> -->
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 ## processReferrer
 
@@ -133,4 +129,4 @@ You can use this API to track a deep link or a marketing link, as long as the li
 
 iOS
 
-<Tabs query="platform=ios-acp&api=track-adobe-deep-link"/>
+<Tabs query="platform=ios&api=track-adobe-deep-link"/>

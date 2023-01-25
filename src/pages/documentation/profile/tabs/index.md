@@ -10,35 +10,7 @@
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios-aep" task="add" repeat="7"/>
-
-1. Add the Mobile Core and Profile extensions to your project using Cocoapods. Add following pods in your `Podfile`:
-
-```ruby
-use_frameworks!
-target 'YourTargetApp' do
-    pod 'AEPCore', '~> 3.0'
-    pod 'AEPUserProfile', '~> 3.0'
-end
-```
-
-2. Import the UserProfile library.  
-
-#### Swift
-
-```swift
-   import AEPCore
-   import AEPUserProfile
-```
-
-#### Objective-C
-
-```objectivec
-   @import AEPCore;
-   @import AEPUserProfile;
-```
-
-<Variant platform="ios-acp" task="add" repeat="7"/>
+<Variant platform="ios" task="add" repeat="7"/>
 
 1. Add the Mobile Core and Profile extensions to your project using Cocoapods. Add following pods in your `Podfile`:
 
@@ -129,33 +101,7 @@ This can be done after calling `setApplication()` in the `onCreate()` method. He
    }
 ```
 
-<Variant platform="ios-aep" task="register" repeat="4"/>
-
-#### Swift
-
-```swift
-// AppDelegate.swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MobileCore.registerExtensions([UserProfile.self], {
-  })
-  ...
-}
-```
-
-#### Objective-C
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AEPMobileCore registerExtensions:@AEPMobileUserProfile.class] completion:^{
-    ...
-  }];
-  ...
-  // Override point for customization after application launch.
-  return YES;
-}
-```
-
-<Variant platform="ios-acp" task="register" repeat="4"/>
+<Variant platform="ios" task="register" repeat="4"/>
 
 #### Swift
 

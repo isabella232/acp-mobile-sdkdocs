@@ -22,11 +22,11 @@ You should see a dialog box similar to the following:
 
 The necessary dependencies and initialization code can be copied from the dialog box to your mobile application project.
 
-<Variant platform="ios-acp" task="get" repeat="8"/>
+<Variant platform="ios" task="get" repeat="8"/>
 
 Adobe Experience Platform SDKs for iOS support **iOS 10 or later**; **requires** Swift 5.1 or newer; **and** Xcode 11.0 or newer.
 
-In order to support the new Apple M1 architecture while maintaining support for existing Intel architecture, the Adobe Experience Platform SDKs are now distributed using XCFrameworks. <br/><br/>Please see the [release notes](../release-notes/2020#december-18-2020) and the document on [current SDK versions](../resources/upgrading-to-aep/current-sdk-versions.md) for more information on the latest extension versions.
+In order to support the new Apple M1 architecture while maintaining support for existing Intel architecture, the Adobe Experience Platform SDKs are now distributed using XCFrameworks. <br/><br/>Please see the [release notes](../release-notes/2020#december-18-2020) and the document on [current SDK versions](../resources/upgrading-to-aep/sdk-versions.md) for more information on the latest extension versions.
 
 1. Open a previously created and configured **Mobile** property in the Data Collection UI, and select the **Environments** tab, followed by the install package icon, as seen below.
 
@@ -121,7 +121,7 @@ implementation 'com.adobe.marketing.mobile:userprofile:1.+'
 implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
 ```
 
-<Variant platform="ios-acp" task="add-dependencies" repeat="8"/>
+<Variant platform="ios" task="add-dependencies" repeat="8"/>
 
 Create a `Podfile` if you do not already have one:
 
@@ -193,7 +193,7 @@ public class MainApp extends Application {
 }
 ```
 
-<Variant platform="ios-acp" task="add-initialization" repeat="5"/>
+<Variant platform="ios" task="add-initialization" repeat="5"/>
 
 The following snippet shows an example of how to add the initialization code. Note that this may need to be adjusted, depending on how your application is structured.
 

@@ -21,7 +21,7 @@ Adobe Audience Manager is a versatile audience data management platform. With th
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 React Native
 
@@ -33,7 +33,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 React Native
 

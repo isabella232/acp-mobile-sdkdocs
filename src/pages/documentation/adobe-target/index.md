@@ -35,7 +35,7 @@ To add the Target extension to your app:
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 React Native
 
@@ -49,7 +49,7 @@ To register the Target extension with Mobile Core:
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 React Native
 
@@ -67,7 +67,7 @@ The `TargetOrder` class encapsulates the order ID, the order total, and the purc
 
 iOS
 
-<Tabs query="platform=ios-acp&task=target-order"/>
+<Tabs query="platform=ios&task=target-order"/>
 
 React Native
 
@@ -81,7 +81,7 @@ The `TargetProduct` class encapsulates the product ID and the product category I
 
 iOS
 
-<Tabs query="platform=ios-acp&task=target-product"/>
+<Tabs query="platform=ios&task=target-product"/>
 
 React Native
 
@@ -95,7 +95,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&task=target-parameters"/>
+<Tabs query="platform=ios&task=target-parameters"/>
 
 React Native
 
@@ -131,7 +131,7 @@ The mbox request that failed can be retried to successfully retrieve the test of
 
 iOS
 
-<Tabs query="platform=ios-acp&task=visual-preview"/>
+<Tabs query="platform=ios&task=visual-preview"/>
 
 ## Offer Prefetch
 

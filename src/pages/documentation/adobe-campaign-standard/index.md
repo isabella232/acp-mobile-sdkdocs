@@ -67,7 +67,7 @@ The instructions to add these extensions to your mobile app are also available i
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 React Native
 
@@ -80,7 +80,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 React Native
 
@@ -94,7 +94,7 @@ To initialize the SDK and set up tracking, see the [initialize the SDK and set u
 
 iOS
 
-<Tabs query="platform=ios-acp&task=initialize"/>
+<Tabs query="platform=ios&task=initialize"/>
 
 ### Set up push messaging
 
@@ -110,7 +110,7 @@ To learn more about creating a push notification using Adobe Campaign, see the t
 
 iOS
 
-<Tabs query="platform=ios-acp&task=push-messaging"/>
+<Tabs query="platform=ios&task=push-messaging"/>
 
 React Native
 
@@ -128,7 +128,7 @@ The code samples below are provided as examples on how to correctly invoke the `
 
 iOS
 
-<Tabs query="platform=ios-acp&task=track"/>
+<Tabs query="platform=ios&task=track"/>
 
 ### Deleting mobile properties in the Data Collection UI
 
@@ -152,7 +152,7 @@ A destination URL can be added to in-app messages that are delivered from Adobe 
 
 iOS
 
-<Tabs query="platform=ios-acp&task=handling"/>
+<Tabs query="platform=ios&task=handling"/>
 
 ### Customizing the frequency of registration requests sent to Campaign
 
@@ -166,6 +166,6 @@ The configuration setting to pause registration requests is provided for specifi
 
 iOS
 
-<Tabs query="platform=ios-acp&task=customize"/>
+<Tabs query="platform=ios&task=customize"/>
 
 Giving a value of `0` when setting `campaign.registrationDelay` will send a registration request on every launch event. This is the previous behavior seen before the registration request reduction enhancement was added.

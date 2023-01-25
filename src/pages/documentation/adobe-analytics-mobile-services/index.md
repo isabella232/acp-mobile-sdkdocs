@@ -109,7 +109,7 @@ iOS AEP (3.x) Mobile Services extension only supports Cocoapods. It does **not**
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 ## Register Mobile Services with Mobile Core
 
@@ -117,7 +117,7 @@ iOS
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 ## Implement Mobile Services APIs in your app
 
@@ -129,7 +129,7 @@ To use your Android or iOS extension with the Experience Platform SDKs, implemen
 
 iOS
 
-<Tabs query="platform=ios-acp&task=set-push-messaging"/>
+<Tabs query="platform=ios&task=set-push-messaging"/>
 
 ### Debugging the push messaging set up
 
@@ -153,7 +153,7 @@ Using the following API does not increment page views.
 
 iOS
 
-<Tabs query="platform=ios-acp&task=set-push-tracking"/>
+<Tabs query="platform=ios&task=set-push-tracking"/>
 
 ## Troubleshooting push messaging
 
@@ -384,7 +384,7 @@ Ensure that the deep link URL has the `a.deeplink.id` key in the URL string. If 
 
 iOS
 
-<Tabs query="platform=ios-acp&task=track-deep-link"/>
+<Tabs query="platform=ios&task=track-deep-link"/>
 
 ## Integration with Apple Search Ads (iOS)
 

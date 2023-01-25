@@ -8,7 +8,7 @@ Import the library:
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios-acp" task="add" repeat="5"/>
+<Variant platform="ios" task="add" repeat="5"/>
 
 #### Swift
 
@@ -91,7 +91,7 @@ super.onCreate();
 }
 ```
 
-<Variant platform="ios-acp" task="register" repeat="5"/>
+<Variant platform="ios" task="register" repeat="5"/>
 
 Register the Identity extension in your app's `didFinishLaunchingWithOptions` function:
 
@@ -231,7 +231,7 @@ Identity.getUrlVariables(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-acp" task="implement" repeat="5"/>
+<Variant platform="ios" task="implement" repeat="5"/>
 
 #### Objective-C
 

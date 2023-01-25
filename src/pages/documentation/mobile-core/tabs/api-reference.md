@@ -6,7 +6,7 @@ The Android SDK automatically registers an `Application.ActivityLifecycleCallbac
 * Tracking push message clickthrough
 * Tracking Local Notification clickthrough
 
-<Variant platform="ios-acp" api="collect-launch-info" repeat="14"/>
+<Variant platform="ios" api="collect-launch-info" repeat="14"/>
 
 #### Swift
 
@@ -72,7 +72,7 @@ data.put("firstname", "customer");
 MobileCore.collectPII(data);
 ```
 
-<Variant platform="ios-acp" api="collect-pii" repeat="10"/>
+<Variant platform="ios" api="collect-pii" repeat="10"/>
 
 #### Swift
 
@@ -186,7 +186,7 @@ public static LoggingMode getLogLevel()
 LoggingMode mode = MobileCore.getLogLevel();
 ```
 
-<Variant platform="ios-acp" api="get-log-level" repeat="10"/>
+<Variant platform="ios" api="get-log-level" repeat="10"/>
 
 #### Swift
 
@@ -269,7 +269,7 @@ MobileCore.getSdkIdentities(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-sdk-identities" repeat="9"/>
+<Variant platform="ios" api="get-sdk-identities" repeat="9"/>
 
 #### Objective-C
 
@@ -340,7 +340,7 @@ MobileCore.log(LoggingMode.DEBUG, "MyClassName", "Provided data was null");
 D/AdobeExperienceSDK: MyClassName - Provided data was null
 ```
 
-<Variant platform="ios-acp" api="log" repeat="15"/>
+<Variant platform="ios" api="log" repeat="15"/>
 
 #### Objective-C
 
@@ -477,7 +477,7 @@ public class MainApp extends Application {
 }
 ```
 
-<Variant platform="ios-acp" api="register-extension" repeat="7"/>
+<Variant platform="ios" api="register-extension" repeat="7"/>
 
 The following snippet shows an example of how to add the initialization code. Note that this may need to be adjusted, depending on how your application is structured.
 
@@ -796,7 +796,7 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
 }
 ```
 
-<Variant platform="ios-acp" api="register-url-handler" repeat="5"/>
+<Variant platform="ios" api="register-url-handler" repeat="5"/>
 
 #### Objective-C
 
@@ -832,7 +832,7 @@ void resetIdentities();
 MobileCore.resetIdentities();
 ```
 
-<Variant platform="ios-acp" api="set-app-group" repeat="10"/>
+<Variant platform="ios" api="set-app-group" repeat="10"/>
 
 #### Swift
 
@@ -940,7 +940,7 @@ import com.adobe.marketing.mobile.MobileCore;
 MobileCore.setLogLevel(LoggingMode.VERBOSE);
 ```
 
-<Variant platform="ios-acp" api="set-log-level" repeat="10"/>
+<Variant platform="ios" api="set-log-level" repeat="10"/>
 
 #### Swift
 
@@ -1116,7 +1116,7 @@ public static void setPushIdentifier(final String pushIdentifier);
 MobileCore.setPushIdentifier(token);
 ```
 
-<Variant platform="ios-acp" api="set-push-identifier" repeat="12"/>
+<Variant platform="ios" api="set-push-identifier" repeat="12"/>
 
 #### Swift
 
@@ -1238,7 +1238,7 @@ additionalContextData.put("customKey", "value");
 MobileCore.trackAction("loginClicked", additionalContextData);
 ```
 
-<Variant platform="ios-acp" api="track-action" repeat="12"/>
+<Variant platform="ios" api="track-action" repeat="12"/>
 
 #### Swift
 
@@ -1418,7 +1418,7 @@ additionalContextData.put("customKey", "value");
 MobileCore.trackState("homePage", additionalContextData);
 ```
 
-<Variant platform="ios-acp" api="track-state" repeat="12"/>
+<Variant platform="ios" api="track-state" repeat="12"/>
 
 #### Swift
 
@@ -1633,7 +1633,7 @@ MobileCore.getPrivacyStatus(new AdobeCallbackWithError<MobilePrivacyStatus>() {
 });
 ```
 
-<Variant platform="ios-acp" api="public-classes" repeat="8"/>
+<Variant platform="ios" api="public-classes" repeat="8"/>
 
 #### ACPError
 

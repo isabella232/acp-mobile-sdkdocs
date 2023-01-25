@@ -5,25 +5,7 @@ contributors:
   - https://github.com/icaraps 
 ---
 
-# Mobile SDK documentation
-
-<InlineAlert variant="success" slots="header, text"/>
-
-Good to go for iOS 15
-
-Adobe Experience Platform Mobile SDKs have been functionally tested on iOS 15 release candidate versions. Please make sure you use [current SDK versions](#) to ensure compatibility.
-
-<InlineAlert variant="info" slots="header, text"/>
-
-Are you interested in Kotlin?
-
-The Adobe Mobile SDK team is looking for feedback on better supporting customers that are currently or planning to use Kotlin in their mobile applications. If you're interested in a Kotlin-based version of the Adobe Experience Platform Mobile SDK, please fill out the [following survey](https://forms.office.com/r/5E5d7pJivG).
-
-<InlineAlert variant="info" slots="header, text"/>
-
-The Swift versions of the iOS SDKs have been released! 
-
-For more information on the Swift versions, including available Swift extensions and reference information, please read the [current SDK versions document](#).<br/><br/>Additionally, the Swift iOS SDKs are open source. You can learn more about this move to Swift and open source in the [Adobe Tech Blog](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4).
+# Mobile SDK documentation (Previous versions)
 
 <InlineAlert variant="success" slots="header, text"/>
 
@@ -37,25 +19,19 @@ The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud so
 
 The SDK is comprised of the Mobile Core and a series of modular Adobe Experience Cloud solutions or third-party vendor extensions that depend on the Mobile Core. Extensions interact with the Mobile Core to provide features specific to the solution or service they represent.
 
-Experience Platform Mobile SDKs are available for Android, iOS, and a [variety](#) of cross-platform development frameworks. SDKs configuration is managed through the Data Collection UI for flexible configuration and extensible, rules-based integrations.
-
-<Media slots="video"/>
-
-<https://www.youtube.com/watch?v=p_TZ6_z2D0E>
+Experience Platform Mobile SDKs are available for Android, iOS, and a variety of cross-platform development frameworks. SDKs configuration is managed through the Data Collection UI for flexible configuration and extensible, rules-based integrations.
 
 ## Supported platforms
 
 The Adobe Experience Platform Mobile SDK supports the following platforms:
 
-- [Android](#)
-- [iOS - Swift](#)
-- [iOS - Objective-C](#)
-- [Cordova](#)
-- [React Native](#)
-- [Flutter (beta)](#)
-- [Unity](#)
-- [WeChat Mini Programs](#)
-- [Xamarin](#)
+- [Android](./sdk-versions.md#android)
+- [iOS](./sdk-versions.md#ios)
+- [Cordova](./sdk-versions.md#cordova)
+- [React Native](./sdk-versions.md#react-native)
+- [Flutter](./sdk-versions.md#flutter)
+- [Unity](./sdk-versions.md#unity)
+- [Xamarin](./sdk-versions.md#xamarin)
 
 ## Get help
 

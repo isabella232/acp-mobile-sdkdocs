@@ -10,7 +10,7 @@ The `extensionVersion()` API returns the version of the Profile extension.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -40,7 +40,7 @@ The `getUserAttributes()` API gets the user profile attributes with the given ke
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-user-attributes"/>
+<Tabs query="platform=ios&api=get-user-attributes"/>
 
 React Native
 
@@ -66,7 +66,7 @@ Registers the Profile extension with the Mobile Core extension.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 ## removeUserAttribute
 
@@ -76,7 +76,7 @@ Removes the user profile attribute for the given key.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=remove-user-attribute"/>
+<Tabs query="platform=ios&api=remove-user-attribute"/>
 
 React Native
 
@@ -102,7 +102,7 @@ Removes the user profile attributes for the given keys.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=remove-user-attributes"/>
+<Tabs query="platform=ios&api=remove-user-attributes"/>
 
 React Native
 
@@ -134,7 +134,7 @@ Remember the following information:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=update-user-attribute"/>
+<Tabs query="platform=ios&api=update-user-attribute"/>
 
 React Native
 
@@ -168,7 +168,7 @@ Allows you to create/update a batch of user profile attributes:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=update-user-attributes"/>
+<Tabs query="platform=ios&api=update-user-attributes"/>
 
 React Native
 

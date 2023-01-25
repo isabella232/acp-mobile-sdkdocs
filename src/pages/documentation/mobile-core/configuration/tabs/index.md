@@ -14,7 +14,7 @@ public static void configureWithAppID(final String appId);
 MobileCore.configureWithAppId("1423ae38-8385-8963-8693-28375403491d");
 ```
 
-<Variant platform="ios-acp" task="configure" repeat="11"/>
+<Variant platform="ios" task="configure" repeat="11"/>
 
 #### Swift
 
@@ -102,7 +102,7 @@ data.put("global.privacy", "optedout");
 MobileCore.updateConfiguration(data);
 ```
 
-<Variant platform="ios-acp" task="update" repeat="10"/>
+<Variant platform="ios" task="update" repeat="10"/>
 
 #### Swift
 
@@ -242,7 +242,7 @@ MobileCore.configureWithFileInPath("absolute/path/to/exampleJSONfile.json");
 MobileCore.configureWithFileInAssets("exampleJSONfile.json");
 ```
 
-<Variant platform="ios-acp" task="bundle" repeat="10"/>
+<Variant platform="ios" task="bundle" repeat="10"/>
 
 #### Swift
 

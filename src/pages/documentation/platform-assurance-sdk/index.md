@@ -29,7 +29,7 @@ Go to the [Experience Platform Data Collection UI](https://experience.adobe.com/
 
 iOS
 
-<Tabs query="platform=ios-acp&task=import-library"/>
+<Tabs query="platform=ios&task=import-library"/>
 
 React Native
 
@@ -57,7 +57,7 @@ Xamarin
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register-assurance"/>
+<Tabs query="platform=ios&task=register-assurance"/>
 
 React Native
 
@@ -93,4 +93,4 @@ You may call this API when the app launches with a url (see code snippet below f
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register-assurance"/>
+<Tabs query="platform=ios&task=register-assurance"/>

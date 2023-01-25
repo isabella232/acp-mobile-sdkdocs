@@ -17,7 +17,7 @@ import com.adobe.marketing.mobile.CampaignClassic;
 import com.adobe.marketing.mobile.Lifecycle;
 ```
 
-<Variant platform="ios-acp" task="add" repeat="8"/>
+<Variant platform="ios" task="add" repeat="8"/>
 
 1. Add the Campaign Classic and [Mobile Core](../mobile-core/index.md) libraries to your project.
 
@@ -72,7 +72,7 @@ public class CampaignClassicTestApp extends Application {
 }
 ```
 
-<Variant platform="ios-acp" task="register" repeat="5"/>
+<Variant platform="ios" task="register" repeat="5"/>
 
 In your app's `application:didFinishLaunchingWithOptions:` method, register the Campaign Classic and Lifecycle extensions:
 

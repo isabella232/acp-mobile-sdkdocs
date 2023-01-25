@@ -10,19 +10,15 @@ The `extensionVersion()` API returns the version of the Media extension that is 
 
 To get the version of the Media extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=extension-version"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=extension-version"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -36,19 +32,15 @@ Creates a media tracker instance that tracks the playback session. The tracker c
 
 The createTracker function with a callback has been **deprecated**. Please use the synchronous version of this API instead.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-tracker"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-tracker"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-tracker"/>
+<Tabs query="platform=ios&api=create-tracker"/>
 
 React Native
 
@@ -67,19 +59,15 @@ Creates a media tracker instance based on the configuration to track the playbac
 
 The createTracker function with a callback has been **deprecated**. Please use the synchronous version of this API instead.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-tracker-with-config"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-tracker-with-config"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-tracker-with-config"/>
+<Tabs query="platform=ios&api=create-tracker-with-config"/>
 
 React Native
 
@@ -97,19 +85,15 @@ Creates an instance of the Media object.
 | `streamType` | [Stream type](#stream-type) | Yes |
 | `mediaType` | [Media type](#media-type) | Yes |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-media-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-media-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-media-object"/>
+<Tabs query="platform=ios&api=create-media-object"/>
 
 React Native
 
@@ -125,19 +109,15 @@ Creates an instance of the AdBreak object.
 | `position` | The number position of the ad break within the content, starting with 1. | Yes |
 | `startTime` | Playhead value at the start of the ad break. | Yes |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-ad-break-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-ad-break-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-ad-break-object"/>
+<Tabs query="platform=ios&api=create-ad-break-object"/>
 
 React Native
 
@@ -154,19 +134,15 @@ Creates an instance of the Ad object.
 | `position` | The number position of the ad within the ad break, starting with 1. | Yes |
 | `length` | Ad length | Yes |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-ad-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-ad-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-ad-object"/>
+<Tabs query="platform=ios&api=create-ad-object"/>
 
 React Native
 
@@ -183,19 +159,15 @@ Creates an instance of the Chapter object.
 | `length` | Chapter length | Yes |
 | `startTime` | Playhead value at the start of the chapter | Yes |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-chapter-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-chapter-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-chapter-object"/>
+<Tabs query="platform=ios&api=create-chapter-object"/>
 
 React Native
 
@@ -216,19 +188,15 @@ Creates an instance of the QoE object.
 
 All the QoE values `bitrate`, `startupTime`, `fps`, `droppedFrames` would be converted to `long` for reporting purposes.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-qoe-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-qoe-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-qoe-object"/>
+<Tabs query="platform=ios&api=create-qoe-object"/>
 
 React Native
 
@@ -242,19 +210,15 @@ Creates an instance of the Player State object.
 | :--- | :--- | :---: |
 | `name` | State name(Use [Player State constants](#player-state-constants) to track standard player states) | Yes |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=create-state-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=create-state-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=create-state-object"/>
+<Tabs query="platform=ios&api=create-state-object"/>
 
 React Native
 
@@ -271,19 +235,15 @@ Tracks the intention to start playback. This starts a tracking session on the me
 | `mediaInfo` | Media information created using the [createMediaObject](#createmediaobject) method. | Yes |
 | `contextData` | Optional Media context data. For standard metadata keys, use [standard video constants](#standard-video-constants) or [standard audio constants](#standard-audio-constants). | No |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-session-start"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-session-start"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-session-start"/>
+<Tabs query="platform=ios&api=track-session-start"/>
 
 React Native
 
@@ -293,19 +253,15 @@ React Native
 
 Tracks the media play, or resume, after a previous pause.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-play"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-play"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-play"/>
+<Tabs query="platform=ios&api=track-play"/>
 
 React Native
 
@@ -314,19 +270,15 @@ React Native
 
 Tracks the media pause.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-pause"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-pause"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-pause"/>
+<Tabs query="platform=ios&api=track-pause"/>
 
 React Native
 
@@ -336,19 +288,15 @@ React Native
 
 Tracks media complete. Call this method only when the media has been completely viewed.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-complete"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-complete"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-complete"/>
+<Tabs query="platform=ios&api=track-complete"/>
 
 React Native
 
@@ -358,19 +306,15 @@ React Native
 
 Tracks the end of a viewing session. Call this method even if the user does not view the media to completion.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-session-end"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-session-end"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-session-end"/>
+<Tabs query="platform=ios&api=track-session-end"/>
 
 React Native
 
@@ -384,19 +328,15 @@ Tracks an error in media playback.
 | :--- | :--- | :---: |
 | `errorId` | Error Information | Yes |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-error"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-error"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-error"/>
+<Tabs query="platform=ios&api=track-error"/>
 
 React Native
 
@@ -412,19 +352,15 @@ Tracks media events.
 | `info` | For an `AdBreakStart` event, the `adBreak` information is created by using the [createAdBreakObject](#createadbreakobject) method.   For an `AdStart` event, the Ad information is created by using the [createAdObject](#createadobject) method.   For `ChapterStart` event, the Chapter information is created by using the [createChapterObject](#createchapterobject) method.  For `StateStart` and `StateEnd` event, the State information is created by using the [createStateObject](#createstateobject) method. |
 | `data` | Optional context data can be provided for `AdStart` and `ChapterStart` events. This is not required for other events. |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=track-event"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=track-event"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=track-event"/>
+<Tabs query="platform=ios&api=track-event"/>
 
 React Native
 
@@ -438,19 +374,15 @@ Provides a media tracker with the current media playhead. For accurate tracking,
 | :--- | :--- |
 | `time` | Current playhead in seconds. For video-on-demand (VOD), the value is specified in seconds from the beginning of the media item. For live streaming, the value is specified as the number of seconds since midnight UTC on that day. |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=update-current-playhead"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=update-current-playhead"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=update-current-playhead"/>
+<Tabs query="platform=ios&api=update-current-playhead"/>
 
 React Native
 
@@ -464,19 +396,15 @@ Provides the media tracker with the current QoE information. For accurate tracki
 | :--- | :--- |
 | `qoeObject` | Current QoE information that was created by using the [createQoEObject](#createqoeobject) method. |
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=update-qoe-object"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=update-qoe-object"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=update-qoe-object"/>
+<Tabs query="platform=ios&api=update-qoe-object"/>
 
 React Native
 
@@ -488,19 +416,15 @@ React Native
 
 Defines the type of a media that is currently tracked.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=media-type"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=media-type"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=media-type"/>
+<Tabs query="platform=ios&api=media-type"/>
 
 React Native
 
@@ -510,19 +434,15 @@ React Native
 
 Defines the stream type of the content that is currently tracked.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=stream-type"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=stream-type"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=stream-type"/>
+<Tabs query="platform=ios&api=stream-type"/>
 
 React Native
 
@@ -532,19 +452,15 @@ React Native
 
 Defines the standard metadata keys for video streams.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=standard-video-constants"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=standard-video-constants"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=standard-video-constants"/>
+<Tabs query="platform=ios&api=standard-video-constants"/>
 
 React Native
 
@@ -554,19 +470,15 @@ React Native
 
 Defines the standard metadata keys for audio streams.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=standard-audio-constants"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=standard-audio-constants"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=standard-audio-constants"/>
+<Tabs query="platform=ios&api=standard-audio-constants"/>
 
 React Native
 
@@ -576,19 +488,15 @@ React Native
 
 Defines the standard metadata keys for ads.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=standard-ad-constants"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=standard-ad-constants"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=standard-ad-constants"/>
+<Tabs query="platform=ios&api=standard-ad-constants"/>
 
 React Native
 
@@ -598,19 +506,15 @@ React Native
 
 Defines some common Player State constants.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=player-state-constants"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=player-state-constants"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=player-state-constants"/>
+<Tabs query="platform=ios&api=player-state-constants"/>
 
 React Native
 
@@ -620,19 +524,15 @@ React Native
 
 Defines the type of a tracking event.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=media-events"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=media-events"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=media-events"/>
+<Tabs query="platform=ios&api=media-events"/>
 
 React Native
 
@@ -642,19 +542,15 @@ React Native
 
 Constant to denote that the current tracking session is resuming a previously closed session. This information **must** be provided when starting a tracking session.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
 Android
 
 <Tabs query="platform=android&api=media-resume"/>
 
-iOS (AEP 3.x)
-
-<Tabs query="platform=ios-aep&api=media-resume"/>
-
 iOS (ACP 2.x)
 
-<Tabs query="platform=ios-acp&api=media-resume"/>
+<Tabs query="platform=ios&api=media-resume"/>
 
 React Native
 

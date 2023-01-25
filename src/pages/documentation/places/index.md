@@ -26,7 +26,7 @@ The SDK extension listens for events that contain GPS coordinates and geofence r
 
 iOS
 
-<Tabs query="platform=ios-acp&task=download"/>
+<Tabs query="platform=ios&task=download"/>
 
 ### Register the Places extension with Mobile Core
 
@@ -34,7 +34,7 @@ iOS
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 ## Additional Location Service resources
 

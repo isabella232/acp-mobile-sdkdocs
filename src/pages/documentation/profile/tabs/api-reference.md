@@ -14,37 +14,7 @@ public static String extensionVersion()
 String extensionVersion = UserProfile.extensionVersion();
 ```
 
-<Variant platform="ios-aep" api="extension-version" repeat="10"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static var extensionVersion: String
-```
-
-**Example**
-
-```swift
-let extensionVersion = UserProfile.extensionVersion
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (nonnull NSString*) extensionVersion;
-```
-
-**Example**
-
-```objectivec
-NSString *extensionVersion = [AEPMobileUserProfile extensionVersion];
-```
-
-<Variant platform="ios-acp" api="extension-version" repeat="10"/>
+<Variant platform="ios" api="extension-version" repeat="10"/>
 
 #### Swift
 
@@ -149,49 +119,7 @@ UserProfile.getUserAttributes(Arrays.asList("itemsAddedToCart"), new AdobeCallba
         });
 ```
 
-<Variant platform="ios-aep" api="get-user-attributes" repeat="13"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func getUserAttributes(attributeNames: [String], completion: @escaping ([String: Any]?, AEPError) -> Void)
-```
-
-* _completion_ is the callback `function` which will be called with user attributes.
-
-**Example**
-
-A retail application wants to get the `itemsAddedToCart` user data when processing checkout.
-
-When the callback is provided, if the operation times out (5s) or an unexpected error occurs, the `completion` method is called with the appropriate `AEPError`.
-
-```swift
-UserProfile.getUserAttributes(attributeNames: ["itemsAddedToCart"]) { attributes, error in
-// your customized code
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void)getUserAttributesWithAttributeNames:(NSArray<NSString *> * _Nonnull) comletion:^(NSDictionary<NSString *,id> * _Nullable, enum AEPError)
-```
-
-**Example**
-
-```objectivec
-NSArray *attributes = @[@"itemsAddedToCart"];
-[AEPMobileUserProfile getUserAttributesWithAttributeNames:attributes completion:^(NSDictionary<NSString *,id> * _Nullable, enum AEPError) {
-        // your customized code
-}];
-```
-
-
-<Variant platform="ios-acp" api="get-user-attributes" repeat="12"/>
+<Variant platform="ios" api="get-user-attributes" repeat="12"/>
 
 #### Swift
 
@@ -381,55 +309,7 @@ import com.adobe.marketing.mobile.UserProfile
 UserProfile.registerExtension();
 ```
 
-<Variant platform="ios-aep" api="register-extension" repeat="11"/>
-
-On iOS, the registration occurs by passing UserProfile extension to the [MobileCore.registerExtensions API](../mobile-core/api-reference.md#registerextension-s).
-
-#### Swift
-
-**Syntax**
-
-```swift
-static func registerExtensions(_ extensions: [NSObject.Type], 
-                               _ completion: (() -> Void)? = nil)
-```
-
-**Example**
-
-```swift
-import AEPUserProfile
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-  
-  MobileCore.registerExtensions([UserProfile.self])
-  // Override point for customization after application launch.
-  return true;
-}
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) registerExtensions: (NSArray<Class*>* _Nonnull) extensions 
-                 completion: (void (^ _Nullable)(void)) completion;
-```
-
-**Example**
-
-```objectivec
-@import AEPUserProfile;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  
-  [AEPMobileCore registerExtensions:@[AEPMobileUserProfile.class] completion:nil];
-  // Override point for customization after application launch.
-  return YES;
-}
-```
-
-<Variant platform="ios-acp" api="register-extension" repeat="11"/>
+<Variant platform="ios" api="register-extension" repeat="11"/>
 
 Register the Identity extension in your app's `didFinishLaunchingWithOptions` function:
 
@@ -488,7 +368,7 @@ A retail application wants to remove the `itemsAddedToCart` user data after the 
 UserProfile.removeUserAttribute("itemsAddedToCart");
 ```
 
-<Variant platform="ios-acp" api="remove-user-attribute" repeat="11"/>
+<Variant platform="ios" api="remove-user-attribute" repeat="11"/>
 
 #### Swift
 
@@ -610,39 +490,7 @@ You want to remove `username`, `usertype` user data when session timeout occurs.
 UserProfile.removeUserAttributes(Arrays.asList("username", "usertype"));
 ```
 
-<Variant platform="ios-aep" api="remove-user-attributes" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-public static void removeUserAttributes(List<String> attributeNames)
-```
-
-**Example**
-
-You want to remove `username`, `usertype` user data when session timeout occurs.
-
-```swift
-UserProfile.removeUserAttributes(Arrays.asList("username", "usertype"));
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) removeUserAttributesWithAttributeNames:(NSArray<NSString *> * _Nonnull)
-```
-
-**Example**
-
-```objectivec
-[AEPMobileUserProfile removeUserAttributesWithAttributeNames:@[@"username", @"usertype"]]
-```
-
-<Variant platform="ios-acp" api="remove-user-attributes" repeat="11"/>
+<Variant platform="ios" api="remove-user-attributes" repeat="11"/>
 
 #### Swift
 
@@ -780,7 +628,7 @@ You want to update `username` of a user obtained in the log in page:
 UserProfile.updateUserAttribute("username", "Will Smith");
 ```
 
-<Variant platform="ios-acp" api="update-user-attribute" repeat="11"/>
+<Variant platform="ios" api="update-user-attribute" repeat="11"/>
 
 #### Swift
 
@@ -909,45 +757,7 @@ profileMap.put("usertype","Actor");
 UserProfile.updateUserAttributes(profileMap);
 ```
 
-<Variant platform="ios-aep" api="update-user-attributes" repeat="11"/>
-
-#### Swift
-
-**Syntax**
-
-```swift
-public static func updateUserAttributes(attributeDict: [String: Any])
-```
-
-**Example**
-
-You want to update `username, usertype` of a user obtained in the log in page:
-
-```swift
-var profileMap = [AnyHashable: Any]()
-profileMap["username"] = "will_smith"
-profileMap["usertype"] = "Actor"
-UserProfile.updateUserAttributes(attributeDict: profileMap)
-```
-
-#### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void)updateUserAttributesWithAttributeDict:(NSDictionary<NSString *,id> * _Nonnull)
-```
-
-**Example**
-
-```objectivec
-NSMutableDictionary *profileMap = [NSMutableDictionary dictionary];
-[profileMap setObject:@"username" forKey:@"will_smith"];
-[profileMap setObject:@"usertype" forKey:@"Actor"];
-[AEPMobileUserProfile updateUserAttributesWithAttributeDict:profileMap];
-```
-
-<Variant platform="ios-acp" api="update-user-attributes" repeat="11"/>
+<Variant platform="ios" api="update-user-attributes" repeat="11"/>
 
 #### Swift
 

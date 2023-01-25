@@ -14,7 +14,7 @@ public static String extensionVersion();
 String signalExtensionVersion = Signal.extensionVersion();
 ```
 
-<Variant platform="ios-acp" api="extension-version" repeat="7"/>
+<Variant platform="ios" api="extension-version" repeat="7"/>
 
 **Syntax**
 
@@ -96,7 +96,7 @@ public static void registerExtension()
 Signal.registerExtension();
 ```
 
-<Variant platform="ios-acp" api="register-extension" repeat="7"/>
+<Variant platform="ios" api="register-extension" repeat="7"/>
 
 **Syntax**
 

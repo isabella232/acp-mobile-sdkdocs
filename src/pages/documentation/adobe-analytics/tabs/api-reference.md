@@ -14,7 +14,7 @@ public static void clearQueue()
 Analytics.clearQueue();
 ```
 
-<Variant platform="ios-acp" api="clear-queue" repeat="10"/>
+<Variant platform="ios" api="clear-queue" repeat="10"/>
 
 #### Swift
 
@@ -139,7 +139,7 @@ ACPAnalytics.ClearQueue();
 String analyticsExtensionVersion = Analytics.extensionVersion();
 ```
 
-<Variant platform="ios-acp" api="extension-version" repeat="10"/>
+<Variant platform="ios" api="extension-version" repeat="10"/>
 
 #### Swift
 
@@ -236,7 +236,7 @@ Analytics.getQueueSize(new AdobeCallback<Long>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-queue-size" repeat="11"/>
+<Variant platform="ios" api="get-queue-size" repeat="11"/>
 
 #### Swift
 
@@ -409,7 +409,7 @@ class StringCallback : Java.Lang.Object, IAdobeCallback
 }
 ```
 
-<Variant platform="ios-acp" api="get-queue-size-with-completion-handler" repeat="11"/>
+<Variant platform="ios" api="get-queue-size-with-completion-handler" repeat="11"/>
 
 #### Swift
 
@@ -468,7 +468,7 @@ Analytics.getTrackingIdentifier(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-tracking-identifier" repeat="11"/>
+<Variant platform="ios" api="get-tracking-identifier" repeat="11"/>
 
 #### Swift
 
@@ -643,7 +643,7 @@ class StringCallback : Java.Lang.Object, IAdobeCallback
 }
 ```
 
-<Variant platform="ios-acp" api="get-tracking-identifier-with-completion-handler" repeat="11"/>
+<Variant platform="ios" api="get-tracking-identifier-with-completion-handler" repeat="11"/>
 
 #### Swift
 
@@ -702,7 +702,7 @@ Analytics.getVisitorIdentifier(new AdobeCallback<String>() {
 });
 ```
 
-<Variant platform="ios-acp" api="get-visitor-identifier" repeat="11"/>
+<Variant platform="ios" api="get-visitor-identifier" repeat="11"/>
 
 #### Swift
 
@@ -875,7 +875,7 @@ class StringCallback : Java.Lang.Object, IAdobeCallback
 }
 ```
 
-<Variant platform="ios-acp" api="get-visitor-identifier-with-completion-handler" repeat="11"/>
+<Variant platform="ios" api="get-visitor-identifier-with-completion-handler" repeat="11"/>
 
 #### Swift
 
@@ -927,7 +927,7 @@ public static void sendQueuedHits()
 Analytics.sendQueuedHits();
 ```
 
-<Variant platform="ios-acp" api="send-queued-hits" repeat="10"/>
+<Variant platform="ios" api="send-queued-hits" repeat="10"/>
 
 #### Swift
 
@@ -1062,7 +1062,7 @@ ACPAnalytics.SendQueuedHits();
 Analytics.setVisitorIdentifier("custom_identifier");
 ```
 
-<Variant platform="ios-acp" api="set-visitor-identifier" repeat="11"/>
+<Variant platform="ios" api="set-visitor-identifier" repeat="11"/>
 
 #### Swift
 

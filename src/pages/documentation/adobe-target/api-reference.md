@@ -10,7 +10,7 @@ This API clears the in-memory cache that contains the prefetched offers.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=clear-prefetch-cache"/>
+<Tabs query="platform=ios&api=clear-prefetch-cache"/>
 
 React Native
 
@@ -27,7 +27,7 @@ This API sends a location click notification for an mbox to the configured Targe
 
 iOS
 
-<Tabs query="platform=ios-acp&api=clicked-location"/>
+<Tabs query="platform=ios&api=clicked-location"/>
 
 React Native
 
@@ -41,7 +41,7 @@ This API sends a location display notification for an mbox to the configured Tar
 
 iOS
 
-<Tabs query="platform=ios-acp&api=displayed-locations"/>
+<Tabs query="platform=ios&api=displayed-locations"/>
 
 React Native
 
@@ -56,7 +56,7 @@ Returns the running version of the Target extension.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -73,7 +73,7 @@ The session ID is generated locally in the SDK upon initial Target request and p
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-session-id"/>
+<Tabs query="platform=ios&api=get-session-id"/>
 
 ## getThirdPartyId
 
@@ -83,7 +83,7 @@ This API gets the custom visitor ID for Target. If no `third-party` ID was previ
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-third-party-id"/>
+<Tabs query="platform=ios&api=get-third-party-id"/>
 
 React Native
 
@@ -98,7 +98,7 @@ This API gets the Target user ID (also known as the `tntId`) from the Target ser
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-tnt-id"/>
+<Tabs query="platform=ios&api=get-tnt-id"/>
 
 React Native
 
@@ -113,7 +113,7 @@ This API sends a prefetch request to your configured Target server. The prefetch
 
 iOS
 
-<Tabs query="platform=ios-acp&api=prefetch-content"/>
+<Tabs query="platform=ios&api=prefetch-content"/>
 
 React Native
 
@@ -128,7 +128,7 @@ Registers the Target extension with the Mobile Core.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 React Native
 
@@ -143,7 +143,7 @@ This API resets the user's experience by removing the visitor identifiers and re
 
 iOS
 
-<Tabs query="platform=ios-acp&api=reset-experience"/>
+<Tabs query="platform=ios&api=reset-experience"/>
 
 React Native
 
@@ -165,7 +165,7 @@ When using `contentWithData` callback to instantiate TargetRequest object, the f
 
 iOS
 
-<Tabs query="platform=ios-acp&api=retrieve-location-content"/>
+<Tabs query="platform=ios&api=retrieve-location-content"/>
 
 React Native
 
@@ -180,7 +180,7 @@ This API sets a specific location in the app to be displayed when preview mode s
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-preview-restart-deep-link"/>
+<Tabs query="platform=ios&api=set-preview-restart-deep-link"/>
 
 React Native
 
@@ -199,7 +199,7 @@ This ID is preserved between app upgrades, is saved and restored during the stan
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-session-id"/>
+<Tabs query="platform=ios&api=set-session-id"/>
 
 ## setThirdPartyId
 
@@ -209,7 +209,7 @@ This API sets the custom visitor ID for Target. This ID is preserved between app
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-third-party-id"/>
+<Tabs query="platform=ios&api=set-third-party-id"/>
 
 React Native
 
@@ -227,7 +227,7 @@ This ID is preserved between app upgrades, is saved and restored during the stan
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-tnt-id"/>
+<Tabs query="platform=ios&api=set-tnt-id"/>
 
 ## Visual preview
 
@@ -237,7 +237,7 @@ Target visual preview mode allows you to easily perform end-to-end QA activities
 
 iOS
 
-<Tabs query="platform=ios-acp&api=visual-preview"/>
+<Tabs query="platform=ios&api=visual-preview"/>
 
 
 ## Public classes
@@ -250,7 +250,7 @@ The following is a list of all the public classes available when using the Adobe
 
 iOS
 
-<Tabs query="platform=ios-acp&api=target-request"/>
+<Tabs query="platform=ios&api=target-request"/>
 
 React Native
 
@@ -263,7 +263,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&api=target-prefetch"/>
+<Tabs query="platform=ios&api=target-prefetch"/>
 
 React Native
 
@@ -276,7 +276,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&api=target-parameters"/>
+<Tabs query="platform=ios&api=target-parameters"/>
 
 React Native
 
@@ -289,7 +289,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&api=target-order"/>
+<Tabs query="platform=ios&api=target-order"/>
 
 React Native
 
@@ -302,7 +302,7 @@ React Native
 
 iOS
 
-<Tabs query="platform=ios-acp&api=target-product"/>
+<Tabs query="platform=ios&api=target-product"/>
 
 React Native
 
