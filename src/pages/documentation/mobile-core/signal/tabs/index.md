@@ -14,7 +14,7 @@ Import the Signal extension in your application's main activity.
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios-acp" task="add" repeat="9"/>
+<Variant platform="ios" task="add" repeat="9"/>
 
 ​The Signal extension is included in the Mobile Core extension. Add the [Mobile Core](../index.md) extension to your project using Cocoapods.
 
@@ -122,7 +122,7 @@ public class MobileApp extends Application {
 
 Please note that the Signal extension is automatically included in the Mobile Core extension by Maven. When you manually install the Signal extension, ensure that you add the `signal-1.x.x.aar` library to your project.
 
-<Variant platform="ios-acp" task="register" repeat="6"/>
+<Variant platform="ios" task="register" repeat="6"/>
 
 In your app's`application:didFinishLaunchingWithOptions`, register the Signal extension with Mobile Core:
 

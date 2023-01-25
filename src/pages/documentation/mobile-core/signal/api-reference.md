@@ -12,7 +12,7 @@ To get the version of the Signal extension, use the following code sample:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -43,7 +43,7 @@ Registers the Signal extension with the Mobile Core.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 React Native
 

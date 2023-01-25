@@ -14,7 +14,7 @@ If the Adobe Analytics extension is enabled in your SDK, collecting this launch 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=collect-launch-info"/>
+<Tabs query="platform=ios&api=collect-launch-info"/>
 
 ## collectPii
 
@@ -28,7 +28,7 @@ Although this method enables the collection of sensitive data, no data is sent t
 
 iOS
 
-<Tabs query="platform=ios-acp&api=collect-pii"/>
+<Tabs query="platform=ios&api=collect-pii"/>
 
 React Native
 
@@ -52,7 +52,7 @@ This API gets the current log level being used in the SDK.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-log-level"/>
+<Tabs query="platform=ios&api=get-log-level"/>
 
 React Native
 
@@ -89,7 +89,7 @@ You must call the API below and retrieve identities stored in the SDK, **before*
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-sdk-identities"/>
+<Tabs query="platform=ios&api=get-sdk-identities"/>
 
 ## log
 
@@ -99,7 +99,7 @@ This is the API used to log from the SDK.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=log"/>
+<Tabs query="platform=ios&api=log"/>
 
 React Native
 
@@ -123,7 +123,7 @@ The following code snippets demonstrate how you can import and register the Mobi
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 React Native
 
@@ -153,7 +153,7 @@ Mobile SDK allows you to add a callback function that is triggered before the [`
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-url-handler"/>
+<Tabs query="platform=ios&api=register-url-handler"/>
 
 ## setAdvertisingIdentifier
 
@@ -173,7 +173,7 @@ This API _must_ be called in `AppDidFinishLaunching` and before any other intera
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-app-group"/>
+<Tabs query="platform=ios&api=set-app-group"/>
 
 Xamarin
 
@@ -222,7 +222,7 @@ On **Android**, Mobile SDK uses the `android.util.Log` class to log messages.<br
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-log-level"/>
+<Tabs query="platform=ios&api=set-log-level"/>
 
 React Native
 
@@ -256,7 +256,7 @@ You should call `setPushIdentifier` on each application launch to ensure the mos
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-push-identifier"/>
+<Tabs query="platform=ios&api=set-push-identifier"/>
 
 ## setSmallIconResourceID / setLargeIconResourceID 
 
@@ -284,7 +284,7 @@ If you installed and configured the Adobe Analytics extension, this method sends
 
 iOS
 
-<Tabs query="platform=ios-acp&api=track-action"/>
+<Tabs query="platform=ios&api=track-action"/>
 
 React Native
 
@@ -318,7 +318,7 @@ If you installed and configured the Adobe Analytics extension, the `trackState` 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=track-state"/>
+<Tabs query="platform=ios&api=track-state"/>
 
 React Native
 
@@ -346,7 +346,7 @@ Xamarin
 
 iOS
 
-<Tabs query="platform=ios-acp&api=public-classes"/>
+<Tabs query="platform=ios&api=public-classes"/>
 
 Xamarin
 

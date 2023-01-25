@@ -12,7 +12,7 @@ To get the version of the Audience extension, use the following code sample:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -26,7 +26,7 @@ This API returns the most recently obtained visitor profile. The visitor profile
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-visitor-profile"/>
+<Tabs query="platform=ios&api=get-visitor-profile"/>
 
 React Native
 
@@ -40,7 +40,7 @@ This API registers an extension class that was derived from `ACPExtension` with 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 React Native
 
@@ -58,7 +58,7 @@ For more information about the UUID, the DPID, the DPUUID and other Audience Man
 
 iOS
 
-<Tabs query="platform=ios-acp&api=reset"/>
+<Tabs query="platform=ios&api=reset"/>
 
 React Native
 
@@ -78,7 +78,7 @@ For more information about the UUID and other Audience Manager identifiers, see 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=signal-with-data"/>
+<Tabs query="platform=ios&api=signal-with-data"/>
 
 React Native
 

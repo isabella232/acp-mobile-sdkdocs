@@ -19,7 +19,7 @@ Use caution when manually clearing the queue. This operation cannot be reverted.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=clear-queue"/>
+<Tabs query="platform=ios&api=clear-queue"/>
 
 React Native
 
@@ -51,7 +51,7 @@ To get the version of the Analytics extension, use the following code sample:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -81,7 +81,7 @@ Retrieves the total number of Analytics hits in the tracking queue.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-queue-size"/>
+<Tabs query="platform=ios&api=get-queue-size"/>
 
 React Native
 
@@ -111,7 +111,7 @@ Retrieves the total number of Analytics hits in the tracking queue. Invoke the c
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-queue-size-with-completion-handler"/>
+<Tabs query="platform=ios&api=get-queue-size-with-completion-handler"/>
 
 ## getTrackingIdentifier
 
@@ -125,7 +125,7 @@ Starting with v1.2.9 (Android) / v2.5.1 (iOS ACPAnalytics) this API does not gen
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-tracking-identifier"/>
+<Tabs query="platform=ios&api=get-tracking-identifier"/>
 
 React Native
 
@@ -163,7 +163,7 @@ If you have an [Experience Cloud ID](../mobile-core/identity/api-reference.md#ge
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-tracking-identifier-with-completion-handler"/>
+<Tabs query="platform=ios&api=get-tracking-identifier-with-completion-handler"/>
 
 ## getVisitorIdentifier
 
@@ -177,7 +177,7 @@ This API gets a custom Analytics visitor identifier, which has been set previous
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-visitor-identifier"/>
+<Tabs query="platform=ios&api=get-visitor-identifier"/>
 
 React Native
 
@@ -211,7 +211,7 @@ This API gets a custom Analytics visitor identifier, which has been set previous
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-visitor-identifier-with-completion-handler"/>
+<Tabs query="platform=ios&api=get-visitor-identifier-with-completion-handler"/>
 
 ## resetIdentities
 
@@ -235,7 +235,7 @@ Use caution when manually clearing the queue. This operation cannot be reverted.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=send-queued-hits"/>
+<Tabs query="platform=ios&api=send-queued-hits"/>
 
 React Native
 
@@ -269,7 +269,7 @@ Sets a custom Analytics visitor identifier. For more information, see [Custom Vi
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-visitor-identifier"/>
+<Tabs query="platform=ios&api=set-visitor-identifier"/>
 
 React Native
 

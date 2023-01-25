@@ -14,7 +14,7 @@ Sessions contain information about the app's current lifecycle, such as the devi
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 React Native
 
@@ -43,7 +43,7 @@ Xamarin
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
 
 React Native
 

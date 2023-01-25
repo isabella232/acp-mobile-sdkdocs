@@ -10,7 +10,7 @@ This API causes the SDK to download the configuration for the provided app ID an
 
 iOS
 
-<Tabs query="platform=ios-acp&api=configure-with-app-id"/>
+<Tabs query="platform=ios&api=configure-with-app-id"/>
 
 Unity
 
@@ -40,7 +40,7 @@ To pass in a bundled path and file name:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=configure-with-file-in-path"/>
+<Tabs query="platform=ios&api=configure-with-file-in-path"/>
 
 Xamarin
 
@@ -56,7 +56,7 @@ To get the version of the Configuration extension, use the following code sample
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -94,7 +94,7 @@ Do not use this API to update the `build.environment` key or any key with an env
 
 iOS
 
-<Tabs query="platform=ios-acp&api=update-configuration"/>
+<Tabs query="platform=ios&api=update-configuration"/>
 
 React Native
 

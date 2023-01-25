@@ -44,7 +44,7 @@ additionalContextData.put("customKey", "value");
 MobileCore.trackAction("loginClicked", additionalContextData);
 ```
 
-<Variant platform="ios-acp" task="track-action" repeat="10"/>
+<Variant platform="ios" task="track-action" repeat="10"/>
 
 #### Swift
 
@@ -166,7 +166,7 @@ additionalContextData.put("customKey", "value");
 MobileCore.trackState("homePage", additionalContextData);
 ```
 
-<Variant platform="ios-acp" task="track-state" repeat="10"/>
+<Variant platform="ios" task="track-state" repeat="10"/>
 
 #### Swift
 

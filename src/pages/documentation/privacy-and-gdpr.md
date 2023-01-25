@@ -38,7 +38,7 @@ You can set a privacy status to ensure collection of data suits your user's pref
 
 iOS
 
-<PrivacyTabs query="platform=ios-acp&task=set-privacy-status"/>
+<PrivacyTabs query="platform=ios&task=set-privacy-status"/>
 
 ### getPrivacyStatus
 
@@ -48,7 +48,7 @@ You can also programmatically view the current privacy status by using the follo
 
 iOS
 
-<PrivacyTabs query="platform=ios-acp&task=get-privacy-status"/>
+<PrivacyTabs query="platform=ios&task=get-privacy-status"/>
 
 ### getSdkIdentities
 

@@ -20,7 +20,7 @@ The unique environment ID from the Data Collection UI can be configured with the
 
 iOS
 
-<Tabs query="platform=ios-acp&task=configure"/>
+<Tabs query="platform=ios&task=configure"/>
 
 Cordova
 
@@ -50,7 +50,7 @@ Do not use this API to update the build.environment or any key with an environme
 
 iOS
 
-<Tabs query="platform=ios-acp&task=update"/>
+<Tabs query="platform=ios&task=update"/>
 
 React Native
 
@@ -101,7 +101,7 @@ To pass in a bundled path and file name:
 
 iOS
 
-<Tabs query="platform=ios-acp&task=bundle"/>
+<Tabs query="platform=ios&task=bundle"/>
 
 Xamarin
 

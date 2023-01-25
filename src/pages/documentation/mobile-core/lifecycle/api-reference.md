@@ -12,7 +12,7 @@ To get the version of the Lifecycle extension, use the following code sample:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -44,7 +44,7 @@ Starts the collection of lifecycle data.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=lifecycle-start"/>
+<Tabs query="platform=ios&api=lifecycle-start"/>
 
 React Native
 
@@ -72,7 +72,7 @@ Pauses the collection of lifecycle data.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=lifecycle-pause"/>
+<Tabs query="platform=ios&api=lifecycle-pause"/>
 
 React Native
 

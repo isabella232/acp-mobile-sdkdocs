@@ -25,7 +25,7 @@ MobileCore.trackAction("purchase", cdata);
 MobileCore.trackState("Order Confirmation", cdata);
 ```
 
-<Variant platform="ios-acp" task="set-variable" repeat="10"/>
+<Variant platform="ios" task="set-variable" repeat="10"/>
 
 #### Swift
 
@@ -165,7 +165,7 @@ MobileCore.trackAction("purchase", cdata);
 MobileCore.trackState("Order Confirmation", cdata);
 ```
 
-<Variant platform="ios-acp" task="products" repeat="6"/>
+<Variant platform="ios" task="products" repeat="6"/>
 
 #### Swift
 

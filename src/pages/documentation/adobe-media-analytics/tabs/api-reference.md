@@ -6,7 +6,7 @@
 String mediaExtensionVersion = Media.extensionVersion();
 ```
 
-<Variant platform="ios-acp" api="extension-version" repeat="10"/>
+<Variant platform="ios" api="extension-version" repeat="10"/>
 
 #### Swift
 
@@ -75,7 +75,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
-<Variant platform="ios-acp" api="create-tracker" repeat="11"/>
+<Variant platform="ios" api="create-tracker" repeat="11"/>
 
 The createTracker function returns the instance of ACPMediaTracker for tracking a media session. The createTracker function with callback as a parameter has been deprecated.
 
@@ -173,7 +173,7 @@ Media.createTracker(config, new AdobeCallback<MediaTracker>() {
 });
 ```
 
-<Variant platform="ios-acp" api="create-tracker-with-config" repeat="11"/>
+<Variant platform="ios" api="create-tracker-with-config" repeat="11"/>
 
 Optional configuration about the tracker can be passed to this function. The createTracker function returns the instance of ACPMediaTracker with the configuration for tracking a media session. The createTracker function with callback as a parameter has been deprecated.
 
@@ -270,7 +270,7 @@ HashMap<String, Object> mediaInfo = Media.createMediaObject("video-name",
                                                             Media.MediaType.Video);
 ```
 
-<Variant platform="ios-acp" api="create-media-object" repeat="11"/>
+<Variant platform="ios" api="create-media-object" repeat="11"/>
 
 Returns an NSDictionary instance that contains information about the media.
 
@@ -339,7 +339,7 @@ public static HashMap<String, Object> createAdBreakObject(String name, Long posi
 HashMap<String, Object> adBreakObject = Media.createAdBreakObject("adbreak-name", 1L, 0D);
 ```
 
-<Variant platform="ios-acp" api="create-ad-break-object" repeat="11"/>
+<Variant platform="ios" api="create-ad-break-object" repeat="11"/>
 
 Returns an NSDictionary instance that contains information about the ad break.
 
@@ -404,7 +404,7 @@ public static HashMap<String, Object> createAdObject(String name, String adId, L
 HashMap<String, Object> adInfo = Media.createAdObject("ad-name", "ad-id", 1L, 15D);
 ```
 
-<Variant platform="ios-acp" api="create-ad-object" repeat="11"/>
+<Variant platform="ios" api="create-ad-object" repeat="11"/>
 
 Returns an NSDictionary instance that contains information about the ad.
 
@@ -477,7 +477,7 @@ public static HashMap<String, Object> createChapterObject(String name,
 HashMap<String, Object> chapterInfo = Media.createChapterObject("chapter-name", 1L, 60D, 0D);
 ```
 
-<Variant platform="ios-acp" api="create-chapter-object" repeat="11"/>
+<Variant platform="ios" api="create-chapter-object" repeat="11"/>
 
 Returns an NSDictionary instance that contains information about the chapter.
 
@@ -548,7 +548,7 @@ public static HashMap<String, Object> createQoEObject(Long bitrate,
 HashMap<String, Object> qoeInfo = Media.createQoEObject(10000000L, 2D, 23D, 10D);
 ```
 
-<Variant platform="ios-acp" api="create-qoe-object" repeat="11"/>
+<Variant platform="ios" api="create-qoe-object" repeat="11"/>
 
 Returns an NSDictionary instance that contains information about the quality of experience.
 
@@ -615,7 +615,7 @@ public static HashMap<String, Object> createStateObject(String stateName);
 HashMap<String, Object> playerStateInfo = Media.createStateObject("fullscreen");
 ```
 
-<Variant platform="ios-acp" api="create-state-object" repeat="11"/>
+<Variant platform="ios" api="create-state-object" repeat="11"/>
 
 Returns an NSDictionary instance that contains information about the player state.
 
@@ -682,7 +682,7 @@ mediaMetadata.put("tvStation", "Sample TV Station");
 _tracker.trackSessionStart(mediaInfo, mediaMetadata);
 ```
 
-<Variant platform="ios-acp" api="track-session-start" repeat="10"/>
+<Variant platform="ios" api="track-session-start" repeat="10"/>
 
 #### Swift
 
@@ -765,7 +765,7 @@ public void trackPlay();
 _tracker.trackPlay();
 ```
 
-<Variant platform="ios-acp" api="track-play" repeat="10"/>
+<Variant platform="ios" api="track-play" repeat="10"/>
 
 #### Swift
 
@@ -819,7 +819,7 @@ public void trackPause();
 _tracker.trackPause();
 ```
 
-<Variant platform="ios-acp" api="track-pause" repeat="10"/>
+<Variant platform="ios" api="track-pause" repeat="10"/>
 
 #### Swift
 
@@ -873,7 +873,7 @@ public void trackComplete();
 _tracker.trackComplete();
 ```
 
-<Variant platform="ios-acp" api="track-complete" repeat="10"/>
+<Variant platform="ios" api="track-complete" repeat="10"/>
 
 #### Swift
 
@@ -927,7 +927,7 @@ public void trackSessionEnd();
 _tracker.trackSessionEnd();
 ```
 
-<Variant platform="ios-acp" api="track-session-end" repeat="10"/>
+<Variant platform="ios" api="track-session-end" repeat="10"/>
 
 #### Swift
 
@@ -981,7 +981,7 @@ public void trackError(String errorId);
 _tracker.trackError("errorId");
 ```
 
-<Variant platform="ios-acp" api="track-error" repeat="10"/>
+<Variant platform="ios" api="track-error" repeat="10"/>
 
 #### Swift
 
@@ -1123,7 +1123,7 @@ tracker.trackError("errorId");
   _tracker.trackEvent(Media.Event.BitrateChange, null, null);
 ```
 
-<Variant platform="ios-acp" api="track-event" repeat="32"/>
+<Variant platform="ios" api="track-event" repeat="32"/>
 
 #### Swift
 
@@ -1442,7 +1442,7 @@ double timeFromMidnightInSecond = (System.currentTimeMillis()/1000) % 86400;
 _tracker.updateCurrentPlayhead(timeFromMidnightInSecond);
 ```
 
-<Variant platform="ios-acp" api="update-current-playhead" repeat="12"/>
+<Variant platform="ios" api="update-current-playhead" repeat="12"/>
 
 #### Swift
 
@@ -1507,7 +1507,7 @@ HashMap<String, Object> qoeObject = Media.createQoEObject(1000000L, 2D, 25D, 10D
 _tracker.updateQoEObject(qoeObject);
 ```
 
-<Variant platform="ios-acp" api="update-qoe-object" repeat="10"/>
+<Variant platform="ios" api="update-qoe-object" repeat="10"/>
 
 #### Swift
 
@@ -1568,7 +1568,7 @@ public class Media {
 }
 ```
 
-<Variant platform="ios-acp" api="media-type" repeat="1"/>
+<Variant platform="ios" api="media-type" repeat="1"/>
 
 ```objc
 typedef NS_ENUM(NSInteger, ACPMediaType) {
@@ -1635,7 +1635,7 @@ public class MediaConstants {
 }
 ```
 
-<Variant platform="ios-acp" api="stream-type" repeat="1"/>
+<Variant platform="ios" api="stream-type" repeat="1"/>
 
 ```objc
 /**
@@ -1712,7 +1712,7 @@ public class MediaConstants {
 }
 ```
 
-<Variant platform="ios-acp" api="standard-video-constants" repeat="1"/>
+<Variant platform="ios" api="standard-video-constants" repeat="1"/>
 
 ```objc
 FOUNDATION_EXPORT NSString* _Nonnull const ACPVideoMetadataKeyShow;
@@ -1777,7 +1777,7 @@ public class MediaConstants {
 }
 ```
 
-<Variant platform="ios-acp" api="standard-audio-constants" repeat="1"/>
+<Variant platform="ios" api="standard-audio-constants" repeat="1"/>
 
 ```objc
 FOUNDATION_EXPORT NSString* _Nonnull const ACPAudioMetadataKeyArtist;
@@ -1820,7 +1820,7 @@ public class MediaConstants {
 }
 ```
 
-<Variant platform="ios-acp" api="standard-ad-constants" repeat="1"/>
+<Variant platform="ios" api="standard-ad-constants" repeat="1"/>
 
 ```objc
 FOUNDATION_EXPORT NSString* _Nonnull const ACPAdMetadataKeyAdvertiser;
@@ -1862,7 +1862,7 @@ public class MediaConstants {
 }
 ```
 
-<Variant platform="ios-acp" api="player-state-constants" repeat="1"/>
+<Variant platform="ios" api="player-state-constants" repeat="1"/>
 
 ```objc
 FOUNDATION_EXPORT NSString* _Nonnull const ACPMediaPlayerStateFullScreen;
@@ -1974,7 +1974,7 @@ public class Media {
 }
 ```
 
-<Variant platform="ios-acp" api="media-events" repeat="1"/>
+<Variant platform="ios" api="media-events" repeat="1"/>
 
 ```objc
 /**
@@ -2099,7 +2099,7 @@ mediaObject.put(MediaConstants.MediaObjectKey.RESUMED, true);
 _tracker.trackSessionStart(mediaObject, null);
 ```
 
-<Variant platform="ios-acp" api="media-resume" repeat="10"/>
+<Variant platform="ios" api="media-resume" repeat="10"/>
 
 #### Swift
 

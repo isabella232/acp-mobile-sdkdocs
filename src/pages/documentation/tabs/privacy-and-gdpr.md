@@ -100,7 +100,7 @@ public static void setPrivacyStatus(final MobilePrivacyStatus privacyStatus);
 MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_OUT);
 ```
 
-<Variant platform="ios-acp" task="set-privacy-status" repeat="13"/>
+<Variant platform="ios" task="set-privacy-status" repeat="13"/>
 
 You can set privacy status to one of the following values:
 
@@ -169,7 +169,7 @@ MobileCore.getPrivacyStatus(new AdobeCallback<MobilePrivacyStatus>() {
 });
 ```
 
-<Variant platform="ios-acp" task="get-privacy-status" repeat="14"/>
+<Variant platform="ios" task="get-privacy-status" repeat="14"/>
 
 The enum representation of the privacy status that corresponds to the following statuses:
 

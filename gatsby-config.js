@@ -33,8 +33,8 @@ module.exports = {
                 path: "/documentation"
             },
             {
-                title: "Current SDK versions",
-                path: "documentation/current-sdk-versions"
+                title: "Previous SDK versions",
+                path: "documentation/sdk-versions"
             },
             {
                 title: "Release notes",
@@ -62,12 +62,8 @@ module.exports = {
                 ]
             },
             {
-                title: "Version 4 Mobile SDKs end-of-support FAQ",
-                path: "/documentation/v4-end-of-life-faq"
-            },
-            {
-                title: "Version 4 API changelog",
-                path: "/documentation/api-changelog"
+                title: "Latest iOS SDK version",
+                path: "documentation/migrate-to-swift"
             },
             {
                 title: "Mobile Foundation extensions",
@@ -389,42 +385,22 @@ module.exports = {
             {
                 title: "Resources",
                 path: "/documentation/resources",
-                pages: [{
+                pages: [
+                    {
                         title: "Overview",
                         path: "/documentation/resources"
                     },
                     {
-                        title: "Upgrade to the Experience Platform SDKs",
-                        path: "documentation/upgrade-platform-sdks",
-                        pages: [{
-                                title: "Overview",
-                                path: "documentation/upgrade-platform-sdks"
-                            },
-                            {
-                                title: "SDK comparison",
-                                path: "documentation/upgrade-platform-sdks/comparison"
-                            },
-                            {
-                                title: "Manual Lifecycle implementation",
-                                path: "documentation/upgrade-platform-sdks/lifecycle"
-                            },
-                            {
-                                title: "API changelog",
-                                path: "documentation/upgrade-platform-sdks/api-changelog.md"
-                            },
-                            {
-                                title: "Analytics migration",
-                                path: "documentation/upgrade-platform-sdks/analytics-comparison.md"
-                            }
-                        ]
+                        title: "SDK comparison",
+                        path: "documentation/upgrade-platform-sdks/comparison"
+                    },
+                    {
+                        title: "API changelog",
+                        path: "documentation/upgrade-platform-sdks/api-changelog.md"
                     },
                     {
                         title: "Privacy and GDPR",
                         path: "documentation/privacy-and-gdpr"
-                    },
-                    {
-                        title: "Migrate to Swift",
-                        path: "documentation/migrate-to-swift"
                     }
                 ]
             }

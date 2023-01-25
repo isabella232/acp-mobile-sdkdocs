@@ -10,7 +10,7 @@ The `extensionVersion` API returns the version of the Campaign Classic extension
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 ## registerDevice
 
@@ -20,7 +20,7 @@ The `registerDevice` API lets you register a user device with Campaign Classic.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-device"/>
+<Tabs query="platform=ios&api=register-device"/>
 
 ## trackNotificationReceive
 
@@ -30,7 +30,7 @@ The `trackNotificationReceive` API sends the received push notification's tracki
 
 iOS
 
-<Tabs query="platform=ios-acp&api=track-notification-receive"/>
+<Tabs query="platform=ios&api=track-notification-receive"/>
 
 ## trackNotificationClick
 
@@ -40,4 +40,4 @@ The `trackNotificationClick` API sends the clicked push notification's tracking 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=track-notification-click"/>
+<Tabs query="platform=ios&api=track-notification-click"/>

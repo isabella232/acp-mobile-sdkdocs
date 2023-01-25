@@ -10,7 +10,7 @@ Returns the running version of the Campaign Standard extension.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -24,7 +24,7 @@ Registers the Campaign Standard extension with the Mobile Core.
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 React Native
 
@@ -40,7 +40,7 @@ This method unregisters any previously registered rules with the Rules Engine an
 
 iOS
 
-<Tabs query="platform=ios-acp&api=reset-linkage-fields"/>
+<Tabs query="platform=ios&api=reset-linkage-fields"/>
 
 React Native
 
@@ -56,7 +56,7 @@ The set linkage fields are stored as a base64 encoded JSON string in memory and 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-linkage-fields"/>
+<Tabs query="platform=ios&api=set-linkage-fields"/>
 
 React Native
 

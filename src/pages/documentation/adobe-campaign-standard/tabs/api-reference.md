@@ -14,7 +14,7 @@ public String extensionVersion()
 Campaign.extensionVersion();
 ```
 
-<Variant platform="ios-acp" api="extension-version" repeat="10"/>
+<Variant platform="ios" api="extension-version" repeat="10"/>
 
 #### Swift
 
@@ -76,7 +76,7 @@ public static void registerExtension()
 Campaign.registerExtension();
 ```
 
-<Variant platform="ios-acp" api="register-extension" repeat="10"/>
+<Variant platform="ios" api="register-extension" repeat="10"/>
 
 #### Swift
 
@@ -126,7 +126,7 @@ public static void resetLinkageFields()
 Campaign.resetLinkageFields()
 ```
 
-<Variant platform="ios-acp" api="reset-linkage-fields" repeat="10"/>
+<Variant platform="ios" api="reset-linkage-fields" repeat="10"/>
 
 #### Swift
 
@@ -192,7 +192,7 @@ linkageFields.put("cusEmail", "john.doe@email.com");
 Campaign.setLinkageFields(linkageFields);
 ```
 
-<Variant platform="ios-acp" api="set-linkage-fields" repeat="10"/>
+<Variant platform="ios" api="set-linkage-fields" repeat="10"/>
 
 #### Swift
 

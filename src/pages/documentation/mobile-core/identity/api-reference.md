@@ -51,7 +51,7 @@ If your application uses more complicated URLs, such as Angular URLs, you should
 
 iOS
 
-<Tabs query="platform=ios-acp&api=append-to-url"/>
+<Tabs query="platform=ios&api=append-to-url"/>
 
 React Native
 
@@ -83,7 +83,7 @@ To get the version of the Identity extension, use the following code sample:
 
 iOS
 
-<Tabs query="platform=ios-acp&api=extension-version"/>
+<Tabs query="platform=ios&api=extension-version"/>
 
 React Native
 
@@ -115,7 +115,7 @@ This ID is preserved between app upgrades, is saved and restored during the stan
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-experience-cloud-id"/>
+<Tabs query="platform=ios&api=get-experience-cloud-id"/>
 
 React Native
 
@@ -145,7 +145,7 @@ This API returns all customer identifiers that were previously synced with the A
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-identifiers"/>
+<Tabs query="platform=ios&api=get-identifiers"/>
 
 React Native
 
@@ -184,7 +184,7 @@ If an error occurs while retrieving the URL string, the callback handler will be
 
 iOS
 
-<Tabs query="platform=ios-acp&api=get-url-variables"/>
+<Tabs query="platform=ios&api=get-url-variables"/>
 
 React Native
 
@@ -214,7 +214,7 @@ The `registerExtension()` API registers the Identity extension with the Mobile C
 
 iOS
 
-<Tabs query="platform=ios-acp&api=register-extension"/>
+<Tabs query="platform=ios&api=register-extension"/>
 
 React Native
 
@@ -248,7 +248,7 @@ If the current SDK privacy status is `optedout`, the advertising identifier is n
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-advertising-identifier"/>
+<Tabs query="platform=ios&api=set-advertising-identifier"/>
 
 React Native
 
@@ -282,7 +282,7 @@ You should call `setPushIdentifier` on each application launch to ensure the mos
 
 iOS
 
-<Tabs query="platform=ios-acp&api=set-push-identifier"/>
+<Tabs query="platform=ios&api=set-push-identifier"/>
 
 React Native
 
@@ -306,7 +306,7 @@ This API updates or appends the provided customer identifier type key and value 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=sync-identifier"/>
+<Tabs query="platform=ios&api=sync-identifier"/>
 
 React Native
 
@@ -336,7 +336,7 @@ This API is an overloaded version, which does not include the parameter for the 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=sync-identifiers"/>
+<Tabs query="platform=ios&api=sync-identifiers"/>
 
 React Native
 
@@ -368,7 +368,7 @@ Starting with _ACPIdentity v2.1.3 (iOS)_ and _Identity v1.1.2 (Android)_ if the 
 
 iOS
 
-<Tabs query="platform=ios-acp&api=sync-identifiers-overloaded"/>
+<Tabs query="platform=ios&api=sync-identifiers-overloaded"/>
 
 React Native
 
@@ -396,7 +396,7 @@ Xamarin
 
 iOS
 
-<Tabs query="platform=ios-acp&api=public-classes"/>
+<Tabs query="platform=ios&api=public-classes"/>
 
 React Native
 

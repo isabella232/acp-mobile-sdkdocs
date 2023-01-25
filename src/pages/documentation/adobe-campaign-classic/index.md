@@ -54,7 +54,7 @@ The request timeout is the amount of time, in seconds, to wait for a response fr
 
 iOS
 
-<Tabs query="platform=ios-acp&task=add"/>
+<Tabs query="platform=ios&task=add"/>
 
 ### Register Campaign Classic with Mobile Core
 
@@ -62,4 +62,4 @@ iOS
 
 iOS
 
-<Tabs query="platform=ios-acp&task=register"/>
+<Tabs query="platform=ios&task=register"/>
