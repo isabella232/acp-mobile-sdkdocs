@@ -36,7 +36,7 @@ The following updates were made in this release:
 
 The following update was made in this release:
 
-**iOS Mobile Servies 1.0.4**
+**iOS Mobile Services 1.0.4**
 
 * Fixed a bug where the iOS fullscreen message was unable to load cached images.
 

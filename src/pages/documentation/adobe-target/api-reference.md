@@ -6,7 +6,11 @@ import Tabs from './tabs/api-reference.md'
 
 This API clears the in-memory cache that contains the prefetched offers.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=clear-prefetch-cache"/>
 
 iOS
 
@@ -23,7 +27,11 @@ This API sends a location click notification for an mbox to the configured Targe
 * For a prefetched mbox, after the mbox content is retrieved using the `retrieveLocationContent` API.
 * For a regular mbox, where no previous prefetch request is made, and the mbox content is retrieved using the `retrieveLocationContent` API.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=clicked-location"/>
 
 iOS
 
@@ -37,7 +45,11 @@ React Native
 
 This API sends a location display notification for an mbox to the configured Target server. The API should be invoked for a prefetched mbox after the mbox content is retrieved using the `retrieveLocationContent` API. If no previous prefetch request is made, and the mbox content is retrieved using the `retrieveLocationContent` API, calling this API does not trigger a notification request to the Target server.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=displayed-locations"/>
 
 iOS
 
@@ -47,12 +59,15 @@ React Native
 
 <Tabs query="platform=react-native&api=displayed-locations"/>
 
-
 ## extensionVersion
 
 Returns the running version of the Target extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -62,14 +77,17 @@ React Native
 
 <Tabs query="platform=react-native&api=extension-version"/>
 
-
 ## getSessionId
 
 This API gets the Target session identifier. 
 
 The session ID is generated locally in the SDK upon initial Target request and persisted for a period defined by `target.sessionTimeout` configuration setting. If the session timeout happens upon a subsequent Target request, a new session ID will be generated for use in the request and persisted in the SDK.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&api=get-session-id"/>
 
 iOS
 
@@ -79,7 +97,11 @@ iOS
 
 This API gets the custom visitor ID for Target. If no `third-party` ID was previously set, or if the ID was reset by calling resetExperience API, it will have a `nil` value.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=get-third-party-id"/>
 
 iOS
 
@@ -89,12 +111,15 @@ React Native
 
 <Tabs query="platform=react-native&api=get-third-party-id"/>
 
-
 ## getTntId
 
 This API gets the Target user ID (also known as the `tntId`) from the Target service. The `tntId` is returned in the network response after a successful call to `prefetchContent` or `retrieveLocationContent`, which is then persisted in the SDK. This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall or when the `resetExperience` API is used.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=get-tnt-id"/>
 
 iOS
 
@@ -104,12 +129,15 @@ React Native
 
 <Tabs query="platform=react-native&api=get-tnt-id"/>
 
-
 ## prefetchContent
 
 This API sends a prefetch request to your configured Target server. The prefetch request is sent with the prefetch objects array and the specified Target parameters.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=prefetch-content"/>
 
 iOS
 
@@ -119,12 +147,15 @@ React Native
 
 <Tabs query="platform=react-native&api=prefetch-content"/>
 
-
 ## registerExtension
 
 Registers the Target extension with the Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=register-extension"/>
 
 iOS
 
@@ -134,12 +165,15 @@ React Native
 
 <Tabs query="platform=react-native&api=register-extension"/>
 
-
 ## resetExperience
 
 This API resets the user's experience by removing the visitor identifiers and resetting the Target session. Invoking this API also removes previously set Target user ID and custom visitor IDs, Target Edge Host, and the session information from persistent storage.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=reset-experience"/>
 
 iOS
 
@@ -161,7 +195,11 @@ When using `contentWithData` callback to instantiate TargetRequest object, the f
 * analytics.payload (A4T payload)
 * clickmetric.analytics.payload (Click tracking A4T payload)
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=retrieve-location-content"/>
 
 iOS
 
@@ -171,12 +209,15 @@ React Native
 
 <Tabs query="platform=react-native&api=retrieve-location-content"/>
 
-
 ## setPreviewRestartDeepLink
 
 This API sets a specific location in the app to be displayed when preview mode selections have been confirmed.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=set-preview-restart-deep-link"/>
 
 iOS
 
@@ -186,7 +227,6 @@ React Native
 
 <Tabs query="platform=react-native&api=set-preview-restart-deep-link"/>
 
-
 ## setSessionId
 
 This API sets the Target session identifier.
@@ -195,7 +235,11 @@ The provided session ID is persisted in the SDK for a period defined by `target.
 
 This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall, upon privacy status update to opted out, or when the resetExperience API is used.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&api=set-session-id"/>
 
 iOS
 
@@ -205,7 +249,11 @@ iOS
 
 This API sets the custom visitor ID for Target. This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall or when the resetExperience API is used.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=set-third-party-id"/>
 
 iOS
 
@@ -223,7 +271,11 @@ The provided tnt ID is persisted in the SDK and attached to subsequent Target re
 
 This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall, upon privacy status update to opted out, or when the `resetExperience` API is used.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&api=set-tnt-id"/>
 
 iOS
 
@@ -233,12 +285,15 @@ iOS
 
 Target visual preview mode allows you to easily perform end-to-end QA activities by enrolling and previewing these activities on your device. This mode does not require a specialized testing set up. To get started, set up a URL scheme and generate the preview links.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&api=visual-preview"/>
 
 iOS
 
 <Tabs query="platform=ios&api=visual-preview"/>
-
 
 ## Public classes
 
@@ -246,7 +301,11 @@ The following is a list of all the public classes available when using the Adobe
 
 ### Target request
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=target-request"/>
 
 iOS
 
@@ -256,10 +315,13 @@ React Native
 
 <Tabs query="platform=react-native&api=target-request"/>
 
-
 ### Target prefetch
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=target-prefetch"/>
 
 iOS
 
@@ -269,10 +331,13 @@ React Native
 
 <Tabs query="platform=react-native&api=target-prefetch"/>
 
-
 ### Target parameters
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=target-parameters"/>
 
 iOS
 
@@ -282,10 +347,13 @@ React Native
 
 <Tabs query="platform=react-native&api=target-parameters"/>
 
-
 ### Target order
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=target-order"/>
 
 iOS
 
@@ -295,10 +363,13 @@ React Native
 
 <Tabs query="platform=react-native&api=target-order"/>
 
-
 ### Target product
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=target-product"/>
 
 iOS
 

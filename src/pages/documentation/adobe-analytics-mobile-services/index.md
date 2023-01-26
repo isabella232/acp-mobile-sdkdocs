@@ -21,7 +21,7 @@ Review the following Mobile Services functionality documentation for context and
 
 <InlineAlert variant="warning" slots="text"/>
 
-Postbacks created from the Mobile Services interface are **not** supported. Please use a rule defined in the Data Collection UI with the Mobile Core extension to create a postback. [Signal extension and Rules Engine integration](../user-guides/rules-engine-integration.md).
+Postbacks created from the Mobile Services interface are **not** supported. Please use a rule defined in the Data Collection UI with the Mobile Core extension to create a postback.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -105,7 +105,11 @@ The Mobile Services extension depends on the Core extension, which includes the 
 
 iOS AEP (3.x) Mobile Services extension only supports Cocoapods. It does **not** work with Swift Package Manager or when included in your app as an XCFramework dependency.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=add"/>
 
 iOS
 
@@ -113,7 +117,11 @@ iOS
 
 ## Register Mobile Services with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=register"/>
 
 iOS
 
@@ -125,7 +133,11 @@ To use your Android or iOS extension with the Experience Platform SDKs, implemen
 
 ### Set up push messaging
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=set-push-messaging"/>
 
 iOS
 
@@ -149,7 +161,11 @@ Use the following API to track a push messaging click in Adobe Analytics.
 
 Using the following API does not increment page views.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=set-push-tracking"/>
 
 iOS
 
@@ -168,7 +184,11 @@ This feature allows you to deliver in-app messages that are triggered from any a
 
 To set up your app for in-app messages, implement the following instructions. You can complete these steps even if you have not yet defined any messages in Mobile Services. After you define messages, they are delivered dynamically to your app and displayed without an app store update.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=set-in-app-messaging"/>
 
 iOS
 
@@ -186,7 +206,11 @@ The fallback image asset name is specified when you configure the message in Mob
 
 The following methods allow you to configure the small and large icons that appear in the notification area, and the large icon that is displayed when notifications appear in the notification drawer.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=set-icon"/>
 
 iOS
 
@@ -380,7 +404,11 @@ You can also append one or more of the following reserved keys, with user-genera
 
 Ensure that the deep link URL has the `a.deeplink.id` key in the URL string. If `a.deeplink.id` is not found, none of the appended URL parameters are sent to Analytics via context data.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&task=track-deep-link"/>
 
 iOS
 
