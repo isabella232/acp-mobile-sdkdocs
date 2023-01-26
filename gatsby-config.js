@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 module.exports = {
-    pathPrefix: process.env.PATH_PREFIX || '/client-sdks/acp/',
+    pathPrefix: process.env.PATH_PREFIX || '/client-sdks/previous-versions/',
     siteMetadata: {
         versions: [
             {
@@ -20,7 +20,7 @@ module.exports = {
               },
               {
                 title: 'Previous versions',
-                path: '/client-sdks/acp/documentation',
+                path: '/client-sdks/previous-versions/documentation',
                 selected: true
               }
           ],
