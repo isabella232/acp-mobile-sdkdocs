@@ -47,7 +47,11 @@ adobe_mc = TS=XXXXXX|MCMID=XXXXXX|MCAID=XXXXXX|MCORGID=XXXXXX@AdobeOrg
 
 If your application uses more complicated URLs, such as Angular URLs, you should use [getUrlVariables](#geturlvariables).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=append-to-url"/>
 
 iOS
 
@@ -79,7 +83,11 @@ The `extensionVersion()` API returns the version of the Identity extension that 
 
 To get the version of the Identity extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -111,7 +119,11 @@ This API retrieves the Adobe Experience Cloud ID (ECID) that was generated when 
 
 This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=get-experience-cloud-id"/>
 
 iOS
 
@@ -141,7 +153,11 @@ Xamarin
 
 This API returns all customer identifiers that were previously synced with the Adobe Experience Cloud Identity Service.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=get-identifiers"/>
 
 iOS
 
@@ -180,7 +196,11 @@ If an error occurs while retrieving the URL string, the callback handler will be
   * `TS` - A timestamp taken when this request was made
 * The optional `adobe_aa_vid` attribute is the URL-encoded Analytics Custom Visitor ID (VID), if previously set in the [Analytics extension](../../adobe-analytics/index.md).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=get-url-variables"/>
 
 iOS
 
@@ -210,7 +230,11 @@ Xamarin
 
 The `registerExtension()` API registers the Identity extension with the Mobile Core extension. This API allows the extension to send and receive events to and from the Mobile SDK.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=register-extension"/>
 
 iOS
 
@@ -244,7 +268,11 @@ The advertising ID is preserved between app upgrades, is saved and restored duri
 
 If the current SDK privacy status is `optedout`, the advertising identifier is not set or stored.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=set-advertising-identifier"/>
 
 iOS
 
@@ -278,7 +306,11 @@ This API sets the device token for push notifications in the SDK. If the current
 
 You should call `setPushIdentifier` on each application launch to ensure the most up-to-date device token is set to the SDK. If no device token is available, `null`/`nil` should be passed.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=set-push-identifier"/>
 
 iOS
 
@@ -302,7 +334,11 @@ If the current SDK privacy status is `MobilePrivacyStatus.OPT_OUT`, calling this
 
 This API updates or appends the provided customer identifier type key and value with the given authentication state to the Experience Cloud Identity Service. If the specified customer ID type exists in the service, the ID is updated with the new ID and authentication state. Otherwise a new customer ID is added.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=sync-identifier"/>
 
 iOS
 
@@ -332,7 +368,11 @@ Xamarin
 
 This API is an overloaded version, which does not include the parameter for the authentication state and it assumes a default value of `VisitorID.AuthenticationState.UNKNOWN`.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=sync-identifiers"/>
 
 iOS
 
@@ -364,7 +404,11 @@ The function of this API is the same as the `syncIdentifier` API. This API passe
 
 Starting with _ACPIdentity v2.1.3 (iOS)_ and _Identity v1.1.2 (Android)_ if the new `identifier` value is null or empty, this ID type is removed from the local storage, Identity shared state and not synced with the Adobe Experience Cloud Identity Service.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=sync-identifiers-overloaded"/>
 
 iOS
 
@@ -392,7 +436,11 @@ Xamarin
 
 ## Public classes
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=public-classes"/>
 
 iOS
 

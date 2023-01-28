@@ -6,7 +6,11 @@ import Tabs from './tabs/api-reference.md'
 
 The `extensionVersion()` API returns the version of the Profile extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -38,13 +42,13 @@ The `getUserAttributes()` API gets the user profile attributes with the given ke
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
+Android
+
+<Tabs query="platform=android&api=get-user-attributes"/>
+
 iOS
 
 <Tabs query="platform=ios&api=get-user-attributes"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=get-user-attributes"/>
 
 Flutter
 
@@ -62,7 +66,11 @@ Xamarin
 
 Registers the Profile extension with the Mobile Core extension.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&api=register-extension"/>
 
 iOS
 
@@ -74,13 +82,13 @@ Removes the user profile attribute for the given key.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
+Android
+
+<Tabs query="platform=android&api=remove-user-attribute"/>
+
 iOS
 
 <Tabs query="platform=ios&api=remove-user-attribute"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=remove-user-attribute"/>
 
 Flutter
 
@@ -100,13 +108,13 @@ Removes the user profile attributes for the given keys.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
+Android
+
+<Tabs query="platform=android&api=remove-user-attributes"/>
+
 iOS
 
 <Tabs query="platform=ios&api=remove-user-attributes"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=remove-user-attributes"/>
 
 Flutter
 
@@ -132,13 +140,13 @@ Remember the following information:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
+Android
+
+<Tabs query="platform=android&api=update-user-attribute"/>
+
 iOS
 
 <Tabs query="platform=ios&api=update-user-attribute"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=update-user-attribute"/>
 
 Flutter
 
@@ -166,13 +174,13 @@ Allows you to create/update a batch of user profile attributes:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
+Android
+
+<Tabs query="platform=android&api=update-user-attributes"/>
+
 iOS
 
 <Tabs query="platform=ios&api=update-user-attributes"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=update-user-attributes"/>
 
 Flutter
 

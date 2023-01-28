@@ -25,7 +25,11 @@ Go to the [Experience Platform Data Collection UI](https://experience.adobe.com/
 
 ### Import the library to your app code
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=import-library"/>
 
 iOS
 
@@ -53,7 +57,11 @@ Xamarin
 
 ### Register AEPAssurance with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=register-assurance"/>
 
 iOS
 
@@ -93,4 +101,4 @@ You may call this API when the app launches with a url (see code snippet below f
 
 iOS
 
-<Tabs query="platform=ios&task=register-assurance"/>
+<Tabs query="platform=ios&task=implement-assurance"/>

@@ -6,7 +6,11 @@ import Tabs from './tabs/api-reference.md'
 
 This API causes the SDK to download the configuration for the provided app ID and apply the configuration to the current session.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+
+Android
+
+<Tabs query="platform=android&api=configure-with-app-id"/>
 
 iOS
 
@@ -28,7 +32,11 @@ This API is only available in Android and was added in Android was added in Andr
 
 You can bundle a JSON configuration file in the app's Assets folder to replace or complement the configuration that was downloaded by using the [Configure with App ID per environment](./index.md#configure-with-app-id-per-environment) approach.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="0"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+
+Android
+
+<Tabs query="platform=android&api=configure-with-file-in-assets"/>
 
 ## configureWithFileInPath
 
@@ -36,7 +44,11 @@ You can include a bundled JSON configuration file in your app package to replace
 
 To pass in a bundled path and file name:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=configure-with-file-in-path"/>
 
 iOS
 
@@ -52,7 +64,11 @@ The `extensionVersion()` API returns the version of the Configuration extension.
 
 To get the version of the Configuration extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -90,7 +106,11 @@ Keys that are not found on the current configuration are added when this method 
 
 Do not use this API to update the `build.environment` key or any key with an environment prefix, because it can lead to unexpected behaviors. For more information, read [Environment-aware configuration properties](./index.md#environment-aware-configuration-properties).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=update-configuration"/>
 
 iOS
 

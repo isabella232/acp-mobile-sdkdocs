@@ -34,13 +34,13 @@ To add the Profile extension to your app:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
 
+Android
+
+<Tabs query="platform=android&task=add"/>
+
 iOS
 
 <Tabs query="platform=ios&task=add"/>
-
-React Native
-
-<Tabs query="platform=react-native&task=add"/>
 
 Cordova
 
@@ -57,7 +57,11 @@ Xamarin
 
 ## Register the extension
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=register"/>
 
 iOS
 

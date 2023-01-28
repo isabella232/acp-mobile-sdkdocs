@@ -8,7 +8,11 @@ The `extensionVersion()` API returns the version of the Signal extension that is
 
 To get the version of the Signal extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -34,12 +38,15 @@ Xamarin
 
 <Tabs query="platform=xamarin&api=extension-version"/>
 
-
 ## registerExtension
 
 Registers the Signal extension with the Mobile Core.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -48,7 +55,6 @@ iOS
 React Native
 
 <Tabs query="platform=react-native&api=register-extension"/>
-
 
 ## collectPII
 

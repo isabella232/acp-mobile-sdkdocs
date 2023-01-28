@@ -34,7 +34,11 @@ You can set a privacy status to ensure collection of data suits your user's pref
 
 ### setPrivacyStatus
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<PrivacyTabs query="platform=android&task=set-privacy-status"/>
 
 iOS
 
@@ -44,7 +48,11 @@ iOS
 
 You can also programmatically view the current privacy status by using the following:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<PrivacyTabs query="platform=android&task=get-privacy-status"/>
 
 iOS
 
