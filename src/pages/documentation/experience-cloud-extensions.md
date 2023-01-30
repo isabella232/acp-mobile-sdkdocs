@@ -11,5 +11,4 @@ Experience Cloud extensions are extensions that directly connect with Experience
 - [Adobe Campaign Classic](./adobe-campaign-classic/index.md)
 - [Adobe Campaign Standard](./adobe-campaign-standard/index.md)
 - [Adobe Journey Optimizer](./adobe-journey-optimizer/index.md)
-- [Adobe Journey Optimizer Decisioning](./adobe-journey-optimizer-decisioning/index.md)
 - [Adobe Target](./adobe-target/)
