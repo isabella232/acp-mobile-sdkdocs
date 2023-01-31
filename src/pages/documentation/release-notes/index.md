@@ -4,15 +4,35 @@ description: Release notes and change logs for the Adobe Experience Platform Mob
 
 # Release notes
 
+## June 15, 2022
+
+### Android Core 1.11.1
+
+* Fixed a crash which was caused by an exception thrown from the Android Activity class.
+
+## June 7, 2022
+
 ### iOS ACPAnalytics 2.5.3
 
 * Fix crash in AnalyticsHitDatabase caused by unprotected shared access of AnalyticsState object.
+
+## May 27, 2022
+
+### Android Campaign Standard 1.0.9
+
+* Fixed a compatibility issue seen when using the Campaign Standard and Messaging In-App beta extensions in the same mobile app.
 
 ## May 24, 2022
 
 ### iOS Analytics 2.5.2
 
 * Fixed a bug for the integration with Assurance where "No Debug Flag" was showing in the UI for some events.
+
+## May 18, 2022
+
+### Android Campaign Classic 1.0.2
+
+* Android Campaign Classic SDK is now Adobe Campaign Classic (ACC) v8 compatible! Broadlog ID can be provided in the UUID format in the notification tracking APIs.
 
 ## May 17, 2022
 
@@ -35,11 +55,40 @@ Updated the following ACP React Native packages to remove the usage of deprecate
 - [@adobe/react-native-acpaudience v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpaudience/v/2.0.1)
 - [@adobe/react-native-acpanalytics v2.0.1](https://www.npmjs.com/package/@adobe/react-native-acpanalytics/v/2.0.1)
 
+## April 21, 2022
+
+### Android Core 1.11.0
+
+* Internal fixes to support In-App Messaging with the AEPMessaging extension.
+* Fixed a crash that could happen while initializing event history database.
+
+### Android Identity 1.3.1
+
+* Improved extension stability by adding additional error checks when processing sync identifier requests.
+
 ## March 30, 2022
 
 ## End of support for Adobe Experience Platform Mobile SDK plugins for Unity
 
 * Effective March 30, 2022, support for Adobe Experience Platform Mobile SDKs on Unity is no longer active. While you may continue using our libraries, Adobe no longer plans to update, modify, or provide support for these libraries. Please contact your Adobe CSM for details.
+
+## March 11, 2022
+
+### Android Core 1.10.1
+
+* Updates the timestamp format for rule token `~timestampp`  with fractional seconds and UTC time zone. This rule token is used to set the mobile property data element "Adobe Experience Platform Timestamp".
+
+### Android Lifecycle 1.1.1
+
+* Lifecycle foreground and background events for Edge Network now format timestamps with fractional seconds and UTC time zone.
+
+### Android Edge 1.3.1
+
+* Updates timestamp in Experience Events to use fractional seconds.
+
+### Android Consent 1.0.1
+
+* Updates timestamp in Consent requests to use fractional seconds.
 
 ## March 4, 2022
 
@@ -57,6 +106,21 @@ Updated the iOS native libraries for the [ACPCore](https://github.com/adobe/xama
 * [Xamarin Analytics iOS 1.0.1](https://www.nuget.org/packages/Adobe.ACPAnalytics.iOS/1.0.1): iOS Analytics updated to 2.5.1
 * [Xamarin Analytics tvOS 1.0.1](https://www.nuget.org/packages/Adobe.ACPAnalytics.tvOS/1.0.1): tvOS Analytics updated to 2.5.1
 
+## March 3, 2022
+
+### Android Analytics 1.2.10
+
+* Fixed a bug for the integration with Assurance where "No Debug Flag" was showing in the UI for some events.
+
+## February 22, 2022
+
+### Android Assurance 1.0.4
+
+* Add support for transmitting large events.
+* Assurance extension now prompts an error message when attempting to connect to a deleted session.
+* Improved logging for troubleshooting.
+* Fixed an issue to ensure that event collection stops on session disconnection.
+
 ## February 14, 2022
 
 ### iOS Core 2.9.5
@@ -66,6 +130,26 @@ Updated the iOS native libraries for the [ACPCore](https://github.com/adobe/xama
 ### iOS Identity 2.5.2
 
 * Fixes intermittent issue for GetUrlVariables and AppendToUrl APIs when custom Analytics identifiers are being used.
+
+## February 8, 2022
+
+### Android Identity 1.3.0
+
+- Added a `device_consent` status parameter when `setAdvertisingIdentifier` is called after ad tracking is enabled/disabled.
+- Added support to handle the MobileCore.resetIdentities() API.
+- Fixes intermittent issue for GetUrlVariables and AppendToUrl APIs when custom Analytics identifiers are being used.
+- Stability improvements for network connections.
+
+Released with sdk-core version 1.10.0
+
+## February 7, 2022
+
+### Android Core 1.10.0
+
+* Added support for a new API `clearUpdatedConfiguration()`, see Configuration API reference for more details.
+* Added support for optionally capturing event history on the device.
+* Added support for triggering rules engine conditions based on event history.
+* Added public platform support for datastore and UI services.
 
 ## January 26, 2022
 
