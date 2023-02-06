@@ -77,7 +77,7 @@ Kotlin
 
 ## Replace the deprecated API calls with the new API calls
 
-Several Android 1.x APIs are depreacted in Android 2.0 libraries, you can choose to replace the deprecated API calls in your code with calling the corresponding alternative APIs:
+Several Android 1.x APIs are depreacted in Android 2.0 libraries, you can choose to replace the deprecated API calls in your code with calling the alternative APIs:
 
 | Deprecated API                  | Alternative API                  |
 | :------------------------------ | :------------------------------- |
