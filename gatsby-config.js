@@ -403,7 +403,7 @@ module.exports = {
                         path: "documentation/privacy-and-gdpr"
                     },
                     {
-                        title: "Migrate to Android 2.0",
+                        title: "Migrate to latest Android SDK",
                         path: "documentation/migrate-to-android",
                     },
                 ]
