@@ -1,6 +1,6 @@
 import Tabs from './tabs/migrate-to-android.md'
 
-# Migrate to Android 2.0
+# Migrate to latest Android SDK
 
 If you have implemented the Android SDK 1.x versions, then this guide will help you understand the steps required to migrate your implementation to the latest Android SDK versions (2.0 or higher). In summary, you'll need to:
 
