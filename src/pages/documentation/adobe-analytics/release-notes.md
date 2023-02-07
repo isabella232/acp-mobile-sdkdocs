@@ -121,6 +121,10 @@ The following updates were made in this release:
 
 * `requestEventIdentifier` is now appended to all non-track events so that Lifecycle (or other extension events that are sent to Analytics) can be viewed with rich detail in Project Griffon.
 
+### iOS Analytics 2.2.2
+
+* `requestEventIdentifier` is now appended to all non-track events so that Lifecycle (or other extension events that are sent to Analytics) can be viewed with rich detail in Project Griffon.
+
 ## October 28, 2019
 
 The following change was made in this release:

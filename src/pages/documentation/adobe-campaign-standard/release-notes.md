@@ -17,7 +17,7 @@
 
 The following updates were made in this release:
 
-**Android Campaign 1.0.7**
+### Android Campaign 1.0.7 and iOS Campaign 1.0.6
 
 * Added an enhancement to reduce the number of registration requests sent to Campaign. There is now a default 7 day registration delay which starts after the most recent registration request sent to Campaign is successful.
 * Added configuration settings to change the default registration delay or to pause registration requests.
@@ -26,7 +26,7 @@ The following updates were made in this release:
 
 The following update was made in this release:
 
-**Android Campaign 1.0.6**
+### Android Campaign 1.0.6
 
 * Added support for weak ETags.
 
@@ -34,7 +34,7 @@ The following update was made in this release:
 
 The following update was made in this release:
 
-**Android Campaign 1.0.5**
+### Android Campaign 1.0.5
 
 * Added ETag support for Campaign rules download requests.
 
@@ -42,7 +42,7 @@ The following update was made in this release:
 
 The following updates were made in this release:
 
-**Android Campaign 1.0.4**
+### Android Campaign 1.0.4
 
 * Changes in how fullscreen in-app messages are displayed inline with WebView security recommendations in Mobile Core 1.5.2 release.
 * Report extension details to Mobile Core for improved logging and Griffon support.
@@ -52,11 +52,11 @@ The following updates were made in this release:
 
 The following updates were made in this release:
 
-**Android Campaign 1.0.3**
+### Android Campaign 1.0.3
 
 * Improved existing log messages and added additional logging to assist with debugging.
 
-**iOS Campaign 1.0.5**
+### iOS Campaign 1.0.5
 
 * Improved existing log messages and added additional logging to assist with debugging.
 
