@@ -36,46 +36,6 @@ Consent.getConsents(new AdobeCallback<Map<String, Object>>() {
 });
 ```
 
-<Variant platform="android" task="update-consents" repeat="5"/>
-
-#### Java
-
-**Syntax**
-
-```java
-public static void update(final Map<String, Object> consents);
-```
-
-**Example**
-
-```java
-// example 1, updating users collect consent to 'yes'
-final Map<String, Object> collectConsents = new HashMap<>();
-collectConsents.put("collect", new HashMap<String, String>() {
-    {
-        put("val", "y");
-    }
-});
-
-final Map<String, Object> consents = new HashMap<>();
-consents.put("consents", collectConsents);
-
-Consent.update(consents);
-
-// example 2, updating users collect consent to 'no'
-final Map<String, Object> collectConsents = new HashMap<>();
-collectConsents.put("collect", new HashMap<String, String>() {
-    {
-        put("val", "n");
-    }
-});
-
-final Map<String, Object> consents = new HashMap<>();
-consents.put("consents", collectConsents);
-
-Consent.update(consents);
-```
-
 <Variant platform="android" task="set-privacy-status" repeat="8"/>
 
 You can set the privacy status to one of the following values:

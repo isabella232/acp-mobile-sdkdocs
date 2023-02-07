@@ -16,7 +16,11 @@ After the configuration is retrieved when the app is initially launched, the con
 
 The unique environment ID from the Data Collection UI can be configured with the SDK using the following:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="4"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="5"/>
+
+Android
+
+<Tabs query="platform=android&task=configure"/>
 
 iOS
 
@@ -46,7 +50,11 @@ Keys that are not found on the current configuration are added when this method 
 
 Do not use this API to update the build.environment or any key with an environment prefix, because it can lead to unexpected behavior. For more information, read [Environment-aware configuration properties](./index.md#environment-aware-configuration-properties).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=update"/>
 
 iOS
 
@@ -97,7 +105,11 @@ You can also load a different `ADBMobileConfig.json` file by using the `Configur
 
 To pass in a bundled path and file name:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&task=bundle"/>
 
 iOS
 

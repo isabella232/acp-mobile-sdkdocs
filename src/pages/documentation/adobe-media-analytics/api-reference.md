@@ -16,7 +16,7 @@ Android
 
 <Tabs query="platform=android&api=extension-version"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=extension-version"/>
 
@@ -38,7 +38,7 @@ Android
 
 <Tabs query="platform=android&api=create-tracker"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-tracker"/>
 
@@ -65,7 +65,7 @@ Android
 
 <Tabs query="platform=android&api=create-tracker-with-config"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-tracker-with-config"/>
 
@@ -91,7 +91,7 @@ Android
 
 <Tabs query="platform=android&api=create-media-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-media-object"/>
 
@@ -115,7 +115,7 @@ Android
 
 <Tabs query="platform=android&api=create-ad-break-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-ad-break-object"/>
 
@@ -140,7 +140,7 @@ Android
 
 <Tabs query="platform=android&api=create-ad-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-ad-object"/>
 
@@ -165,7 +165,7 @@ Android
 
 <Tabs query="platform=android&api=create-chapter-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-chapter-object"/>
 
@@ -194,7 +194,7 @@ Android
 
 <Tabs query="platform=android&api=create-qoe-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-qoe-object"/>
 
@@ -216,7 +216,7 @@ Android
 
 <Tabs query="platform=android&api=create-state-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=create-state-object"/>
 
@@ -241,7 +241,7 @@ Android
 
 <Tabs query="platform=android&api=track-session-start"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-session-start"/>
 
@@ -259,7 +259,7 @@ Android
 
 <Tabs query="platform=android&api=track-play"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-play"/>
 
@@ -276,7 +276,7 @@ Android
 
 <Tabs query="platform=android&api=track-pause"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-pause"/>
 
@@ -294,7 +294,7 @@ Android
 
 <Tabs query="platform=android&api=track-complete"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-complete"/>
 
@@ -312,7 +312,7 @@ Android
 
 <Tabs query="platform=android&api=track-session-end"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-session-end"/>
 
@@ -334,7 +334,7 @@ Android
 
 <Tabs query="platform=android&api=track-error"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-error"/>
 
@@ -358,7 +358,7 @@ Android
 
 <Tabs query="platform=android&api=track-event"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=track-event"/>
 
@@ -380,7 +380,7 @@ Android
 
 <Tabs query="platform=android&api=update-current-playhead"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=update-current-playhead"/>
 
@@ -402,7 +402,7 @@ Android
 
 <Tabs query="platform=android&api=update-qoe-object"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=update-qoe-object"/>
 
@@ -422,7 +422,7 @@ Android
 
 <Tabs query="platform=android&api=media-type"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=media-type"/>
 
@@ -440,7 +440,7 @@ Android
 
 <Tabs query="platform=android&api=stream-type"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=stream-type"/>
 
@@ -458,7 +458,7 @@ Android
 
 <Tabs query="platform=android&api=standard-video-constants"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=standard-video-constants"/>
 
@@ -476,7 +476,7 @@ Android
 
 <Tabs query="platform=android&api=standard-audio-constants"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=standard-audio-constants"/>
 
@@ -494,7 +494,7 @@ Android
 
 <Tabs query="platform=android&api=standard-ad-constants"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=standard-ad-constants"/>
 
@@ -512,7 +512,7 @@ Android
 
 <Tabs query="platform=android&api=player-state-constants"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=player-state-constants"/>
 
@@ -530,7 +530,7 @@ Android
 
 <Tabs query="platform=android&api=media-events"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=media-events"/>
 
@@ -548,7 +548,7 @@ Android
 
 <Tabs query="platform=android&api=media-resume"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&api=media-resume"/>
 

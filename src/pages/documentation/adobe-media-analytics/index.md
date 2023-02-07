@@ -58,7 +58,7 @@ Android
 
 <Tabs query="platform=android&task=add"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&task=add"/>
 
@@ -74,7 +74,7 @@ Android
 
 <Tabs query="platform=android&task=register"/>
 
-iOS (ACP 2.x)
+iOS
 
 <Tabs query="platform=ios&task=register"/>
 

@@ -21,7 +21,11 @@ To get started with Identity, complete the following steps:
 
 ## Add the Identity extension to your app
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=add"/>
 
 iOS
 
@@ -53,7 +57,11 @@ The `registerExtension()` API registers the Identity extension with the Mobile C
 
 To register the Identity extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=register"/>
 
 iOS
 
@@ -109,7 +117,11 @@ To use the same visitor ID in the app and mobile web and pass the visitor ID to 
 
 ### Implementing visitor tracking between an app and the mobile web
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=implement"/>
 
 iOS
 

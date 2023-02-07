@@ -6,12 +6,23 @@
 
 * Bug fixes to improve SDK stability.
 
+## Jul 16, 2021
+
+### Android Media 2.1.2
+
+* Enabled debugging post processed data in Media Analytics Assurance workflow.
+* Added support to handle the MobileCore.resetIdentities() API.
+
 ## March 29, 2021
 
 ### @adobe/react-native-acpmedia 2.3.1
 
 * Updated to iOS Media v2.3.1.
 * Updated to Android Media v2.1.1.
+
+### Android Media 2.1.1
+
+* Updated "Content-Type" header to "application/json" in Media Collection API requests.
 
 ## March 26, 2021
 
@@ -34,6 +45,11 @@
 * Added support for tvOS.
 
 ## October 7, 2020
+
+### Android Media 2.1.0
+
+* Changed the **default** Ad tracking granularity to **10 seconds**. Added configuration key to enable 1 sec ad tracking.
+* **Restart** tracking session every **24 hours** for long running sessions.
 
 ### iOS Media 2.2.0
 
@@ -58,6 +74,10 @@
 
 ## June 17, 2020
 
+### Android Media 2.0.1
+
+* Fixed a crash when configuring incorrect collection API server.
+
 ### iOS Media 2.1.0
 
 * Added tvOS compatibility
@@ -72,6 +92,11 @@
 
 ## May 19, 2020
 
+### Android Media 2.0.0
+
+* Uses media collection endpoint for tracking both streaming and downloaded content.
+* Added support for player state tracking
+* 
 ### iOS Media 2.0.0
 
 * Uses media collection endpoint for tracking both streaming and downloaded content.
@@ -89,6 +114,10 @@ The following updates were made in this release:
 
 The following updates were made in this release:
 
+### Android Media 1.1.1
+
+* Bug fixes
+
 ### iOS Media 1.1.2
 
 * Bug fixes
@@ -100,6 +129,13 @@ The following updates were made in this release:
 ### iOS Media 1.1.1
 
 * Bug fixes
+
+## August 30, 2019
+
+### Android Media 1.1.0
+
+* Support for tracking downloaded content.
+* Bug fixes to improve stability and performance.
 
 ## August 29, 2019
 
@@ -130,6 +166,10 @@ The following updates were made in this release:
 ## January 24, 2019
 
 The following updates were made in this release:
+
+### Android Media 1.0.0
+
+* First version of Media Android Extension.
 
 ### iOS Media 1.0.0
 
