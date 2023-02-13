@@ -55,9 +55,9 @@ dependencies {
 
 <InlineAlert variant="warning" slots="text"/>
 
-Warning Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://github.com/adobe/aepsdk-core-android/blob/main/Documentation/MobileCore/gradle-dependencies.md) for managing gradle dependencies.
+Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://github.com/adobe/aepsdk-core-android/blob/main/Documentation/MobileCore/gradle-dependencies.md) for managing Gradle dependencies.
 
-Save the `build.gradle` file and click `Sync Project with Gradle Files` in Android Studio to download the latet Android SDK.
+Save the `build.gradle` file and select `Sync Project with Gradle Files` in Android Studio to download the latet Android SDK.
 
 ## Update SDK initialization
 
@@ -79,11 +79,11 @@ Kotlin
 
 Several Android 1.x APIs are depreacted in Android 2.0 libraries, you can choose to replace the deprecated API calls in your code with calling the alternative APIs:
 
-| Deprecated API                  | Alternative API                  |
-| :------------------------------ | :------------------------------- |
-| Identity.registerExtension      | MobileCore.registerExtensions    |
-| Signal.registerExtension        |                                  |
-| Lifecycle.registerExtension     |                                  |
-| UserProfile.registerExtension   |                                  |
-| UserProfile.updateUserAttribute | UserProfile.updateUserAttributes |
-| UserProfile.removeUserAttribute | UserProfile.removeUserAttributes |
+| Deprecated API                    | Alternative API                    |
+| :-------------------------------- | :--------------------------------- |
+| `Identity.registerExtension`      | `MobileCore.registerExtensions`    |
+| `Signal.registerExtension`        |                                    |
+| `Lifecycle.registerExtension`     |                                    |
+| `UserProfile.registerExtension`   |                                    |
+| `UserProfile.updateUserAttribute` | `UserProfile.updateUserAttributes` |
+| `UserProfile.removeUserAttribute` | `UserProfile.removeUserAttributes` |
