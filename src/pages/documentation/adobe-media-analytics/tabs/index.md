@@ -1,12 +1,4 @@
-<Variant platform="android" task="add" repeat="9"/>
-
-The latest Android SDK versions:
-
-[<img src="https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/core.svg?logo=android&logoColor=white&label=core&style=flat-square" alt="Maven Central" style="width:150px"/>](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/core)
-
-[<img src="https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/analytics.svg?logo=android&logoColor=white&label=analytics&style=flat-square" alt="Maven Central" style="width:150px"/>](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/analytics)
-
-[<img src="https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/media.svg?logo=android&logoColor=white&label=media&style=flat-square" alt="Maven Central" style="width:150px"/>](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/media)
+<Variant platform="android" task="add" repeat="5"/>
 
 1. Add the Media extension and its dependencies to your project using the app's Gradle file.
 
@@ -24,15 +16,7 @@ You can also manually include the libraries. Get `.aar` libraries from [Github](
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios" task="add" repeat="12"/>
-
-The latest iOS SDK versions:
-
-[<img src="https://img.shields.io/cocoapods/v/AEPCore.svg?color=orange&label=ACPCore&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/ACPCore)
-
-[<img src="https://img.shields.io/cocoapods/v/AEPAnalytics.svg?color=orange&label=ACPAnalytics&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/ACPAnalytics)
-
-[<img src="https://img.shields.io/cocoapods/v/AEPMedia.svg?color=orange&label=ACPMedia&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/ACPMedia)
+<Variant platform="ios" task="add" repeat="8"/>
 
 1. To add the Media library and its dependencies to your project, add the following pods to your `Podfile`:
 
@@ -58,17 +42,9 @@ import ACPMedia
 #import "ACPMedia.h"
 ```
 
-<Variant platform="react-native" task="add" repeat="18"/>
+<Variant platform="react-native" task="add" repeat="11"/>
 
 #### JavaScript
-
-The latest React Native Wrapper versions:
-
-[<img src="https://img.shields.io/npm/v/@adobe/react-native-acpcore.svg?color=green&label=%40adobe%2Freact-native-acpcore&logo=npm&style=flat-square" alt="npm version" style="width:250px"/>](https://www.npmjs.com/package/@adobe/react-native-acpcore)
-
-[<img src="https://img.shields.io/npm/v/@adobe/react-native-acpanalytics.svg?color=green&label=%40adobe%2Freact-native-acpanalytics&logo=npm&style=flat-square" alt="npm version" style="width:250px"/>](https://www.npmjs.com/package/@adobe/react-native-acpanalytics)
-
-[<img src="https://img.shields.io/npm/v/@adobe/react-native-acpmedia.svg?color=green&label=%40adobe%2Freact-native-acpmedia&logo=npm&style=flat-square" alt="npm version" style="width:250px"/>](https://www.npmjs.com/package/@adobe/react-native-acpmedia)
 
 1. Install Media.
 

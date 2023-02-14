@@ -1,11 +1,30 @@
 # Release Notes
 
+## January 20, 2021
+
+### iOS Audience 2.3.0
+
+* Added tvOS compatibility
+
+## December 18, 2020
+
+### iOS Audience 2.2.0
+
+* The AEP SDKs are now distributed using XCFrameworks in order to support hardware with the new Apple M1 architecture while maintaining support for existing Intel architecture.
+  * **IMPORTANT**: Upgrading to XCFrameworks distribution requires Xcode 12.0 or newer
+  * **IMPORTANT**: If using Cocoapods, upgrading to the XCFrameworks distribution requires Cocoapods 1.10.0 or newer
+
 ## November 9, 2020
 
 ### Android Audience 1.1.0
 
 * Added support for AdobeCallbackWithError for APIs getVisitorProfile, signalWithData.
 * Added changes to publish Audience shared state on EventHub boot.
+
+### iOS Audience 2.1.0
+* Added new APIs getVisitorProfileWithCompletionHandler, signalWithData:WithCompletionHandler. These APIs take completion handler as an argument which is invoked with the desirable response or an NSError if an unexpected error occurs or the request times out.
+* Added changes to publish Audience shared state on EventHub boot.
+* Fixed an issue to handle Analytics response only if AAMForwarding is enabled.
 
 ## July 17, 2020
 

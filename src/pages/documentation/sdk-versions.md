@@ -97,7 +97,7 @@ For React Native, we recommend that you first install [Node.js](https://nodejs.o
 
 <InlineAlert variant="info" slots="text"/>
 
-Beta versions of React Native Experience Platform Edge Network, Edge Identity, Edge Consent, Messaging and Assurance can be found in the repository link [here](https://github.com/adobe/aepsdk-react-native). These new beta extensions require the latest AEP Core to opperate. See [README](https://github.com/adobe/aepsdk-react-native/blob/main/README.md) for further information on installation and configuration.
+React Native Experience Platform Edge Network, Edge Identity, Edge Consent, Optimize, Places, Target, Campaign Classic and Assurance can be found in the repository link [here](https://github.com/adobe/aepsdk-react-native). These new extensions require the latest AEP Core to operate. See [README](https://github.com/adobe/aepsdk-react-native/blob/main/README.md) for further information on installation and configuration.
 
 ## Flutter
 

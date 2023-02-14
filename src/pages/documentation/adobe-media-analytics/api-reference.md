@@ -266,6 +266,7 @@ iOS
 React Native
 
 <Tabs query="platform=react-native&api=track-play"/>
+
 ### trackPause
 
 Tracks the media pause.

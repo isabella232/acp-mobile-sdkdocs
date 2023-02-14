@@ -4,6 +4,12 @@ description: Release notes and change logs for the Adobe Experience Platform Mob
 
 # Release notes
 
+## August 25, 2022
+
+### iOS ACPAnalytics 2.5.4
+
+* Fix race conditions in AnalyticsHitQueue to prevent crash related to concurrent reset of database.
+
 ## June 15, 2022
 
 ### Android Core 1.11.1

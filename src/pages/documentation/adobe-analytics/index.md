@@ -102,7 +102,11 @@ The number of seconds to wait before Analytics launch hits are sent from the SDK
 
 ## Add Analytics to your application
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=add"/>
 
 iOS
 
@@ -130,7 +134,11 @@ Xamarin
 
 ## Register Analytics with Mobile Core
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=register"/>
 
 iOS
 
@@ -186,7 +194,11 @@ For more information about collecting audio and video analytics, please read the
 
 Event serialization is not supported by processing rules. To set serialized events directly on the hits sent to Analytics, use the following syntax in context data parameters:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&task=serialize"/>
 
 iOS
 

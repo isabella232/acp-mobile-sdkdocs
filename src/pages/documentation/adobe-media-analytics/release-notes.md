@@ -96,7 +96,7 @@
 
 * Uses media collection endpoint for tracking both streaming and downloaded content.
 * Added support for player state tracking
-* 
+
 ### iOS Media 2.0.0
 
 * Uses media collection endpoint for tracking both streaming and downloaded content.

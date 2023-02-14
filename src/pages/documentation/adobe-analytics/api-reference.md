@@ -15,7 +15,11 @@ Force delete, without sending to Analytics, all hits being stored or batched on 
 
 Use caution when manually clearing the queue. This operation cannot be reverted.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android 
+
+<Tabs query="platform=android&api=clear-queue"/>
 
 iOS
 
@@ -47,7 +51,11 @@ The `extensionVersion()` API returns the version of the Analytics extension that
 
 To get the version of the Analytics extension, use the following code sample:
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=extension-version"/>
 
 iOS
 
@@ -77,7 +85,11 @@ Xamarin
 
 Retrieves the total number of Analytics hits in the tracking queue.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=get-queue-size"/>
 
 iOS
 
@@ -121,7 +133,11 @@ Retrieves the Analytics tracking identifier that is generated for this app/devic
 
 Starting with v1.2.9 (Android) / v2.5.1 (iOS ACPAnalytics) this API does not generate or retrieve a new tracking identifier (AID) for new visitors. For the visitors which have an AID previously generated will continue retrieve the AID value with this API, and new users will use the ECID (MID) value as the primary identity.<br/><br/>Before using this API, see the documentation on identifying [unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=get-tracking-identifier"/>
 
 iOS
 
@@ -173,7 +189,11 @@ Before using this API, see [Identify unique visitors](https://experienceleague.a
 
 This API gets a custom Analytics visitor identifier, which has been set previously using [setVisitorIdentifier](#setvisitoridentifier).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=get-visitor-identifier"/>
 
 iOS
 
@@ -231,7 +251,11 @@ This method forces the library to send all hits in the offline queue, regardless
 
 Use caution when manually clearing the queue. This operation cannot be reverted.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=send-queued-hits"/>
 
 iOS
 
@@ -265,7 +289,11 @@ Before using this API, see [Identify unique visitors](https://experienceleague.a
 
 Sets a custom Analytics visitor identifier. For more information, see [Custom Visitor ID](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html).
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="6"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="7"/>
+
+Android
+
+<Tabs query="platform=android&api=set-visitor-identifier"/>
 
 iOS
 
