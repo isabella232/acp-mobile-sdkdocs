@@ -14,7 +14,7 @@ At this time, the following Android SDK 1.x libraries may be switched out with t
 
 <InlineAlert variant="warning" slots="text"/>
 
-Since we will not provide a `Core bundle` artifact automatically including Core, Signal, Lifecycle and Identity artifacts, you need to manually import those libraries in Android SDK 2.0.
+Starting with version 2.0.0, the `sdk-core` bundle (which includes Core, Lifecycle, Identity, Signal) will no longer receive updates. You need to include those libraries individually as described below.
 
 | Extension Name  | Latest Version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ Kotlin
 
 ## Replace the deprecated API calls with the new API calls
 
-Several Android 1.x APIs are depreacted in Android 2.0 libraries, you can choose to replace the deprecated API calls in your code with calling the alternative APIs:
+Some of the APIs available in previous major versions of the Mobile SDK for Android are now deprecated. You can choose to replace the deprecated APIs in your code with the alternative APIs in the latest version, as described in the table below:
 
 | Deprecated API                    | Alternative API                    |
 | :-------------------------------- | :--------------------------------- |
