@@ -65,6 +65,10 @@ module.exports = {
                 title: "Latest iOS SDK version",
                 path: "documentation/migrate-to-swift"
             },
+	    {
+                title: "Migrate to latest Android SDK",
+                path: "documentation/migrate-to-android"
+            },
             {
                 title: "Mobile Foundation extensions",
                 path: "/documentation/mobile-foundation-extensions",
@@ -401,11 +405,8 @@ module.exports = {
                     {
                         title: "Privacy and GDPR",
                         path: "documentation/privacy-and-gdpr"
-                    },
-                    {
-                        title: "Migrate to latest Android SDK",
-                        path: "documentation/migrate-to-android",
-                    },
+                    }
+                   
                 ]
             }
         ]
