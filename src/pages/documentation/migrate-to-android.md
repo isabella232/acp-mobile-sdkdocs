@@ -4,7 +4,7 @@ import Tabs from './tabs/migrate-to-android.md'
 
 If you have implemented the previous versions of the Android Mobile SDKs, then this guide will help you understand the steps required to migrate to the latest version. In summary, you will need to:
 
-1. [Switch Gradle dependencies from 1.x to 2.0](#switch-gradle-dependencies-to-latest-versions)
+1. [Switch Gradle dependencies to latest versions](#switch-gradle-dependencies-to-latest-versions)
 2. [Update SDK initialization](#update-sdk-initialization)
 3. [Replace the deprecated API calls with the new API calls](#replace-the-deprecated-api-calls-with-the-new-api-calls1)
 
