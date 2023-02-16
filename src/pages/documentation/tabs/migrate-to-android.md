@@ -8,7 +8,6 @@ public class MainApp extends Application {
     public void onCreate() {
         super.onCreate();
         MobileCore.setApplication(this);
-        MobileCore.setLogLevel(LoggingMode.ERROR);
         MobileCore.configureWithAppID(ENVIRONMENT_FILE_ID);
         List<Class<? extends Extension>> extensions = new ArrayList<>();
         extensions.add(Lifecycle.EXTENSION);
@@ -34,9 +33,8 @@ class MyApp : Application() {
     override fun onCreate() {
         super.onCreate()
         MobileCore.setApplication(this)
-        MobileCore.setLogLevel(LoggingMode.VERBOSE)
         MobileCore.configureWithAppID(ENVIRONMENT_FILE_ID)
-        val extensions = listOf(Identity.EXTENSION, Signal.EXTENSION, Lifecycle.EXTENSION, UserProfile.EXTENSION, Assurance.    EXTENSION)
+        val extensions = listOf(Identity.EXTENSION, Signal.EXTENSION, Lifecycle.EXTENSION, UserProfile.EXTENSION, Assurance.EXTENSION)
         MobileCore.registerExtensions(extensions) {
             Log.d(LOG_TAG, "AEP Mobile SDK is initialized")
         }

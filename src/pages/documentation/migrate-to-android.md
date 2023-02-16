@@ -10,7 +10,7 @@ If you have implemented the previous versions of the Android Mobile SDKs, then t
 
 ## Switch Gradle dependencies to latest versions
 
-At this time, the following Android SDK 1.x libraries may be switched out with their respective Android SDK 2.0 libraries. See instructions on proceeding further if you have [manually imported SDK libraries](#manual-library-import) , or if you used [Gradle to manage SDK dependencies](#Gradle).
+At this time, the previous versions of the Android Mobile SDKs may be switched out with their respective latest version. See instructions on proceeding further if you have [manually imported SDK libraries](#manual-library-import) , or if you used [Gradle to manage SDK dependencies](#Gradle).
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -61,7 +61,7 @@ Save the `build.gradle` file and select `Sync Project with Gradle Files` in Andr
 
 ## Update SDK initialization
 
-After you have imported the new Android libraries, you'll need to update SDK initialization code as described below. With Mobile Core version 2.0.0 and above, the `MobileCore.start()` API is no longer required. The SDK has simplified initialization and registration of extensions by providing the `MobileCore.registerExtensions()` API. After the given extensions have been registered, the SDK will be initialized and the completion block will be executed. Code which used to reside in the start() block will now reside in the `MobileCore.registerExtensions()`'s completion block.
+After you have imported the new Android libraries, you'll need to update SDK initialization code as described below. With Mobile Core version 2.0.0 and above, the `MobileCore.start()` API is no longer required. The SDK has simplified initialization and registration of extensions by providing the `MobileCore.registerExtensions()` API. After the given extensions have been registered, the SDK will be initialized and the completion block will be executed. The code which used to reside in the start() block will now reside in the `MobileCore.registerExtensions()`'s completion block.
 
 The following code snippets show the recommended initialization code for the latest Mobile SDKs.
 
