@@ -55,7 +55,7 @@ dependencies {
 
 <InlineAlert variant="warning" slots="text"/>
 
-Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://github.com/adobe/aepsdk-core-android/blob/main/Documentation/MobileCore/gradle-dependencies.md) for managing Gradle dependencies.
+Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://developer.adobe.com/client-sdks/documentation/manage-gradle-dependencies) for managing Gradle dependencies.
 
 Save the `build.gradle` file and select `Sync Project with Gradle Files` in Android Studio to download the latet Android SDK.
 
