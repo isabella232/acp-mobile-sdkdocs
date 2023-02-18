@@ -45,11 +45,11 @@ dependencies {
     //replace sdk-core with Core/Lifecycle/Identity/Signal 2.0
     //implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
     implementation 'com.adobe.marketing.mobile:core:2.+'
-    implementation 'com.adobe.marketing.mobile:identity:2.+'
     implementation 'com.adobe.marketing.mobile:lifecycle:2.+'
+    implementation 'com.adobe.marketing.mobile:identity:2.+'
     implementation 'com.adobe.marketing.mobile:signal:2.+'
 
-    // replace UserProfile 1.+ with UserProfile 2.0
+    //replace UserProfile 1.+ with UserProfile 2.0
     //implementation 'com.adobe.marketing.mobile:userprofile:1.+'
     implementation 'com.adobe.marketing.mobile:userprofile:2.+'
 
@@ -60,7 +60,7 @@ dependencies {
 
 Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://developer.adobe.com/client-sdks/documentation/manage-gradle-dependencies) for managing Gradle dependencies.
 
-Save the `build.gradle` file and select `Sync Project with Gradle Files` in Android Studio to download the latet Android SDK.
+Save the `build.gradle` file and select `Sync Project with Gradle Files` in Android Studio to download the latest Android SDK.
 
 ## Update SDK initialization
 
