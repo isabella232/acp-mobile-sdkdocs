@@ -87,7 +87,7 @@ jobs:
           AIO_AZURE_DEV_CONNECTION_STRING:
             ${{ secrets.AIO_AZURE_DEV_CONNECTION_STRING }}
 
-  build-dev:
+  build-stage:
     defaults:
       run:
         shell: bash
