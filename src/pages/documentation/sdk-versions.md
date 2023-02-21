@@ -1,34 +1,35 @@
-# SDK versions
+# Previous SDK versions
 
 <InlineAlert variant="warning" slots="text"/>
 
-This document lists the previous versions of the Mobile SDKs.
+This document lists the previous versions of the Adobe Experience Platform Mobile SDKs. Check out [this page for latest versions and solution support](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) of the Mobile SDKs.
 
 <InlineAlert variant="info" slots="text"/>
 
-**Migrate to Swift**<br/>If you are currently using our Objective-C (ACP-prefix libraries), please see the [Migrating to Swift](../migrate-to-swift.md) guide for next steps.
+**Migrate to latest Mobile SDKs for iOS**<br/>If you are currently using the Objective-C (ACP-prefixed) libraries, please see the [Migrating to latest SDKs for iOS](../migrate-to-swift.md) guide for next steps.
+
+<InlineAlert variant="info" slots="text"/>
+
+**Migrate to latest Mobile SDKs for Android**<br/>If you are currently using the Android libraries compatible with Mobile Core 1.x, please see the [Migrating to latest SDKs for Android](../migrate-to-android.md) guide for next steps.
 
 ## Android
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK for Android supports Google Android API 14 (Ice Cream Sandwich) or later. The Adobe Experience Platform Edge Network extension and other for Edge Network extensions require Android versions 4.4 or later (API levels 19 or later).
+The Mobile SDKs for Android compatible with Mobile Core version 1.x support Google Android API 14 (Ice Cream Sandwich) or later.
 
 <InlineAlert variant="info" slots="text"/>
 
-Due to sunset of [JCenter by JFrog](https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/), our SDKs are no longer being uploaded to JCenter. Android libraries are now available on [MavenCentral](https://search.maven.org/search?q=g:com.adobe.marketing.mobile). For more information, see links below or find [our libraries on MavenCentral](https://search.maven.org/search?q=g:com.adobe.marketing.mobile). For more information on how to declare dependencies from Maven, please see [Declaring repositories](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_multiple_repositories) on Gradle.
+Due to sunset of [JCenter by JFrog](https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/), the Mobile SDKs are no longer being uploaded to JCenter. Android libraries are now available on [MavenCentral](https://search.maven.org/search?q=g:com.adobe.marketing.mobile). For more information, see links below or find [the Android libraries on MavenCentral](https://search.maven.org/search?q=g:com.adobe.marketing.mobile). For more information on how to declare dependencies from Maven, please see [Declaring repositories](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_multiple_repositories) on Gradle.
 
 | Extension | Maven | Github |
 |---|---|---|
-| [Mobile Core](../mobile-core/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/core.svg?logo=android&logoColor=white&label=core&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/core) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
+| [Mobile Core](../mobile-core/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/sdk-core.svg?logo=android&logoColor=white&label=sdk-core&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/sdk-core) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Profile](../profile/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/userprofile.svg?logo=android&logoColor=white&label=userprofile&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/userprofile) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Identity](../mobile-core/identity/index.md) | Bundled in Mobile Core | — |
 | [Signal](../mobile-core/signal/index.md) | Bundled in Mobile Core | — |
 | [Lifecycle](../mobile-core/lifecycle/index.md) | Bundled in Mobile Core | — |
 | [Rules Engine](../mobile-core/rules-engine/index.md) | Bundled in Mobile Core | — |
-| [Adobe Experience Platform Edge Network](../edge-network/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/edge.svg?logo=android&logoColor=white&label=edge&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/edge) | - |
-| [Identity for Edge Network](../identity-for-edge-network/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/edgeidentity.svg?logo=android&logoColor=white&label=edgeidentity&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/edgeidentity) | [Link](https://github.com/adobe/aepsdk-edgeidentity-android) |
-| [Consent for Edge Network](../consent-for-edge-network/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/edgeconsent.svg?logo=android&logoColor=white&label=edgeconsent&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/edgeconsent) | [Link](https://github.com/adobe/aepsdk-edgeconsent-android) |
 | [Adobe Experience Platform Assurance](../platform-assurance-sdk/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/assurance.svg?logo=android&logoColor=white&label=assurance&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/assurance) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android)
 | [Places Service](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/places.svg?logo=android&logoColor=white&label=places&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/places) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Places Monitor](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.html?lang=en) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/places-monitor.svg?logo=android&logoColor=white&label=placesmonitor&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/places-monitor) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
@@ -36,8 +37,6 @@ Due to sunset of [JCenter by JFrog](https://jfrog.com/blog/into-the-sunset-bintr
 | [Adobe Analytics - Media Analytics for Audio & Video](../adobe-media-analytics/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/media.svg?logo=android&logoColor=white&label=media&versionPrefix=2&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/media) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Adobe Audience Manager](../adobe-audience-manager/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/audience.svg?logo=android&logoColor=white&label=audience&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/audience) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Adobe Analytics - Mobile Services](../adobe-analytics-mobile-services/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/mobileservices.svg?logo=android&logoColor=white&label=mobileservices&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/mobileservices) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
-| [Adobe Journey Optimizer](../adobe-journey-optimizer/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/messaging.svg?logo=android&logoColor=white&label=messaging&versionPrefix=1&style=flat-square)](#) | [Link](https://github.com/adobe/aepsdk-messaging-android) |
-| [Adobe Journey Optimizer - Decisioning](../adobe-journey-optimizer-decisioning/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/optimize.svg?logo=android&logoColor=white&label=optimize&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/optimize) | [Link](https://github.com/adobe/aepsdk-optimize-android) |
 | [Adobe Target](../adobe-target/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/target.svg?logo=android&logoColor=white&label=target&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/target) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Adobe Campaign Standard](../adobe-campaign-standard/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/campaign.svg?logo=android&logoColor=white&label=campaign&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/campaign) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
 | [Adobe Campaign Classic](../adobe-campaign-classic/index.md) | [![Maven Central](https://img.shields.io/maven-central/v/com.adobe.marketing.mobile/campaignclassic.svg?logo=android&logoColor=white&label=campaignclassic&versionPrefix=1&style=flat-square)](https://mvnrepository.com/artifact/com.adobe.marketing.mobile/campaignclassic) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/android) |
@@ -46,7 +45,7 @@ Due to sunset of [JCenter by JFrog](https://jfrog.com/blog/into-the-sunset-bintr
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK for iOS supports iOS 10 or later (includes support for iOS, iPadOS, and tvOS).
+Version 1.x and 2.x of the Mobile SDK for iOS support iOS 10 or later (includes support for iOS, iPadOS, and tvOS).
 
 | Extension | tvOS | App Extension | CocoaPods | GitHub |
 |---|---|---|---|---|
@@ -56,10 +55,7 @@ Adobe Experience Platform Mobile SDK for iOS supports iOS 10 or later (includes 
 | [Signal](../mobile-core/signal/index.md) | ✔️ |   | Bundled in Mobile Core | — |
 | [Lifecycle](../mobile-core/lifecycle/index.md) | ✔️ |   | Bundled in Mobile Core | — |
 | [Rules Engine](../mobile-core/rules-engine/index.md) | ✔️ |   | Bundled in Mobile Core | — |
-| Adobe Experience Platform Edge Network |   |   | Not Available | — |
-| Identity for Edge Network |   |   | Not Available | — |
-| Consent for Edge Network |   |   | Not Available | — |
-| Adobe Experience Platform Assurance |   |   | Not Available | — |
+| [Adobe Experience Platform Assurance](../platform-assurance-sdk/index.md) |   |   | AEPAssurance 1.1.4 | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/iOS/AEPAssurance) |
 | [Places Service](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) |   |   | [![Cocoapods](https://img.shields.io/cocoapods/v/ACPPlaces.svg?color=orange&label=ACPPlaces&logo=apple&logoColor=white&style=flat-square)](https://cocoapods.org/pods/ACPPlaces) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/iOS/ACPPlaces) |
 | [Places Monitor](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.html?lang=en) |   |   | [![Cocoapods](https://img.shields.io/cocoapods/v/ACPPlacesMonitor.svg?color=orange&label=ACPPlacesMonitor&logo=apple&logoColor=white&style=flat-square)](https://cocoapods.org/pods/ACPPlacesMonitor) | [Link](https://github.com/adobe/places-monitor-ios) |
 | [Adobe Analytics](../adobe-analytics/index.md) | ✔️ |   | [![Cocoapods](https://img.shields.io/cocoapods/v/ACPAnalytics.svg?color=orange&label=ACPAnalytics&logo=apple&logoColor=white&style=flat-square)](https://cocoapods.org/pods/ACPAnalytics) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/iOS/ACPAnalytics) |
@@ -105,7 +101,7 @@ Adobe Experience Platform Mobile SDK plugin for Flutter supports Flutter **versi
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK plugins for Flutter are compatible only with [iOS — Objective-C](#ios-objective-c) libraries, at this time.
+Adobe Experience Platform Mobile SDK plugins for Flutter are compatible only with [iOS — Objective-C](#ios-objective-c) libraries.
 
 | Extension | pub.dev | Github | Sample App |
 |---|---|---|---|
@@ -122,7 +118,7 @@ Adobe Experience Platform Mobile SDK plugins for Cordova supports Cordova **vers
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK plugins for Cordova are compatible only with [Android](#android) and [iOS — Objective-C](#ios-objective-c) libraries, at this time.
+Adobe Experience Platform Mobile SDK plugins for Cordova are compatible only with [Android](#android) and [iOS — Objective-C](#ios-objective-c) libraries.
 
 A sample Cordova application that uses the Adobe Experience Platform Mobile SDK can be found [here](https://github.com/adobe/cordova-acpsample).
 
@@ -157,7 +153,7 @@ Adobe Experience Platform Mobile SDK plugins for Xamarin require **MonoAndroid 9
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK plugins for Xamarin are compatible only with [Android](#android) and [iOS — Objective-C](#ios-objective-c) libraries, at this time.
+Adobe Experience Platform Mobile SDK plugins for Xamarin are compatible only with [Android](#android) and [iOS — Objective-C](#ios-objective-c) libraries.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -175,19 +171,19 @@ The Adobe Experience Platform Mobile SDK plugins for Xamarin are packages distri
 
 <InlineAlert variant="info" slots="text"/>
 
-Effective March 30, 2022, support for Adobe Experience Platform Mobile SDKs on Unity is no longer active. While you may continue using our libraries, Adobe no longer plans to update, modify, or provide support for these libraries. Please contact your Adobe CSM for details.
+Effective March 30, 2022, support for Adobe Experience Platform Mobile SDKs on Unity is no longer active. While you may continue using these libraries, Adobe no longer plans to update, modify, or provide support for these libraries. Please contact your Adobe CSM for details.
 
 Adobe Experience Platform Mobile SDK plugin for Unity supports Unity **version 2019.4.34f1**. For the latest Unity installation instructions, see the README file in the [`unity-acpcore`](https://github.com/adobe/unity-acpcore) repository.
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK plugins for Unity are compatible only with [Android](#android) and [iOS — Objective-C](#ios-objective-c) libraries, at this time.
+Adobe Experience Platform Mobile SDK plugins for Unity are compatible only with [Android](#android) and [iOS — Objective-C](#ios-objective-c) libraries.
 
 To start using the Adobe Experience Platform Mobile SDK for Unity, open your application and import the following Unity package(s):
 
 | Extension | Github | Sample App |
 |---|---|---|
 | [Mobile Core](../mobile-core/index.md) | [Link](https://github.com/adobe/unity-acpcore/tree/master/bin) | [Sample](https://github.com/adobe/unity-acpcore#sample-app) |
-| Adobe Experience Platform Assurance | [Link](https://github.com/adobe/unity-aepassurance/tree/master/bin) | [Sample](https://github.com/adobe/unity-aepassurance#sample-app) |
+| [Adobe Experience Platform Assurance](../platform-assurance-sdk/index.md) | [Link](https://github.com/adobe/unity-aepassurance/tree/master/bin) | [Sample](https://github.com/adobe/unity-aepassurance#sample-app) |
 | [Adobe Analytics](../adobe-analytics/index.md) | [Link](https://github.com/adobe/unity-acpanalytics/tree/master/bin) | [Sample](https://github.com/adobe/unity-acpanalytics#sample-app) |
 | [Profile](../profile/index.md) | [Link](https://github.com/adobe/unity_acpuserprofile/tree/master/bin) | [Sample](https://github.com/adobe/unity_acpuserprofile#sample-app) |

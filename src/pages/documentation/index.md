@@ -2,16 +2,28 @@
 title: Mobile SDK overview
 description: This is the overview page of Mobile SDK
 contributors:
-  - https://github.com/icaraps 
+  - https://github.com/icaraps
 ---
 
 # Mobile SDK documentation (Previous versions)
+
+<InlineAlert variant="warning" slots="text"/>
+
+This document lists the previous versions of the Adobe Experience Platform Mobile SDKs. Check out [this page for latest versions and solution support](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) of the Mobile SDKs.
+
+<InlineAlert variant="info" slots="text"/>
+
+**Migrate to latest Mobile SDKs for iOS**<br/>If you are currently using the Objective-C (ACP-prefixed) libraries, please see the [Migrating to latest SDKs for iOS](../migrate-to-swift.md) guide for next steps.
+
+<InlineAlert variant="info" slots="text"/>
+
+**Migrate to latest Mobile SDKs for Android**<br/>If you are currently using the Android libraries compatible with Mobile Core 1.x, please see the [Migrating to latest SDKs for Android](../migrate-to-android.md) guide for next steps.
 
 <InlineAlert variant="success" slots="header, text"/>
 
 Support for Adobe Experience Platform Edge Network
 
-The Adobe Experience Platform Mobile SDKs support data collection and other features via the Edge Network. <br/><br/> The new [Experience Platform Edge Network](#) extension is now available for Android and iOS. This extension, alongside many others, can help you take advantage of functionality provided by [Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) and [Adobe Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html).
+The Adobe Experience Platform Mobile SDKs support data collection and other features via the Edge Network. <br/><br/> The new [Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/getting-started/) extension is now available for Android and iOS. This extension, alongside many others, can help you take advantage of functionality provided by [Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) and [Adobe Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html).
 
 ## Bring the Adobe Experience Cloud to your apps
 

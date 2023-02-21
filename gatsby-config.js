@@ -16,7 +16,7 @@ module.exports = {
             {
                 title: 'Latest version',
                 path: '/client-sdks/documentation',
-  
+
               },
               {
                 title: 'Previous versions',
@@ -66,11 +66,11 @@ module.exports = {
                 ]
             },
             {
-                title: "Latest iOS SDK version",
+                title: "Migrate to latest SDKs for iOS",
                 path: "documentation/migrate-to-swift"
             },
 	    {
-                title: "Migrate to latest Android SDK",
+                title: "Migrate to latest SDKs for Android",
                 path: "documentation/migrate-to-android"
             },
             {
@@ -399,18 +399,18 @@ module.exports = {
                         path: "/documentation/resources"
                     },
                     {
-                        title: "SDK comparison",
+                        title: "v4 SDK comparison",
                         path: "documentation/upgrade-platform-sdks/comparison"
                     },
                     {
-                        title: "API changelog",
+                        title: "v4 API changelog",
                         path: "documentation/upgrade-platform-sdks/api-changelog.md"
                     },
                     {
                         title: "Privacy and GDPR",
                         path: "documentation/privacy-and-gdpr"
                     }
-                   
+
                 ]
             }
         ]

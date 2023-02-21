@@ -1,6 +1,6 @@
 import Tabs from './tabs/migrate-to-swift.md'
 
-# Migrate to Swift
+# Migrate to latest Adobe Experience Platform Mobile SDKs for iOS
 
 If you have implemented Objective-C versions (ACP-prefixed SDK libraries, 2.x or lower), then this guide will help you understand the steps required to migrate your implementation to the latest Swift versions (AEP-prefixed SDK libraries, 3.x or higher). In summary, you'll need to:
 
@@ -73,18 +73,18 @@ You should now see the added package collection on the left pane. Once selected,
 ![](./assets/migrate-to-swift/package-collection.png)
 
 
-#### Installing AEP SDKs using SPM 
+#### Installing AEP SDKs using SPM
 
 To add the AEP SDK Packages to your application, from the Xcode 13 menu select **File**, followed by **Add Packages**.
 
 If you have configured package collection as mentioned above, select each package you would like to add to your project and click "Add Package" on the bottom right.
 
-If not, enter the Package URL for the AEP SDK repositories: 
+If not, enter the Package URL for the AEP SDK repositories:
 
 - AEPCore: `https://github.com/adobe/aepsdk-core-ios.git`
 - AEPUserProfile: `https://github.com/adobe/aepsdk-userprofile-ios.git`
 
-For each package, specify the Dependency rule as a specific version or a range of versions and select the Project. 
+For each package, specify the Dependency rule as a specific version or a range of versions and select the Project.
 
 When prompted, select all the `AEP*` libraries, then click `Add Package`.
 
