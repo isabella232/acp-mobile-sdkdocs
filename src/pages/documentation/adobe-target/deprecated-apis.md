@@ -69,4 +69,3 @@ Android
 iOS
 
 <Tabs query="platform=ios&api=public-classes"/>
-

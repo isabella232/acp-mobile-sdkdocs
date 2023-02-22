@@ -35,7 +35,6 @@ ACP 2.x (Objective-C)
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
-
 AEP 3.x (Swift)
 
 <Tabs query="platform=aep-swift&api=extension-version"/>
@@ -51,7 +50,6 @@ ACP 2.x (Objective-C)
 ### getExperienceCloudId
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
-
 
 AEP 3.x (Swift)
 

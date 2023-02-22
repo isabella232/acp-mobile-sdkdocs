@@ -89,4 +89,3 @@ React Native
 | Android | Supported |
 | Apple iOS​ | Supported |
 | React Native (iOS & Android) | Supported |
-

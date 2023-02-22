@@ -62,4 +62,3 @@ AEP 3.x (Objective-C)
 ACP 2.x (Objective-C)
 
 <Tabs query="platform=acp-objc&api=lifecycle-pause"/>
-

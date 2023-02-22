@@ -146,5 +146,3 @@ For more information see [Target API reference](../adobe-target/api-reference.md
 | targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback: | Deprecated |
 | targetCreateRequestWithName:defaultContent:parameters: | Deprecated | 
 | targetCreateOrderConfirmRequestWithName:orderId:orderTotal:productPurchasedId:parameters: | Deprecated |
-
-
