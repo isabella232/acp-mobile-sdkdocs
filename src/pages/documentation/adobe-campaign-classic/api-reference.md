@@ -30,6 +30,20 @@ iOS
 
 <Tabs query="platform=ios&api=register-device"/>
 
+## registerExtension
+
+The `registerExtension` API registers the Adobe Campaign Classic extension with the Mobile Core.
+
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+
+Android
+
+<Tabs query="platform=android&api=register-extension"/>
+
+iOS
+
+<Tabs query="platform=ios&api=register-extension"/>
+
 ## trackNotificationReceive
 
 The `trackNotificationReceive` API sends the received push notification's tracking information to the configured Adobe Campaign Classic server.

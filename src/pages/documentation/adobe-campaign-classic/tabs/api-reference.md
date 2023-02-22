@@ -138,6 +138,52 @@ func application(_ application: UIApplication, didRegisterForRemoteNotifications
 }];
 ```
 
+<Variant platform="android" api="register-extension" repeat="5"/>
+
+#### Java
+
+**Syntax**
+
+```java
+public static void registerExtension()
+```
+
+**Example**
+
+```java
+CampaignClassic.registerExtension();
+```
+
+<Variant platform="ios" api="register-extension" repeat="10"/>
+
+#### Swift
+
+**Syntax**
+
+```swift
+static func registerExtension()
+```
+
+**Example**
+
+```swift
+ACPCampaignClassic.registerExtension()
+```
+
+#### Objective-C
+
+**Syntax**
+
+```objc
++ (void) registerExtension;
+```
+
+**Example**
+
+```objc
+[ACPCampaignClassic registerExtension];
+```
+
 <Variant platform="android" api="track-notification-click" repeat="6"/>
 
 #### Java
