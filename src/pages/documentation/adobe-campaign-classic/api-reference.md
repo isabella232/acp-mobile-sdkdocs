@@ -32,7 +32,7 @@ iOS
 
 ## registerExtension
 
-This `registerExtension` API registers the Adobe Campaign Classic extension with the Mobile Core.
+The `registerExtension` API registers the Adobe Campaign Classic extension with the Mobile Core.
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
 
