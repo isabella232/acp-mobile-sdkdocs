@@ -350,7 +350,7 @@ Tracks media events.
 | Variable Name | Description |
 | :--- | :--- |
 | `event` | [Media event](#media-events) |
-| `info` | For an `AdBreakStart` event, the `adBreak` information is created by using the [createAdBreakObject](#createadbreakobject) method.   For an `AdStart` event, the Ad information is created by using the [createAdObject](#createadobject) method.   For `ChapterStart` event, the Chapter information is created by using the [createChapterObject](#createchapterobject) method.  For `StateStart` and `StateEnd` event, the State information is created by using the [createStateObject](#createstateobject) method. |
+| `info` | For an `AdBreakStart` event, the `adBreak` information is created by using the [createAdBreakObject](#createadbreakobject) method. For an `AdStart` event, the Ad information is created by using the [createAdObject](#createadobject) method. For `ChapterStart` event, the Chapter information is created by using the [createChapterObject](#createchapterobject) method. For `StateStart` and `StateEnd` event, the State information is created by using the [createStateObject](#createstateobject) method. |
 | `data` | Optional context data can be provided for `AdStart` and `ChapterStart` events. This is not required for other events. |
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>

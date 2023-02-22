@@ -2,7 +2,7 @@
 
 The following tables provide information about the differences between the new Experience Platform SDKs and the 4x SDKs.
 
-##  Functionality support
+## Functionality support
 
 ### Core functionality
 

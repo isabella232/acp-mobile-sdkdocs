@@ -115,7 +115,7 @@ Xamarin
 
 <Tabs query="platform=xamarin&api=get-queue-size"/>
 
-## getQueueSizeWithCompletionHandler <a id="getqueuesizewithcompletionhandler"></a>
+## getQueueSizeWithCompletionHandler
 
 Retrieves the total number of Analytics hits in the tracking queue. Invoke the callback with NSError if an unexpected error occurs or the request times out.
 

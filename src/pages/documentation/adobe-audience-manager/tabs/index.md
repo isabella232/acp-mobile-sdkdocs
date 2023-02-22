@@ -16,7 +16,7 @@ Audience Manager depends on the Identity extension and is automatically included
 1. Add the library to your project via your `Podfile` by adding `pod 'ACPAudience'`
 2. Import the Audience and Identity library, using the respective language.
 
-Please note that the Audience Manager extension depends on the Identity extension, which is automatically included in the Core pod. If you are installing the Audience Manager extension manually, ensure you add the  `libACPIdentity_iOS.a` library to your project.
+Please note that the Audience Manager extension depends on the Identity extension, which is automatically included in the Core pod. If you are installing the Audience Manager extension manually, ensure you add the `libACPIdentity_iOS.a` library to your project.
 
 #### Swift
 

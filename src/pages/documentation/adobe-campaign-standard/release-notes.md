@@ -83,4 +83,3 @@ The following change was made in this release:
 ### iOS Campaign Standard 1.0.1
 
 * Fixed an issue with duplicate symbols being present in the Campaign extension library.
-* 

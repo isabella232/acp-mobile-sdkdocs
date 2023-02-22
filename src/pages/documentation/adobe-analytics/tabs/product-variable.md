@@ -54,7 +54,7 @@ ACPCore.trackAction("purchase", data: contextData)
 ACPCore.trackState("Order Confirmation", data: contextData)
 ```
 
-#### Objective-C 
+#### Objective-C
 
 **Syntax**
 
