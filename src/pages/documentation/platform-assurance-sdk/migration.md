@@ -30,8 +30,6 @@ AEP 1.x (Objective-C)
 
 <Tabs query="platform=aep-1-obj-c&task=extension-version"/>
 
-
-
 ### startSession
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
@@ -49,4 +47,3 @@ AEP 1.x (Objective-C)
 <Tabs query="platform=aep-1-obj-c&task=start-session"/>
 
 Follow this link for step by step migration to AEPAssurance 3.x for [Swift](https://github.com/adobe/aepsdk-assurance-ios/blob/dev/Documentation/MIGRATIONSWIFT.md) and [Objective-C](https://github.com/adobe/aepsdk-assurance-ios/blob/dev/Documentation/MIGRATIONObjC.md) iOS applications.
-

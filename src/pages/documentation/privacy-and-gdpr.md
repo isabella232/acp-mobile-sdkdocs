@@ -1,4 +1,4 @@
-import PrivacyTabs from './tabs/privacy-and-gdpr.md'
+import Tabs from './tabs/privacy-and-gdpr.md'
 
 # Privacy and GDPR
 
@@ -38,11 +38,11 @@ You can set a privacy status to ensure collection of data suits your user's pref
 
 Android
 
-<PrivacyTabs query="platform=android&task=set-privacy-status"/>
+<Tabs query="platform=android&task=set-privacy-status"/>
 
 iOS
 
-<PrivacyTabs query="platform=ios&task=set-privacy-status"/>
+<Tabs query="platform=ios&task=set-privacy-status"/>
 
 ### getPrivacyStatus
 
@@ -52,11 +52,11 @@ You can also programmatically view the current privacy status by using the follo
 
 Android
 
-<PrivacyTabs query="platform=android&task=get-privacy-status"/>
+<Tabs query="platform=android&task=get-privacy-status"/>
 
 iOS
 
-<PrivacyTabs query="platform=ios&task=get-privacy-status"/>
+<Tabs query="platform=ios&task=get-privacy-status"/>
 
 ### getSdkIdentities
 
@@ -80,4 +80,3 @@ To update the SDK configuration, programmatically, use the following information
 
 * For more information about GDPR, see [GDPR and Your Business](https://www.adobe.com/privacy/general-data-protection-regulation.html)
 * To see the Privacy Service API documentation, go to [Privacy Service API](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-

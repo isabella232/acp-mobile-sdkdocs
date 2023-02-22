@@ -146,4 +146,3 @@ ACP 2.x (Objective-C)
 <Tabs query="language=acp-objc&api=set-authorization-status"/>
 
 For additional details, please read the [Places API reference](./api-reference.md).
-

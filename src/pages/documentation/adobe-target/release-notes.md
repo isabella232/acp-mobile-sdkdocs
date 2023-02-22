@@ -169,4 +169,3 @@ The Target Client Code is now automatically added based on your Experience Cloud
 
 * If no code is found, you can type it in.
 * If multiple codes are found, you can select the code from the drop-down list.
-

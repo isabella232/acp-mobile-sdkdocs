@@ -22,6 +22,7 @@
 * Added changes to publish Audience shared state on EventHub boot.
 
 ### iOS Audience 2.1.0
+
 * Added new APIs getVisitorProfileWithCompletionHandler, signalWithData:WithCompletionHandler. These APIs take completion handler as an argument which is invoked with the desirable response or an NSError if an unexpected error occurs or the request times out.
 * Added changes to publish Audience shared state on EventHub boot.
 * Fixed an issue to handle Analytics response only if AAMForwarding is enabled.
@@ -52,4 +53,3 @@ The following change was made in this release:
 
 * The `global.ssl` configuration settings are ignored, and SSL is enabled by default.
 * Appends IMS OrgID to AAM demdex calls if subdomain endpoint is missing.
-

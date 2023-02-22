@@ -301,7 +301,7 @@ When the user downloads and runs an app as the result of a Google Play store acq
 
 #### Using the Google Play Install Referrer APIs
 
-Starting on March 1, 2020, Google is deprecating the install\_referrer intent broadcast mechanism. For more information, see the [Still Using InstallBroadcast? Switch to the Play Referrer API by March 1, 2020 ](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). To continue collecting install referrer information from the Google Play store, update your application to use the Mobile Services extension version 1.1.0 or newer.
+Starting on March 1, 2020, Google is deprecating the install\_referrer intent broadcast mechanism. For more information, see the [Still Using InstallBroadcast? Switch to the Play Referrer API by March 1, 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). To continue collecting install referrer information from the Google Play store, update your application to use the Mobile Services extension version 1.1.0 or newer.
 
 With the deprecation, instead of creating a `BroadcastReceiver`, you need to collect the install referrer URL from a new Google API and pass the resulting URL to the SDK.
 
@@ -454,4 +454,3 @@ To prepare for your migration, please note the following information:
 
 * Visit [Mobile Services documentation](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 * Visit [Mobile Services](https://mobilemarketing.adobe.com)
-
