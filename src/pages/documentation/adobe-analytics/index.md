@@ -45,7 +45,6 @@ To narrow the search for a report suite identifier, type a string in the combo b
 
 To learn what a tracking server is and how to find it, please read the documentation on [tracking servers](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackingserver.html).
 
-
 The tracking server is the tracking domain that all the Analytics requests should be made.
 
 #### Offline enabled

@@ -43,7 +43,6 @@ AEP 3.x (Objective-C)
 
 <Tabs query="platform=aep-objc&api=get-visitor-profile"/>
 
-
 ACP 2.x (Objective-C)
 
 <Tabs query="platform=acp-objc&api=get-visitor-profile"/>

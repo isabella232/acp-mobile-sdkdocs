@@ -10,7 +10,7 @@ To get the version of the Audience extension, use the following code sample:
 
 <TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
 
-Android 
+Android
 
 <Tabs query="platform=android&api=extension-version"/>
 

@@ -42,7 +42,6 @@
 * Removed retrieval and generation of Analytics tracking identifier (AID). Existing AID values stored on the device will continue to be loaded and used, however new visitors will not be assigned an AID value.
 * **IMPORTANT**: If you encounter issues including this dependency through Gradle, 1.2.8 fixes the error.
 
-
 ### iOS Analytics 2.5.1
 
 * Removed retrieval and generation of Analytics tracking identifier (AID). Existing AID values stored on the device will continue to be loaded and used, however new visitors will not be assigned an AID value.
