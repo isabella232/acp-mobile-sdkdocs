@@ -1,8 +1,6 @@
 ---
 title: Mobile SDK overview
 description: This is the overview page of Mobile SDK
-contributors:
-  - https://github.com/icaraps
 ---
 
 # Mobile SDK documentation (Previous versions)
@@ -13,11 +11,11 @@ This document lists the previous versions of the Adobe Experience Platform Mobil
 
 <InlineAlert variant="info" slots="text"/>
 
-**Migrate to latest Mobile SDKs for iOS**<br/>If you are currently using the Objective-C (ACP-prefixed) libraries, please see the [Migrating to latest SDKs for iOS](../migrate-to-swift.md) guide for next steps.
+**Migrate to latest Mobile SDKs for iOS**<br/>If you are currently using the Objective-C (ACP-prefixed) libraries, please see the [Migrating to latest SDKs for iOS](./migrate-to-swift.md) guide for next steps.
 
 <InlineAlert variant="info" slots="text"/>
 
-**Migrate to latest Mobile SDKs for Android**<br/>If you are currently using the Android libraries compatible with Mobile Core 1.x, please see the [Migrating to latest SDKs for Android](../migrate-to-android.md) guide for next steps.
+**Migrate to latest Mobile SDKs for Android**<br/>If you are currently using the Android libraries compatible with Mobile Core 1.x, please see the [Migrating to latest SDKs for Android](./migrate-to-android.md) guide for next steps.
 
 ## Supported platforms
 
