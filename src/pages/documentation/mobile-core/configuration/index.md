@@ -80,6 +80,16 @@ Xamarin
 
 <Tabs query="platform=xamarin&task=update"/>
 
+## Clearing programmatic updates to the configuration
+
+<InlineAlert variant="info" slots="text"/>
+
+This API is only available in Android.
+
+You can clear any programmatic updates made to the configuration via the `clearUpdatedConfiguration` API. This will clear programmatic updates to configuration made via the `updateConfiguration(configMap)` API. It will also clear any updates to the `MobilePrivacyStatus` made via `setPrivacyStatus(privacyStatus)`.
+
+For implementation details, please refer to the [configuration API reference](./api-reference.md#clearUpdatedConfiguration).
+
 ## Using a bundled file configuration
 
 You can include a bundled JSON configuration file in your app package to replace or complement the configuration that was downloaded by using the [Configure with App ID per environment](./index.md#configure-with-app-id-per-environment) approach.
