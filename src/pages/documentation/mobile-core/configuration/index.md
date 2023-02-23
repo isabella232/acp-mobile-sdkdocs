@@ -86,7 +86,7 @@ Xamarin
 
 This API is only available in Android.
 
-You can clear any programmatic updates made to the configuration via the `clearUpdatedConfiguration` API. This will clear programmatic updates to configuration made via the `updateConfiguration(configMap)` API. It will also clear any updates to the `MobilePrivacyStatus` made via `setPrivacyStatus(privacyStatus)`.
+You can clear any programmatic updates made to the configuration via the `clearUpdatedConfiguration` API. This will clear programmatic updates to configuration made via the `updateConfiguration` API. It will also clear any updates to the `MobilePrivacyStatus` made via `setPrivacyStatus`.
 
 For implementation details, please refer to the [configuration API reference](./api-reference.md#clearUpdatedConfiguration).
 
