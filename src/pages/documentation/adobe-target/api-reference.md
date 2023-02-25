@@ -20,45 +20,6 @@ React Native
 
 <Tabs query="platform=react-native&api=clear-prefetch-cache"/>
 
-## clickedLocation
-
-This API sends a location click notification for an mbox to the configured Target server and can be invoked in the following cases:
-
-* For a prefetched mbox, after the mbox content is retrieved using the `retrieveLocationContent` API.
-* For a regular mbox, where no previous prefetch request is made, and the mbox content is retrieved using the `retrieveLocationContent` API.
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
-
-Android
-
-<Tabs query="platform=android&api=clicked-location"/>
-
-iOS
-
-<Tabs query="platform=ios&api=clicked-location"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=clicked-location"/>
-
-## displayedLocations
-
-This API sends a location display notification for an mbox to the configured Target server. The API should be invoked for a prefetched mbox after the mbox content is retrieved using the `retrieveLocationContent` API. If no previous prefetch request is made, and the mbox content is retrieved using the `retrieveLocationContent` API, calling this API does not trigger a notification request to the Target server.
-
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
-
-Android
-
-<Tabs query="platform=android&api=displayed-locations"/>
-
-iOS
-
-<Tabs query="platform=ios&api=displayed-locations"/>
-
-React Native
-
-<Tabs query="platform=react-native&api=displayed-locations"/>
-
 ## extensionVersion
 
 Returns the running version of the Target extension.
@@ -79,19 +40,19 @@ React Native
 
 ## getSessionId
 
+<InlineAlert variant="info" slots="text"/>
+
+This API is only available in Android and latest iOS Target Mobile SDKs.
+
 This API gets the Target session identifier. 
 
 The session ID is generated locally in the SDK upon initial Target request and persisted for a period defined by `target.sessionTimeout` configuration setting. If the session timeout happens upon a subsequent Target request, a new session ID will be generated for use in the request and persisted in the SDK.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 Android
 
 <Tabs query="platform=android&api=get-session-id"/>
-
-iOS
-
-<Tabs query="platform=ios&api=get-session-id"/>
 
 ## getThirdPartyId
 
@@ -128,6 +89,45 @@ iOS
 React Native
 
 <Tabs query="platform=react-native&api=get-tnt-id"/>
+
+## locationClicked
+
+This API sends a location click notification for an mbox to the configured Target server and can be invoked in the following cases:
+
+* For a prefetched mbox, after the mbox content is retrieved using the `retrieveLocationContent` API.
+* For a regular mbox, where no previous prefetch request is made, and the mbox content is retrieved using the `retrieveLocationContent` API.
+
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=location-clicked"/>
+
+iOS
+
+<Tabs query="platform=ios&api=location-clicked"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=location-clicked"/>
+
+## locationsDisplayed
+
+This API sends a location display notification for an mbox to the configured Target server. The API should be invoked for a prefetched mbox after the mbox content is retrieved using the `retrieveLocationContent` API. If no previous prefetch request is made, and the mbox content is retrieved using the `retrieveLocationContent` API, calling this API does not trigger a notification request to the Target server.
+
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="3"/>
+
+Android
+
+<Tabs query="platform=android&api=locations-displayed"/>
+
+iOS
+
+<Tabs query="platform=ios&api=locations-displayed"/>
+
+React Native
+
+<Tabs query="platform=react-native&api=locations-displayed"/>
 
 ## prefetchContent
 
@@ -229,21 +229,21 @@ React Native
 
 ## setSessionId
 
+<InlineAlert variant="info" slots="text"/>
+
+This API is only available in Android and latest iOS Target Mobile SDKs.
+
 This API sets the Target session identifier.
 
 The provided session ID is persisted in the SDK for a period defined by `target.sessionTimeout` configuration setting. If the provided session ID is nil/null or empty, or if the privacy status is opted out, the SDK will remove the session ID value from the persistence.
 
 This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall, upon privacy status update to opted out, or when the resetExperience API is used.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 Android
 
 <Tabs query="platform=android&api=set-session-id"/>
-
-iOS
-
-<Tabs query="platform=ios&api=set-session-id"/>
 
 ## setThirdPartyId
 
@@ -265,21 +265,21 @@ React Native
 
 ## setTntId
 
+<InlineAlert variant="info" slots="text"/>
+
+This API is only available in Android and latest iOS Target Mobile SDKs.
+
 This API sets the Target user identifier.
 
 The provided tnt ID is persisted in the SDK and attached to subsequent Target requests. It is used to derive the edge host value in the SDK, which is also persisted and used in future Target requests. If the provided tnt ID is nil/null or empty, or if the privacy status is opted out, the SDK will remove the tnt ID and edge host values from the persistence.
 
 This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall, upon privacy status update to opted out, or when the `resetExperience` API is used.
 
-<TabsBlock orientation="horizontal" slots="heading, content" repeat="2"/>
+<TabsBlock orientation="horizontal" slots="heading, content" repeat="1"/>
 
 Android
 
 <Tabs query="platform=android&api=set-tnt-id"/>
-
-iOS
-
-<Tabs query="platform=ios&api=set-tnt-id"/>
 
 ## Visual preview
 

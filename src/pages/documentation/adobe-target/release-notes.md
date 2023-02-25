@@ -74,11 +74,11 @@ The following updates were made in this release:
 
 The following updates were made in this release:
 
-**Android Target 1.1.4**
+### Android Target 1.1.4
 
 * Improved existing log messages and added additional logging to assist with debugging.
 
-**iOS Target 2.1.5**
+### iOS Target 2.1.5
 
 * Improved existing log messages and added additional logging to assist with debugging.
 
