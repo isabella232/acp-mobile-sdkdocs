@@ -52,262 +52,6 @@ clearPrefetchCache();
 ACPTarget.clearPrefetchCache();
 ```
 
-<Variant platform="android" api="clicked-location" repeat="6"/>
-
-#### Java
-
-**Syntax**
-
-```java
-public static void locationClicked(final String mboxName, final TargetParameters parameters)
-```
-
-* _mboxName_ is a String that contains the mbox location for which the click notification will be sent to Target.
-* _parameters_ is the configured `TargetParameters` for the request.
-
-**Example**
-
-```java
-// Mbox parameters
-Map<String, String> mboxParameters = new HashMap<>();
-mboxParameters.put("membership", "prime");
-
-// Product parameters
-TargetProduct targetProduct = new TargetProduct("CEDFJC", "Electronics");
-
-
-// Order parameters
-List<String> purchasedIds = new ArrayList<String>();
-purchasedIds.add("81");
-purchasedIds.add("123");
-purchasedIds.add("190");
-TargetOrder targetOrder = new TargetOrder("NJJICK", "650", purchasedIds);
-
-// Profile parameters
-Map<String, String> profileParameters = new HashMap<>();
-profileParameters.put("ageGroup", "20-32");
-
-// Create Target Parameters
-TargetParameters targetParameters = new TargetParameters.Builder(mboxParameters)
-                                .profileParameters(profileParameters)
-                                .order(targetOrder)
-                                .product(targetProduct)
-                                .build();
-
-Target.locationClicked("cartLocation", targetParameters);
-```
-
-<Variant platform="ios" api="clicked-location" repeat="8"/>
-
-**Syntax**
-
-```objc
-+ (void) locationClickedWithName: (nonnull NSString*) name targetParameters: (nullable ACPTargetParameters*) parameters;
-```
-
-* _name_ is an NSString that contains the mbox location for which the click notification will be sent to Target.
-* _parameters_ is the configured `ACPTargetParameters` for the request.
-
-**Example**
-
-**Swift**
-
-```swift
-// Mbox parameters
-let mboxParameters = [
-"membership": "prime"
-]
-
-// Product parameters
-let productParameters = [
-"id": "CEDFJC",
-"categoryId": "Electronics"
-]
-
-// Order parameters
-let orderParameters = [
-"id": "NJJICK",
-"total": "650",
-"purchasedProductIds": "81, 123, 190"
-]
-
-// Profile parameters
-let profileParameters = [
-"ageGroup": "20-32"
-]
-
-// Create Target parameters
-let product = ACPTargetProduct(id: "24D334", categoryId: "Stationary")
-let order = ACPTargetOrder(id: "ADCKKBC", total: NSNumber(value: 400.50), purchasedProductIds: ["34", "125"])
-let targetParameters = ACPTargetParameters(parameters: nil, profileParameters: nil, product: product, order: order)
-
-ACPTarget.locationClicked(withName: "cartLocation", targetParameters: targetParameters)
-```
-
-**Objective-C**
-
-```objc
-// Mbox parameters
-NSDictionary *mboxParameters = @{@"membership":@"prime"};
-
-// Product parameters
-NSDictionary *productParameters = @{@"id":@"CEDFJC",
-                                    @"categoryId":@"Electronics"};
-// Order parameters
-NSDictionary *orderParameters = @{@"id":@"NJJICK",
-                                    @"total":@"650",
-                                    @"purchasedProductIds":@"81, 123, 190"};
-
-// Profile parameters
-NSDictionary *profileParameters = @{@"ageGroup":@"20-32"};
-
-// Create Target parameters
-ACPTargetProduct *product = [ACPTargetProduct targetProductWithId:@"24D334" categoryId:@"Stationary"];
-ACPTargetOrder *order = [ACPTargetOrder targetOrderWithId:@"ADCKKBC" total:@(400.50) purchasedProductIds:@[@"34", @"125"]];
-ACPTargetParameters *targetParameters = [ACPTargetParameters targetParametersWithParameters:nil
-                                                    profileParameters:nil
-                                                              product:product
-                                                                order:order];
-
-[ACPTarget locationClickedWithName:@"cartLocation" targetParameters:targetParameters];
-```
-
-<Variant platform="react-native" api="clicked-location" repeat="6"/>
-
-#### JavaScript
-
-**Syntax**
-
-```javascript
-locationClickedWithName(name: string, parameters?: ACPTargetParameters)
-```
-
-* _name_ is a string that contains the mbox location for which the click notification will be sent to Target.
-* _parameters_ is the configured `ACPTargetParameters` for the request.
-
-**Example**
-
-```javascript
-// Mbox parameters
-var mboxParameters = {"membership": "prime"};
-
-// Product parameters
-var productParameters = new ACPTargetProduct("CEDFJC", "Electronics");
-
-// Order parameters
-var orderParameters = new ACPTargetOrder("NJJICK", 650, ["81","123","190"]);
-
-// Profile parameters
-var profileParameters = {"ageGroup": "20-32"};
-
-// Create Target parameters
-var product = new ACPTargetProduct("24D334", "Stationary");
-var order = new ACPTargetOrder("ADCKKBC", 400.50, ["34","125"]);
-var targetParameters = new ACPTargetParameters(null, null, product, order);
-
-ACPTarget.locationClickedWithName("cartLocation", targetParameters);
-```
-
-<Variant platform="android" api="displayed-locations" repeat="6"/>
-
-#### Java
-
-**Syntax**
-
-```java
-public static void locationsDisplayed(final List<String> mboxNames, final TargetParameters targetParameters)
-```
-
-* _mboxNames_ is a list of the mbox locations for which the display notification will be sent to Target.
-* _targetParameters_ is the configured `TargetParameters` for the request.
-
-**Example**
-
-```java
-List<String> purchasedProductIds = new ArrayList<String>();
-purchasedProductIds.add("34");
-purchasedProductIds.add("125"); 
-TargetOrder targetOrder = new TargetOrder("123", 567.89, purchasedProductIds);
-
-TargetProduct targetProduct = new TargetProduct("123", "Books");
-
-TargetParameters targetParameters = new TargetParameters.Builder()
-.parameters(new HashMap<String, String>())
-.profileParameters(new HashMap<String, String>())
-.product(targetProduct)
-.order(targetOrder)
-.build();
-
-List<String> mboxList = new ArrayList<>();
-mboxList.add("mboxName1");
-
-Target.locationsDisplayed(mboxList, targetParameters);
-```
-
-<Variant platform="ios" api="displayed-locations" repeat="8"/>
-
-**Syntax**
-
-```objc
-+ (void) locationsDisplayed: (nonnull NSArray<NSString*>*) mboxNames 
-withTargetParameters: (nullable ACPTargetParameters*) targetParameters;
-```
-
-* _mboxNames_ is an NSArray of the mbox locations for which the display notification will be sent to Target.
-* _targetParameters_ is the configured `ACPTargetParameters` for the request.
-
-**Example**
-
-**Swift**
-
-```swift
-let product = ACPTargetProduct(id: "24D334", categoryId: "Stationary")
-
-let order = ACPTargetOrder(id: "ADCKKBC", total: NSNumber(value: 400.50), purchasedProductIds: ["34", "125"])
-
-let targetParameters = ACPTargetParameters(parameters: nil, profileParameters: nil, product: product, order: order)
-
-ACPTarget.locationsDisplayed(["mboxName1", "mboxName2"], with: targetParameters)
-```
-
-**Objective-C**
-
-```objc
-ACPTargetProduct *product = [ACPTargetProduct targetProductWithId:@"24D334" categoryId:@"Stationary"];
-
-ACPTargetOrder *order = [ACPTargetOrder targetOrderWithId:@"ADCKKBC" total:@(400.50) purchasedProductIds:@[@"34", @"125"]];
-
-ACPTargetParameters *targetParameters = [ACPTargetParameters targetParametersWithParameters:nil
-profileParameters:nil
-product:product
-order:order];
-
-[ACPTarget locationsDisplayed:@[@"mboxName1", @"mboxName2"] withTargetParameters:targetParameters];
-```
-
-<Variant platform="react-native" api="displayed-locations" repeat="6"/>
-
-#### JavaScript
-
-**Syntax**
-
-```javascript
-locationsDisplayed(mboxNames: Array<string>, parameters?: ACPTargetParameters)
-```
-
-* _mboxNames_ is an Array of the mbox locations for which the display notification will be sent to Target.
-* _targetParameters_ is the configured `ACPTargetParameters` for the request.
-
-**Example**
-
-```javascript
-var product = new ACPTargetProduct("24D334", "Stationary");
-var order = new ACPTargetOrder("ADCKKBC", 400.50, ["34", "125"]);
-var targetParameters = new ACPTargetParameters(null, null, product, order);
-
-ACPTarget.locationsDisplayed(["mboxName1", "mboxName2"], targetParameters);
-```
-
 <Variant platform="android" api="extension-version" repeat="5"/>
 
 #### Java
@@ -386,10 +130,6 @@ Target.getSessionId(new AdobeCallback<String>() {
     }
 });
 ```
-
-<Variant platform="ios" api="get-session-id" repeat="1"/>
-
-This API is not available in Target iOS ACP 2.x SDK.
 
 <Variant platform="android" api="get-third-party-id" repeat="6"/>
 
@@ -531,6 +271,262 @@ getTntId(): Promise<string>
 ACPTarget.getTntId().then(tntId => {
             // read target's tntId                         
 });
+```
+
+<Variant platform="android" api="location-clicked" repeat="6"/>
+
+#### Java
+
+**Syntax**
+
+```java
+public static void locationClicked(final String mboxName, final TargetParameters parameters)
+```
+
+* _mboxName_ is a String that contains the mbox location for which the click notification will be sent to Target.
+* _parameters_ is the configured `TargetParameters` for the request.
+
+**Example**
+
+```java
+// Mbox parameters
+Map<String, String> mboxParameters = new HashMap<>();
+mboxParameters.put("membership", "prime");
+
+// Product parameters
+TargetProduct targetProduct = new TargetProduct("CEDFJC", "Electronics");
+
+
+// Order parameters
+List<String> purchasedIds = new ArrayList<String>();
+purchasedIds.add("81");
+purchasedIds.add("123");
+purchasedIds.add("190");
+TargetOrder targetOrder = new TargetOrder("NJJICK", "650", purchasedIds);
+
+// Profile parameters
+Map<String, String> profileParameters = new HashMap<>();
+profileParameters.put("ageGroup", "20-32");
+
+// Create Target Parameters
+TargetParameters targetParameters = new TargetParameters.Builder(mboxParameters)
+                                .profileParameters(profileParameters)
+                                .order(targetOrder)
+                                .product(targetProduct)
+                                .build();
+
+Target.locationClicked("cartLocation", targetParameters);
+```
+
+<Variant platform="ios" api="location-clicked" repeat="8"/>
+
+**Syntax**
+
+```objc
++ (void) locationClickedWithName: (nonnull NSString*) name targetParameters: (nullable ACPTargetParameters*) parameters;
+```
+
+* _name_ is an NSString that contains the mbox location for which the click notification will be sent to Target.
+* _parameters_ is the configured `ACPTargetParameters` for the request.
+
+**Example**
+
+**Swift**
+
+```swift
+// Mbox parameters
+let mboxParameters = [
+"membership": "prime"
+]
+
+// Product parameters
+let productParameters = [
+"id": "CEDFJC",
+"categoryId": "Electronics"
+]
+
+// Order parameters
+let orderParameters = [
+"id": "NJJICK",
+"total": "650",
+"purchasedProductIds": "81, 123, 190"
+]
+
+// Profile parameters
+let profileParameters = [
+"ageGroup": "20-32"
+]
+
+// Create Target parameters
+let product = ACPTargetProduct(id: "24D334", categoryId: "Stationary")
+let order = ACPTargetOrder(id: "ADCKKBC", total: NSNumber(value: 400.50), purchasedProductIds: ["34", "125"])
+let targetParameters = ACPTargetParameters(parameters: nil, profileParameters: nil, product: product, order: order)
+
+ACPTarget.locationClicked(withName: "cartLocation", targetParameters: targetParameters)
+```
+
+**Objective-C**
+
+```objc
+// Mbox parameters
+NSDictionary *mboxParameters = @{@"membership":@"prime"};
+
+// Product parameters
+NSDictionary *productParameters = @{@"id":@"CEDFJC",
+                                    @"categoryId":@"Electronics"};
+// Order parameters
+NSDictionary *orderParameters = @{@"id":@"NJJICK",
+                                    @"total":@"650",
+                                    @"purchasedProductIds":@"81, 123, 190"};
+
+// Profile parameters
+NSDictionary *profileParameters = @{@"ageGroup":@"20-32"};
+
+// Create Target parameters
+ACPTargetProduct *product = [ACPTargetProduct targetProductWithId:@"24D334" categoryId:@"Stationary"];
+ACPTargetOrder *order = [ACPTargetOrder targetOrderWithId:@"ADCKKBC" total:@(400.50) purchasedProductIds:@[@"34", @"125"]];
+ACPTargetParameters *targetParameters = [ACPTargetParameters targetParametersWithParameters:nil
+                                                    profileParameters:nil
+                                                              product:product
+                                                                order:order];
+
+[ACPTarget locationClickedWithName:@"cartLocation" targetParameters:targetParameters];
+```
+
+<Variant platform="react-native" api="clicked-location" repeat="6"/>
+
+#### JavaScript
+
+**Syntax**
+
+```javascript
+locationClickedWithName(name: string, parameters?: ACPTargetParameters)
+```
+
+* _name_ is a string that contains the mbox location for which the click notification will be sent to Target.
+* _parameters_ is the configured `ACPTargetParameters` for the request.
+
+**Example**
+
+```javascript
+// Mbox parameters
+var mboxParameters = {"membership": "prime"};
+
+// Product parameters
+var productParameters = new ACPTargetProduct("CEDFJC", "Electronics");
+
+// Order parameters
+var orderParameters = new ACPTargetOrder("NJJICK", 650, ["81","123","190"]);
+
+// Profile parameters
+var profileParameters = {"ageGroup": "20-32"};
+
+// Create Target parameters
+var product = new ACPTargetProduct("24D334", "Stationary");
+var order = new ACPTargetOrder("ADCKKBC", 400.50, ["34","125"]);
+var targetParameters = new ACPTargetParameters(null, null, product, order);
+
+ACPTarget.locationClickedWithName("cartLocation", targetParameters);
+```
+
+<Variant platform="android" api="locations-displayed" repeat="6"/>
+
+#### Java
+
+**Syntax**
+
+```java
+public static void locationsDisplayed(final List<String> mboxNames, final TargetParameters targetParameters)
+```
+
+* _mboxNames_ is a list of the mbox locations for which the display notification will be sent to Target.
+* _targetParameters_ is the configured `TargetParameters` for the request.
+
+**Example**
+
+```java
+List<String> purchasedProductIds = new ArrayList<String>();
+purchasedProductIds.add("34");
+purchasedProductIds.add("125"); 
+TargetOrder targetOrder = new TargetOrder("123", 567.89, purchasedProductIds);
+
+TargetProduct targetProduct = new TargetProduct("123", "Books");
+
+TargetParameters targetParameters = new TargetParameters.Builder()
+.parameters(new HashMap<String, String>())
+.profileParameters(new HashMap<String, String>())
+.product(targetProduct)
+.order(targetOrder)
+.build();
+
+List<String> mboxList = new ArrayList<>();
+mboxList.add("mboxName1");
+
+Target.locationsDisplayed(mboxList, targetParameters);
+```
+
+<Variant platform="ios" api="locations-displayed" repeat="8"/>
+
+**Syntax**
+
+```objc
++ (void) locationsDisplayed: (nonnull NSArray<NSString*>*) mboxNames 
+withTargetParameters: (nullable ACPTargetParameters*) targetParameters;
+```
+
+* _mboxNames_ is an NSArray of the mbox locations for which the display notification will be sent to Target.
+* _targetParameters_ is the configured `ACPTargetParameters` for the request.
+
+**Example**
+
+**Swift**
+
+```swift
+let product = ACPTargetProduct(id: "24D334", categoryId: "Stationary")
+
+let order = ACPTargetOrder(id: "ADCKKBC", total: NSNumber(value: 400.50), purchasedProductIds: ["34", "125"])
+
+let targetParameters = ACPTargetParameters(parameters: nil, profileParameters: nil, product: product, order: order)
+
+ACPTarget.locationsDisplayed(["mboxName1", "mboxName2"], with: targetParameters)
+```
+
+**Objective-C**
+
+```objc
+ACPTargetProduct *product = [ACPTargetProduct targetProductWithId:@"24D334" categoryId:@"Stationary"];
+
+ACPTargetOrder *order = [ACPTargetOrder targetOrderWithId:@"ADCKKBC" total:@(400.50) purchasedProductIds:@[@"34", @"125"]];
+
+ACPTargetParameters *targetParameters = [ACPTargetParameters targetParametersWithParameters:nil
+profileParameters:nil
+product:product
+order:order];
+
+[ACPTarget locationsDisplayed:@[@"mboxName1", @"mboxName2"] withTargetParameters:targetParameters];
+```
+
+<Variant platform="react-native" api="locations-displayed" repeat="6"/>
+
+#### JavaScript
+
+**Syntax**
+
+```javascript
+locationsDisplayed(mboxNames: Array<string>, parameters?: ACPTargetParameters)
+```
+
+* _mboxNames_ is an Array of the mbox locations for which the display notification will be sent to Target.
+* _targetParameters_ is the configured `ACPTargetParameters` for the request.
+
+**Example**
+
+```javascript
+var product = new ACPTargetProduct("24D334", "Stationary");
+var order = new ACPTargetOrder("ADCKKBC", 400.50, ["34", "125"]);
+var targetParameters = new ACPTargetParameters(null, null, product, order);
+
+ACPTarget.locationsDisplayed(["mboxName1", "mboxName2"], targetParameters);
 ```
 
 <Variant platform="android" api="prefetch-content" repeat="6"/>
@@ -1173,10 +1169,6 @@ public static void setSessionId(final String sessionId)
 Target.setSessionId("3f24b997-ea74-420c-81f8-96a8b92c3961");
 ```
 
-<Variant platform="ios" api="set-session-id" repeat="1"/>
-
-This API is not available in Target iOS ACP 2.x SDK.
-
 <Variant platform="android" api="set-third-party-id" repeat="6"/>
 
 #### Java
@@ -1255,27 +1247,17 @@ public static void setTntId(final String tntId)
 Target.setTntId("f741a5d5-09c0-4931-bf53-b9e568c5f782.35_0");
 ```
 
-<Variant platform="ios" api="set-tnt-id" repeat="1"/>
-
-This API is not available in Target iOS ACP 2.x SDK.
-
 <Variant platform="android" api="visual-preview" repeat="2"/>
 
-On Android, when the application is launched as a result of a deep link, the `collectLaunchInfo` API is internally invoked, and the Target activity and deep link information is extracted from the Intent extras.
+On Android, when the application is launched as a result of a deep link, the Mobile Core's [collectLaunchInfo](../../mobile-core/api-reference.md#collectlaunchinfo) API is internally invoked, and the Target activity and deep link information is extracted from the Intent extras.
 
-The SDK can only collect information from the launching Activity if [`setApplication`](../mobile-core/api-reference.md#application-reference-android-only) has been called. Setting the Application is only necessary on an Activity that is also an entry point for your application. However, setting the Application on each Activity has no negative impact and ensures that the SDK always has the necessary reference to your Application. We recommend that you call `setApplication` in each of your Activities.
+The SDK can only collect information from the launching Activity if [setApplication](../mobile-core/api-reference.md#application-reference-android-only) API has been called. Setting the Application is only necessary on an Activity that is also an entry point for your application. However, setting the Application on each Activity has no negative impact and ensures that the SDK always has the necessary reference to your Application. We recommend that you call `setApplication` API in each of your Activities.
 
-<Variant platform="ios" api="visual-preview" repeat="11"/>
+<Variant platform="ios" api="visual-preview" repeat="7"/>
 
-To enter the visual preview mode, use the `collectLaunchInfo` API to enable the mode, and select the red floating button that appears on the app screen.
+To enter the visual preview mode, use the Mobile Core's [collectLaunchInfo](../../mobile-core/api-reference.md#collectlaunchinfo) API to enable the mode, and select the red floating button that appears on the app screen.
 
-**Swift**
-
-**Syntax**
-
-```swift
-open class func collectLaunchInfo(_ userinfo: [AnyHashable: Any])
-```
+#### Swift
 
 **Example**
 
@@ -1283,13 +1265,7 @@ open class func collectLaunchInfo(_ userinfo: [AnyHashable: Any])
 ACPCore.collectLaunchInfo(["adb_deeplink" : "com.adobe.targetpreview://app.adobetarget.com?at_preview_token=tokenFromTarget"])
 ```
 
-**Objective-C**
-
-**Syntax**
-
-```objectivec
-+ (void) collectLaunchInfo: (nonnull NSDictionary*) userInfo;
-```
+#### Objective-C
 
 **Example**
 
@@ -1742,7 +1718,7 @@ This class contains productId and categoryId.
 @end
 ```
 
-Examples for creating instances of ACPTargetProduct can be seen in the [Target overview](./index.md#target-product-class)
+Examples for creating instances of ACPTargetProduct can be seen in the [Target overview](../index.md#target-product-class)
 
 <Variant platform="react-native" api="target-product" repeat="5"/>
 

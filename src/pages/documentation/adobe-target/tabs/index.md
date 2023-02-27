@@ -1,4 +1,4 @@
-<Variant platform="android" task="add" repeat="5"/>
+<Variant platform="android" task="add" repeat="3"/>
 
 #### Java
 
@@ -9,38 +9,13 @@ implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
 implementation 'com.adobe.marketing.mobile:target:1.+'
 ```
 
-2. Import the Target extension to your application's main activity.
-
-```java
-import com.adobe.marketing.mobile.*;
-```
-
-<Variant platform="ios" task="add" repeat="7"/>
+<Variant platform="ios" task="add" repeat="2"/>
 
 1. Add the ACPCore and ACPTarget CocoaPods to your project via your `Podfile`.
 
 ```ruby
 pod 'ACPCore','~>2.0'
 pod 'ACPTarget','~>2.0'
-```
-
-2. Import the Target and Identity libraries.
-
-**Swift**
-
-```swift
-    import ACPCore
-    import ACPTarget
-```
-
-**Objective-C**
-
-```objectivec
-    #import "ACPCore.h"
-    #import "ACPTarget.h"
-    #import "ACPIdentity.h"
-    #import "ACPTargetRequestObject.h"
-    #import "ACPTargetPrefetchObject.h"
 ```
 
 <Variant platform="react-native" task="add" repeat="7"/>
@@ -75,6 +50,10 @@ In your Application's `onCreate()` method, after calling the `setApplication()` 
 Here is code sample that calls these set up methods:
 
 ```java
+import com.adobe.marketing.mobile.MobileCore;
+import com.adobe.marketing.mobile.Target;
+import com.adobe.marketing.mobile.Identity;
+
 public class TargetApp extends Application {
 
  @Override
@@ -99,6 +78,9 @@ public class TargetApp extends Application {
 #### Swift
 
 ```swift
+import ACPCore
+import ACPTarget
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
   ACPCore.configure(withAppId: "yourAppId")   
   ACPTarget.registerExtension()
@@ -114,6 +96,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 In your app's `didFinishLaunchingWithOptions` function, register the Target extension with Mobile Core:
 
 ```objectivec
+#import "ACPCore.h"
+#import "ACPTarget.h"
+#import "ACPIdentity.h"
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [ACPCore configureWithAppId:@"yourAppId"];
   [ACPTarget registerExtension];
@@ -349,19 +335,15 @@ var targetParameters = new ACPTargetParameters(mboxParameters, profileParameters
 
 <Variant platform="android" task="visual-preview" repeat="2"/>
 
-On Android, when the application is launched as a result of a deep link, the `collectLaunchInfo` API is internally invoked, and the Target activity and deep link information is extracted from the Intent extras.
+On Android, when the application is launched as a result of a deep link, the Mobile Core's [collectLaunchInfo](../../mobile-core/api-reference.md#collectlaunchinfo) API is internally invoked, and the Target activity and deep link information is extracted from the Intent extras.
 
-The SDK can only collect information from the launching Activity if [`setApplication`](../mobile-core/api-reference.md#application-reference-android-only) has been called. Setting the Application is only necessary on an Activity that is also an entry point for your application. However, setting the Application on each Activity has no negative impact and ensures that the SDK always has the necessary reference to your Application. We recommend that you call `setApplication` in each of your Activities.
+The SDK can only collect information from the launching Activity if [setApplication](../../mobile-core/api-reference.md#setapplication) API has been called. Setting the Application is only necessary on an Activity that is also an entry point for your application. However, setting the Application on each Activity has no negative impact and ensures that the SDK always has the necessary reference to your Application. We recommend that you call `setApplication` API in each of your Activities.
 
-<Variant platform="ios" task="visual-preview" repeat="10"/>
+<Variant platform="ios" task="visual-preview" repeat="7"/>
+
+On iOS, the Mobile Core's [collectLaunchInfo](../../mobile-core/api-reference.md#collectlaunchinfo) API can be invoked with the Target preview deep link as shown below: 
 
 #### Swift
-
-**Syntax**
-
-```swift
-open class func collectLaunchInfo(_ userinfo: [AnyHashable: Any])
-```
 
 **Example**
 
@@ -370,12 +352,6 @@ ACPCore.collectLaunchInfo(["adb_deeplink" : "com.adobe.targetpreview://app.adobe
 ```
 
 #### Objective-C
-
-**Syntax**
-
-```objectivec
-+ (void) collectLaunchInfo: (nonnull NSDictionary*) userInfo;
-```
 
 **Example**
 
