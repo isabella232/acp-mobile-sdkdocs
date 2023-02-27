@@ -42,7 +42,7 @@ React Native
 
 <InlineAlert variant="info" slots="text"/>
 
-This API is only available in Android and latest iOS Target Mobile SDKs.
+This API is only available in Android and in [latest iOS Target Mobile SDKs](https://developer.adobe.com/client-sdks/documentation/adobe-target/api-reference/).
 
 This API gets the Target session identifier. 
 
@@ -231,7 +231,7 @@ React Native
 
 <InlineAlert variant="info" slots="text"/>
 
-This API is only available in Android and latest iOS Target Mobile SDKs.
+This API is only available in Android and in [latest iOS Target Mobile SDKs](https://developer.adobe.com/client-sdks/documentation/adobe-target/api-reference/).
 
 This API sets the Target session identifier.
 
@@ -267,7 +267,7 @@ React Native
 
 <InlineAlert variant="info" slots="text"/>
 
-This API is only available in Android and latest iOS Target Mobile SDKs.
+This API is only available in Android and in [latest iOS Target Mobile SDKs](https://developer.adobe.com/client-sdks/documentation/adobe-target/api-reference/).
 
 This API sets the Target user identifier.
 
