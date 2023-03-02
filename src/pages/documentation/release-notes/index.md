@@ -4,6 +4,12 @@ description: Release notes and change logs for the Adobe Experience Platform Mob
 
 # Release notes
 
+## March 2, 2023
+
+### iOS ACPCore 2.9.7
+
+* Fix race conditions in StringUtils.
+
 ## February 13, 2023
 
 ### Android Campaign Standard 1.0.10

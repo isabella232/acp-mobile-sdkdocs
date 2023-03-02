@@ -1,5 +1,11 @@
 # Release Notes
 
+## March 2, 2023
+
+### iOS ACPCore 2.9.7
+
+* Fix race conditions in StringUtils.
+
 ## January 5, 2023
 
 ### Android Lifecycle 1.1.2
