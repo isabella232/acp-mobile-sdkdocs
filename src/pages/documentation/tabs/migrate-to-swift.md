@@ -17,6 +17,7 @@
       [AEPMobileCore registerExtensions:@[AEPMobileSignal.class, AEPMobileLifecycle.class, AEPMobileUserProfile.class, AEPMobileIdentity.class, AEPMobileAssurance.class] completion:^{
         [AEPMobileCore configureWithAppId: @"yourAppId"];
         if (appState != UIApplicationStateBackground) {
+          // only start lifecycle if the application is not in the background
           [AEPMobileCore lifecycleStart:@{@"contextDataKey": @"contextDataVal"}];
         }
        }];
