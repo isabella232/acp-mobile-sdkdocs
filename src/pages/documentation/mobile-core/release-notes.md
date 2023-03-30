@@ -1,5 +1,9 @@
 # Release Notes
 
+### Android Mobile Core 1.11.5
+
+* Fixed crash when initializing SDK in Android direct boot mode. 
+
 ## March 2, 2023
 
 ### iOS ACPCore 2.9.7
