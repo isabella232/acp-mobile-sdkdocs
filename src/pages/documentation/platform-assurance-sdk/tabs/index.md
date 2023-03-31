@@ -44,7 +44,7 @@ import AEPAssurance
 1. Install the AEP Assurance package.
 
 ```bash
-npm install @adobe/react-native-aepassurance
+npm install @adobe/react-native-aepassurance@2.0.1
 ```
 
 2. Link the module.
