@@ -97,7 +97,7 @@ React Native Experience Platform Edge Network, Edge Identity, Edge Consent, Opti
 
 ## Flutter
 
-Adobe Experience Platform Mobile SDK plugin for Flutter supports Flutter **versions 1.10.0 or later**.
+Adobe Experience Platform Mobile SDK plugin for Flutter supports Flutter **versions 2.0.0 or later**.
 
 <InlineAlert variant="info" slots="text"/>
 
