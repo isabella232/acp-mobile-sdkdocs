@@ -13,7 +13,7 @@ The following tables provide information about the differences between the new E
 | Programmatic configuration | No | Yes |
 | Bundled configuration | Yes | Yes |
 | Configuration management in tags | No | Yes |
-| Lifecycle metrics | Yes | Yes. See [Manual Lifecycle Implementation](lifecycle.md) |
+| Lifecycle metrics | Yes | Yes. See [Manual Lifecycle Implementation](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/) |
 | Experience Cloud ID service | Yes | Yes |
 | Privacy and GDPR framework | Yes | Yes |
 
