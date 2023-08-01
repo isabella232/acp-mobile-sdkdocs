@@ -4,6 +4,12 @@ description: Release notes and change logs for the Adobe Experience Platform Mob
 
 # Release notes
 
+## August 1, 2023
+
+### Android Mobile Core 1.11.6
+
+* Implemented database recovery in SQLiteDataQueue for cases where adding or removing an entry fails due to unexpected errors.
+
 ## March 29, 2023
 
 ### Android Mobile Core 1.11.5
