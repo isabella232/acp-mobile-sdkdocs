@@ -1,4 +1,8 @@
+import Alerts from '../resources/alerts.md'
+
 # Mobile Core
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 <InlineAlert variant="warning" slots="text"/>
 

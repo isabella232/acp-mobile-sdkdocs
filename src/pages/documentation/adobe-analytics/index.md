@@ -3,9 +3,12 @@ title: Adobe Analytics extension
 description: Configuring the Adobe Analytics extension in the Data Collection UI
 ---
 
+import Alerts from '../resources/alerts.md'
 import Tabs from './tabs/index.md'
 
 # Adobe Analytics
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 ## Configure the Analytics extension in the Data Collection UI
 

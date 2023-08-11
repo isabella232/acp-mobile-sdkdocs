@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Campaign Standard
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 <InlineAlert variant="info" slots="text"/>
 

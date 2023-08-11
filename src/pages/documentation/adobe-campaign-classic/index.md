@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Campaign Classic
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 ## Configure Campaign Classic extension in the Data Collection UI
 
