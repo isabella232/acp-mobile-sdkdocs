@@ -1,6 +1,9 @@
 import Tabs from './tabs/api-reference.md'
+import Alerts from '/src/pages/documentation/resources/alerts.md'
 
 # Lifecycle API reference
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 ## extensionVersion
 

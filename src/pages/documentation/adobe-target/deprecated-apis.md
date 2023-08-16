@@ -1,6 +1,9 @@
 import Tabs from './tabs/deprecated-apis.md'
+import Alerts from '/src/pages/documentation/resources/alerts.md'
 
 # Deprecated Target APIs
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 The following Target APIs are **deprecated APIs** that are no longer supported on AEPTarget version 3.x and newer, and are **only** present in ACPTarget 2.x.
 

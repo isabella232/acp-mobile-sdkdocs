@@ -1,4 +1,8 @@
+import Alerts from '/src/pages/documentation/resources/alerts.md'
+
 # Lifecycle metrics
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 ## Lifecycle data content response metrics
 
