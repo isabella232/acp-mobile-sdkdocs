@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../../resources/alerts.md'
 
 # Lifecycle
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 <InlineAlert variant="warning" slots="text"/>
 

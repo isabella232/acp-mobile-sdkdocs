@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Audience Manager
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 Adobe Audience Manager is a versatile audience data management platform. With the SDK, you can update audience profiles for users and retrieve user segment information from your mobile app. For more information, see [Adobe Audience Manager](https://business.adobe.com/products/audience-manager/adobe-audience-manager.html).
 

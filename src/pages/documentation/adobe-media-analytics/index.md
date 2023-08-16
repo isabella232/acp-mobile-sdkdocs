@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Analytics - Media Analytics for Audio and Video
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 <InlineAlert variant="warning" slots="text"/>
 

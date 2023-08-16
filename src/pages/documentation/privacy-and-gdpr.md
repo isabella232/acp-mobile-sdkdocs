@@ -1,6 +1,9 @@
 import Tabs from './tabs/privacy-and-gdpr.md'
+import Alerts from '/src/pages/documentation/resources/alerts.md'
 
 # Privacy and GDPR
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 The Adobe Experience Platform SDKs give you controls to manage consent and privacy obligations, such as the European Union's General Data Protection Regulation (GDPR). Developers can retrieve locally stored identities and set opt status flags for data collection and transmission.
 

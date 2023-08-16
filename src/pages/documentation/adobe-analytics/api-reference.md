@@ -4,8 +4,11 @@ description: An API reference for the Adobe Analytics mobile extension.
 ---
 
 import Tabs from './tabs/api-reference.md'
+import Alerts from '/src/pages/documentation/resources/alerts.md'
 
 # Analytics API reference
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 ## clearQueue
 

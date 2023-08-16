@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../../resources/alerts.md'
 
 # Signal
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 The Signal extension allows marketers to send a "signal" to their apps through the Adobe Experience Platform Mobile SDKs. This signal might tell the Mobile SDKs or the apps to complete tasks, such as send PII-labeled data, to trigger a postback to a third-party ad-network and open an app deep link or URL. To ensure that signals are sent or are activated, the marketers need to configure triggers and traits in the Data Collection UI.
 

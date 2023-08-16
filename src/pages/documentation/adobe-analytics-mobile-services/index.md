@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Analytics - Mobile Services
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 This extension enables in-app messaging, push notifications, and marketing links functionality from [Mobile Services](https://mobilemarketing.adobe.com) on the Experience Platform SDK.
 

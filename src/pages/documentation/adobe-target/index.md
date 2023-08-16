@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Target
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 Adobe Target helps test, personalize, and optimize mobile app experiences based on user behavior and mobile context. You can deliver interactions that engage and convert through iterative testing and rules-based and AI-powered personalization.
 

@@ -5,11 +5,11 @@ description: This is the overview page of Mobile SDK
 
 # Mobile SDK documentation (Previous versions)
 
-<InlineAlert variant="info" slots="text"/>
+<InlineAlert variant="error" slots="text"/>
 
 Effective August 31, 2023: ACP iOS SDKs, Flutter for ACP, React Native for ACP, Cordova, and Xamarin SDKs will no longer be supported. Refer to [ACP SDKs end-of-support](https://developer.adobe.com/client-sdks/documentation/resources/acp-end-of-support/) for more information.
 
-<InlineAlert variant="warning" slots="text"/>
+<InlineAlert variant="error" slots="text"/>
 
 This document lists the previous versions of the Adobe Experience Platform Mobile SDKs. Check out [this page for latest versions and solution support](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) of the Mobile SDKs.
 

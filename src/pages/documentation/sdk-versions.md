@@ -1,6 +1,6 @@
 # Previous SDK versions
 
-<InlineAlert variant="warning" slots="text"/>
+<InlineAlert variant="error" slots="text"/>
 
 This document lists the previous versions of the Adobe Experience Platform Mobile SDKs. Check out [this page for latest versions and solution support](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) of the Mobile SDKs.
 
@@ -49,7 +49,7 @@ Version 1.x and 2.x of the Mobile SDK for iOS support iOS 10 or later (includes 
 
 | Extension | tvOS | App Extension | CocoaPods | GitHub |
 |---|---|---|---|---|
-| [Mobile Core](../mobile-core/index.md) | ✔️ |   | [![Cocoapods](https://img.shields.io/cocoapods/v/ACPCore.svg?color=orange&label=ACPCore&logo=apple&logoColor=white&style=flat-square)](https://cocoapods.org/pods/ACPCore) | 	[Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/iOS/ACPCore)
+| [Mobile Core](../mobile-core/index.md) | ✔️ |   | [![Cocoapods](https://img.shields.io/cocoapods/v/ACPCore.svg?color=orange&label=ACPCore&logo=apple&logoColor=white&style=flat-square)](https://cocoapods.org/pods/ACPCore) |     [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/iOS/ACPCore)
 | [Profile](../profile/index.md) |   |   | [![Cocoapods](https://img.shields.io/cocoapods/v/ACPUserProfile.svg?color=orange&label=ACPUserProfile&logo=apple&logoColor=white&style=flat-square)](https://cocoapods.org/pods/ACPUserProfile) | [Link](https://github.com/Adobe-Marketing-Cloud/acp-sdks/tree/master/iOS/ACPUserProfile) |
 | [Identity](../mobile-core/identity/index.md) | ✔️ |   | Bundled in Mobile Core | — |
 | [Signal](../mobile-core/signal/index.md) | ✔️ |   | Bundled in Mobile Core | — |

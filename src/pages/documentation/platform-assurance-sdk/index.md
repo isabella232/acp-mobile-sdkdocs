@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../resources/alerts.md'
 
 # Adobe Experience Platform Assurance extension
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 This extension enables capabilities for Adobe Experience Platform Assurance.
 

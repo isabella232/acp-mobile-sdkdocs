@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../../resources/alerts.md'
 
 # Identity
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 The Identity extension is bundled with [Mobile Core](../index.md) and enables your app with the Experience Cloud ID (ECID). This service helps with the synchronization of Adobe and other customer identifiers.
 

@@ -1,4 +1,8 @@
+import Alerts from '/src/pages/documentation/resources/alerts.md'
+
 # Mobile foundation extensions
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 Mobile foundation extensions are the main extensions you can use when using the Mobile SDKs. These extensions are highly recommended to use when you are implementing your own mobile solution.
 

@@ -1,6 +1,9 @@
 import Tabs from './tabs/index.md'
+import Alerts from '../../resources/alerts.md'
 
 # Configuration
+
+<Alerts query="platform=outdated-version&componentClass=InlineNestedAlert"/>
 
 The Configuration extension is built into the Mobile Core extension. It provides several different APIs for you to setup the configuration either remotely in the Data Collection UI or locally.
 
