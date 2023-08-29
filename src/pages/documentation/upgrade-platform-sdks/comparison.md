@@ -1,5 +1,9 @@
 ---
-noIndex: true
+title: Experience Platform SDKs vs 4x SDKs
+description: Learn the differences between the Experience Platform SDK and the v4 SDK.
+keywords:
+- API
+- Migration
 ---
 
 # Experience Platform SDKs vs. 4x SDKs

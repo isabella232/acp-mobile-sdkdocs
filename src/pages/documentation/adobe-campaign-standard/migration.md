@@ -2,7 +2,7 @@
 title: Migrating to AEPCampaign reference
 description: Learn how to migrate to the AEPCampaign APIs from the ACPCampaign APIs.
 keywords:
-- Adobe Campaign
+- Adobe Campaign Standard
 - Migration
 - Tutorial
 ---

@@ -1,5 +1,9 @@
 ---
-noIndex: true
+title: API Changelog
+description: Learn the differences between the Experience Platform SDK APIs and the v4 SDK APIs.
+keywords:
+- API
+- Migration
 ---
 
 # API Changelog

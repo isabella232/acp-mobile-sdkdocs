@@ -1,15 +1,15 @@
 ---
-title: Migrating to AEPAudience
+title: Migrating to AEPAudience reference
 description: Learn how to migrate your APIs from ACPAudience to AEPAudience.
 keywords:
 - Migration
-- Audience
+- Adobe Audience Manager
 - Tutorial
 ---
 
 import Tabs from './tabs/migration.md'
 
-# Migrating to AEPAudience
+# Migrating to AEPAudience reference
 
 This document is a reference comparison of AEPAudience (3.x) APIs against their equivalent ACPAudience (2.x) APIs.
 

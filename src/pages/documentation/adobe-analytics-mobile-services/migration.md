@@ -1,5 +1,5 @@
 ---
-title: Migrating to AEPMobileServices
+title: Migrating to AEPMobileServices reference
 description: Learn how to migrate your APIs from ACPMobileServices to AEPMobileServices.
 keywords:
 - Mobile Services
