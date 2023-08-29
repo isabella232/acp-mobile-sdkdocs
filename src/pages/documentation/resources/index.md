@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Resources
 
 The following document provides a list of resources for you to better understand how to use Mobile SDK.

@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Release Notes
 
 ## May 18, 2022

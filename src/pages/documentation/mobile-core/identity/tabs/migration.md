@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="aep-swift" api="append-to-url" repeat="1"/>
 
 ```swift
@@ -8,7 +12,7 @@ static func appendTo(url: URL?, completion: @escaping (URL?, Error?) -> Void)
 
 ```objectivec
 + (void) appendToUrl: (NSURL * _Nullable baseUrl)
-					completion: ^(NSURL * _Nullable urlWithVisitorData, NSError * _Nullable error) completion;
+                    completion: ^(NSURL * _Nullable urlWithVisitorData, NSError * _Nullable error) completion;
 ```
 
 <Variant platform="acp-objc" api="append-to-url" repeat="1"/>
@@ -139,8 +143,8 @@ static func syncIdentifier(identifierType: String, identifier: String, authentic
 
 ```objectivec
 + (void) syncIdentifierWithType: (NSString * _Nonnull identifierType)
-										 identifier: (NSString * _Nonnull identifier)
-								 authentication: (enum AEPAuthenticationState authenticationState);
+                                         identifier: (NSString * _Nonnull identifier)
+                                 authentication: (enum AEPAuthenticationState authenticationState);
 ```
 
 <Variant platform="acp-objc" api="sync-identifier" repeat="1"/>
@@ -163,7 +167,7 @@ static func syncIdentifiers(identifiers: [String: String]?, authenticationState:
 ```objectivec
 + (void) syncIdentifiers: (NSDictionary<NSString *, NSString *> * _Nullable identifiers);
 + (void) syncIdentifiers: (NSDictionary<NSString *, NSString *> * _Nullable identifiers)
-					authentication: (enum AEPAuthenticationState authenticationState);
+                    authentication: (enum AEPAuthenticationState authenticationState);
 ```
 
 <Variant platform="acp-objc" api="sync-identifiers" repeat="1"/>

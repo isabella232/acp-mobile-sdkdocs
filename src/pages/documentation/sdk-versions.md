@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Previous SDK versions
 
 <InlineAlert variant="error" slots="text"/>

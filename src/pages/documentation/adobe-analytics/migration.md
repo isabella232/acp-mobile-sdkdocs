@@ -1,3 +1,13 @@
+---
+title: Migrating to AEPAnalytics
+description: Learn how to migrate from using the ACPAnalytics extension to the AEPAnalytics extension.
+keywords:
+- Adobe Analytics
+- Migration
+- Tutorial
+---
+
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPAnalytics

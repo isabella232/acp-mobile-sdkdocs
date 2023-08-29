@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 import Tabs from './tabs/privacy-and-gdpr.md'
 import Alerts from '/src/pages/documentation/resources/alerts.md'
 

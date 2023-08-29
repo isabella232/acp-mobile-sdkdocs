@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPCampaign reference
+description: Learn how to migrate to the AEPCampaign APIs from the ACPCampaign APIs.
+keywords:
+- Adobe Campaign
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPCampaign reference

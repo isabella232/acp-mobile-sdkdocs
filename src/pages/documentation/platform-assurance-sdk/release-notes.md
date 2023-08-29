@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Release Notes
 
 Release notes and change logs for the Adobe Experience Platform Assurance extension

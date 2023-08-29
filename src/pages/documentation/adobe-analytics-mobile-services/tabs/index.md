@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="android" task="add" repeat="4"/>
 
 Add the Mobile Services extension to your project using the app's Gradle file.

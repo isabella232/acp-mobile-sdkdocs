@@ -1,3 +1,13 @@
+---
+title: Migrating to AEPSignal reference
+description: Learn how to migrate to the AEPSignal APIs from the ACPSignal APIs.
+keywords:
+- Signal
+- Signal for Mobile Core
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPSignal reference

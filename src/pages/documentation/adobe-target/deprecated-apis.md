@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 import Tabs from './tabs/deprecated-apis.md'
 import Alerts from '/src/pages/documentation/resources/alerts.md'
 

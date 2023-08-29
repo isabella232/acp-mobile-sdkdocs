@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="aep-3-swift" task="extension-version" repeat="1"/>
 
 ```swift

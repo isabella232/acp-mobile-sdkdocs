@@ -1,6 +1,7 @@
 ---
 title: Mobile SDK overview
 description: This is the overview page of Mobile SDK
+noIndex: true
 ---
 
 # Mobile SDK documentation (Previous versions)

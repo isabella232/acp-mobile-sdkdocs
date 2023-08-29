@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="android" task="get" repeat="10"/>
 
 #### Java

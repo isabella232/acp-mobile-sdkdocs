@@ -1,6 +1,7 @@
 ---
 title: Adobe Analytics extension
 description: Configuring the Adobe Analytics extension in the Data Collection UI
+noIndex: true
 ---
 
 import Alerts from '../resources/alerts.md'

@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="aep-swift" api="clear-prefetch-cache" repeat="1"/>
 
 ```swift

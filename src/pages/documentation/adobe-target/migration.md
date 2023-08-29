@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPTarget reference
+description: Learn how to migrate to the AEPTarget APIs from the ACPTarget APIs.
+keywords:
+- Adobe Target
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPTarget reference

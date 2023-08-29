@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Release Notes
 
 ## August 1, 2023

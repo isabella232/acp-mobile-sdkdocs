@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPMedia reference
+description: Learn how to migrate from ACPMedia APIs to the AEPMedia APIs.
+keywords:
+- Adobe Media Analytics
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPMedia reference

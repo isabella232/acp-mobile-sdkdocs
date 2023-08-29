@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPAssurance 3.x reference
+description: Learn how to migrate to the 3.x version of the AEPAssurance APIs from the 1.x version of the AEPAssurance APIs.
+keywords:
+- Assurance
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPAssurance(3.x) reference

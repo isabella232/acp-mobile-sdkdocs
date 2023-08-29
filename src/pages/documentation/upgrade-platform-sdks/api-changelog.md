@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # API Changelog
 
 This page details SDK API changes between the Experience Platform SDKs and 4x SDKs.

@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPPlaces reference
+description: Learn how to migrate to the AEPPlaces APIs from the ACPPlaces APIs.
+keywords:
+- Places
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPPlaces reference

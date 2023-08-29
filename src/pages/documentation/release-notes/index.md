@@ -1,5 +1,7 @@
 ---
+title: 2023 Release Notes
 description: Release notes and change logs for the Adobe Experience Platform Mobile SDKs.
+noIndex: true
 ---
 
 # Release notes

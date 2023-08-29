@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="aep-objc" api="track-adobe-deep-link" repeat="1"/>
 
 ```objc

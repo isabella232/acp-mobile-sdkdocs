@@ -1,3 +1,8 @@
+---
+title: Mobile SDKs for iOS Migration Guide
+description: Learn how to migrate to the latest versions of the Adobe Experience Platform Mobile SDKs for iOS.
+---
+
 import Tabs from './tabs/migrate-to-swift.md'
 
 # Migrate to latest Adobe Experience Platform Mobile SDKs for iOS

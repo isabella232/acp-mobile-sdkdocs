@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPMobileServices
+description: Learn how to migrate your APIs from ACPMobileServices to AEPMobileServices.
+keywords:
+- Mobile Services
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPMobileServices reference

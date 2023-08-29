@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="obj-c" repeat="1"/>
 
 ```objc

@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPAudience
+description: Learn how to migrate your APIs from ACPAudience to AEPAudience.
+keywords:
+- Migration
+- Audience
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPAudience
