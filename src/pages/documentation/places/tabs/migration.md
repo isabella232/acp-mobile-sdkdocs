@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant language="aep-swift" api="clear" repeat="1"/>
 
 ```swift

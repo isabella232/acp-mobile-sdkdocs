@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 import Alerts from '../resources/alerts.md'
 
 # Mobile Core

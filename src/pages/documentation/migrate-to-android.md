@@ -1,3 +1,8 @@
+---
+title: Mobile SDKs for Android Migration Guide
+description: Learn how to migrate to the latest versions of the Adobe Experience Platform Mobile SDKs for Android.
+---
+
 import Tabs from './tabs/migrate-to-android.md'
 
 # Migrate to latest Adobe Experience Platform Mobile SDKs for Android

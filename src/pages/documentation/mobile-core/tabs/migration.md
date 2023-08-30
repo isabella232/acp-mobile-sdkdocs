@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="aep-swift" api="track-action" repeat="1"/>
 
 ```swift

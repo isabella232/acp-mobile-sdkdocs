@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="java" repeat="1"/>
 
 ```java

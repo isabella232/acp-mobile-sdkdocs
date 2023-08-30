@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="android" task="set-variable" repeat="5"/>
 
 #### Java

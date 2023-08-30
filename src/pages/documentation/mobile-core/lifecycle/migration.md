@@ -1,3 +1,13 @@
+---
+title: Migrating to AEPLifecycle reference
+description: Learn how to migrate to the AEPLifecycle APIs from the ACPLifecycle APIs.
+keywords:
+- Lifecycle
+- Lifecycle for Mobile Core
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPLifecycle reference

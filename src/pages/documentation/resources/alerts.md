@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="outdated-version" componentClass="InlineNestedAlert" repeat="1"/>
 
 <InlineNestedAlert variant="error" header="false" iconPosition="left">

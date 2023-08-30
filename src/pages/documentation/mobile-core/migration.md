@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPCore reference
+description: Learn how to migrate to the AEPCore APIs from the ACPCore APIs.
+keywords:
+- Mobile Core
+- Migration
+- Tutorial 
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPCore reference

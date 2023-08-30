@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="aep-swift" api="clear-queue" repeat="1"/>
 
 ```swift

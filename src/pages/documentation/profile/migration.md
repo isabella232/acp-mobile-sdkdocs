@@ -1,3 +1,12 @@
+---
+title: Migrating to AEPUserProfile
+description: Learn how to migrate to the AEPUserProfile APIs from the ACPUserProfile APIs.
+keywords:
+- Profile
+- Migration
+- Tutorial
+---
+
 import ExtensionVersionAEPSwift from './tabs/migration/extension-version/aep-swift.md'
 import ExtensionVersionAEPObjectiveC from './tabs/migration/extension-version/aep-objective-c.md'
 import ExtensionVersionACPObjectiveC from './tabs/migration/extension-version/acp-objective-c.md'

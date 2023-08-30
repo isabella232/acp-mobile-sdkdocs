@@ -1,3 +1,11 @@
+---
+title: API Changelog
+description: Learn the differences between the Experience Platform SDK APIs and the v4 SDK APIs.
+keywords:
+- API
+- Migration
+---
+
 # API Changelog
 
 This page details SDK API changes between the Experience Platform SDKs and 4x SDKs.

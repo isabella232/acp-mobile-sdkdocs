@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 import Alerts from '/src/pages/documentation/resources/alerts.md'
 
 # Places API reference

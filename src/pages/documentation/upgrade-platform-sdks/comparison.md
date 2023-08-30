@@ -1,3 +1,11 @@
+---
+title: Experience Platform SDKs vs 4x SDKs
+description: Learn the differences between the Experience Platform SDK and the v4 SDK.
+keywords:
+- API
+- Migration
+---
+
 # Experience Platform SDKs vs. 4x SDKs
 
 The following tables provide information about the differences between the new Experience Platform SDKs and the 4x SDKs.
@@ -35,7 +43,7 @@ The following tables provide information about the differences between the new E
 
 | Functionality | 4x SDK | Experience Platform SDK |
 |---|---|---|
-| Postbacks - Get/POST URL requests | Yes |	Yes - Signals extension |
+| Postbacks - Get/POST URL requests | Yes |    Yes - Signals extension |
 | Postbacks - PII Get/POST URL requests | Yes | Yes - Signals extension |
 | Postbacks - Open app deeplink | Yes | Yes - Signals extension |
 | Push Messaging | Yes | Yes - Mobile Services extension (deprecated) |

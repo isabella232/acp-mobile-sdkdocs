@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 <Variant platform="android" api="load-target-requests" repeat="10"/>
 
 #### TargetRequest Builder

@@ -1,3 +1,13 @@
+---
+title: Migrating to AEPIdentity reference
+description: Learn how to migrate to the AEPIdentity APIs from the ACPIdentity APIs.
+keywords:
+- Identity for Mobile Core
+- Identity
+- Migration
+- Tutorial
+---
+
 import Tabs from './tabs/migration.md'
 
 # Migrating to AEPIdentity reference

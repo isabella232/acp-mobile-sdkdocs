@@ -221,10 +221,6 @@ module.exports = {
                             {
                                 title: "API reference",
                                 path: "documentation/profile/api-reference"
-                            },
-                            {
-                                title: "Release notes",
-                                path: "documentation/profile/release-notes"
                             }
                         ]
                     }
