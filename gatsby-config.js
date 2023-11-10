@@ -12,19 +12,22 @@
 module.exports = {
     pathPrefix: process.env.PATH_PREFIX || '/client-sdks/previous-versions/',
     siteMetadata: {
-        versions: [
+        pages: [
             {
-                title: 'Latest version',
-                path: '/client-sdks/documentation',
-
-              },
-              {
-                title: 'Previous versions',
-                path: '/client-sdks/previous-versions/documentation',
-                selected: true
-              }
-          ],
-        pages: [{
+                title: "Versions",
+                menu: [
+                    {
+                        title: "Latest version",
+                        path: "https://developer.adobe.com/client-sdks/home/",
+                    },
+                    {
+                        title: "Previous versions",
+                        path: '/',
+                        selected: true
+                    }
+                ]
+            },
+        {
             title: 'Documentation',
             path: '/documentation',
         }],
