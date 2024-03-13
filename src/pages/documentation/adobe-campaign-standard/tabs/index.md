@@ -188,8 +188,7 @@ In addition to adding the `FullscreenMessageActivity`, a global lifecycle callba
 
 #### Set up local notifications
 
-To set up local notifications in Android, update the AndroidManifest.xml file with `<receiver android:name="com.adobe.marketing.mobile.LocalNotificationHandler"/>`. To configure the notification icons that the local notification will use, see the [configuring notification icons section](../adobe-analytics-mobile-services/index.md#configuring-notification-icons) within the Adobe Analytics - Mobile Services documentation.
-
+To set up local notifications in Android, update the AndroidManifest.xml file with `<receiver android:name="com.adobe.marketing.mobile.LocalNotificationHandler"/>`.
 <Variant platform="ios" task="initialize" repeat="1"/>
 
 No additional setup is needed for iOS in-app messaging and local notifications.
