@@ -258,6 +258,15 @@ module.exports = {
                 ]
             },
             {
+                title: "Adobe Analytics - Mobile Services",
+                path: "/documentation/adobe-analytics-mobile-services",
+                pages: [{
+                    title: "End of support",
+                    path: "/documentation/adobe-analytics-mobile-services"
+                }
+                ]
+            },
+            {
                 title: "Adobe Media Analytics",
                 path: "/documentation/adobe-media-analytics",
                 pages: [{
