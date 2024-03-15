@@ -12,6 +12,10 @@ Effective August 31, 2023: ACP iOS SDKs, Flutter for ACP, React Native for ACP, 
 
 <InlineAlert variant="error" slots="text"/>
 
+Mobile Services reached end-of-life on December 31, 2022. Mobile Services, which supports a mobile-centric UI, acquisition, deep linking, in-app messaging, push notification, and geo-location is no longer supported after this date. Refer to [Adobe Mobile Services end-of-life FAQ](https://experienceleague.adobe.com/en/docs/discontinued/using/mobile-services) for more information
+
+<InlineAlert variant="error" slots="text"/>
+
 This document lists the previous versions of the Adobe Experience Platform Mobile SDKs. Check out [this page for latest versions and solution support](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) of the Mobile SDKs.
 
 <InlineAlert variant="info" slots="text"/>
